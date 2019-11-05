@@ -1,0 +1,10 @@
+C:\Users\zero\source\repos\Aggelies-FormsApp\bin\Debug\Aggelies-FormsApp.exe.config
+C:\Users\zero\source\repos\Aggelies-FormsApp\bin\Debug\Aggelies-FormsApp.exe
+C:\Users\zero\source\repos\Aggelies-FormsApp\bin\Debug\Aggelies-FormsApp.pdb
+C:\Users\zero\source\repos\Aggelies-FormsApp\obj\Debug\Aggelies-FormsApp.csprojAssemblyReference.cache
+C:\Users\zero\source\repos\Aggelies-FormsApp\obj\Debug\Aggelies_FormsApp.Properties.Resources.resources
+C:\Users\zero\source\repos\Aggelies-FormsApp\obj\Debug\Aggelies-FormsApp.csproj.GenerateResource.cache
+C:\Users\zero\source\repos\Aggelies-FormsApp\obj\Debug\Aggelies-FormsApp.exe
+C:\Users\zero\source\repos\Aggelies-FormsApp\obj\Debug\Aggelies-FormsApp.pdb
+C:\Users\zero\source\repos\Aggelies-FormsApp\obj\Debug\Aggelies_FormsApp.Form1.resources
+C:\Users\zero\source\repos\Aggelies-FormsApp\obj\Debug\Aggelies_FormsApp.Register.resources
