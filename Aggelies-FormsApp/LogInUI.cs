@@ -18,8 +18,7 @@ namespace Aggelies_FormsApp
     {
         OleDbConnection conn = new OleDbConnection();
  
-        string u = "one";
-        string p = "1234";
+        
         public Form1()
         {
             InitializeComponent();
