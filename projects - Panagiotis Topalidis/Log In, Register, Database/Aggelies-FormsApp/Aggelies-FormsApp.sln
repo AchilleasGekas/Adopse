@@ -6,9 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aggelies-FormsApp", "Aggelies-FormsApp.csproj", "{5D584BD2-D759-4563-B3E7-D14DB4EE8E3C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FB793255-26C4-430E-894E-30B156412BE3}"
-	ProjectSection(SolutionItems) = preProject
-		DBConnection.cs = DBConnection.cs
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
