@@ -10,8 +10,7 @@ namespace Aggelies_FormsApp
     {
         /// <summary>
         /// The main entry point for the application.
-        /// </summary>       
-        /// dokimi
+        /// </summary>
         [STAThread]
         static void Main()
         {
