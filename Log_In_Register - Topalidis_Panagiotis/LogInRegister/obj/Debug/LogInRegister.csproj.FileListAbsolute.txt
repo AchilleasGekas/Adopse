@@ -1,9 +1,0 @@
-C:\Users\zero\source\repos\LogInRegister\bin\Debug\LogInRegister.exe.config
-C:\Users\zero\source\repos\LogInRegister\bin\Debug\LogInRegister.exe
-C:\Users\zero\source\repos\LogInRegister\bin\Debug\LogInRegister.pdb
-C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.Form1.resources
-C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.Properties.Resources.resources
-C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.csproj.GenerateResource.cache
-C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.exe
-C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.pdb
-C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.Form2.resources
