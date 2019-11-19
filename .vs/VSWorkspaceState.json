@@ -1,10 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\projects - Panagiotis Topalidis",
-    "\\projects - Panagiotis Topalidis\\Log In, Register, Database",
-    "\\projects - Panagiotis Topalidis\\Log In, Register, Database\\Aggelies-FormsApp"
+    "\\Aggelies-FormsApp",
+    "\\Aggelies-FormsApp\\SearchBar_EK",
+    "\\Aggelies-FormsApp\\SQL_Database_Achilleas_Gekas",
+    "\\Aggelies-FormsApp\\UX_KAMPANIS_NTONTOGLOU\\UX_KAMPANIS_NTONTOGLOU",
+    "\\Aggelies-FormsApp\\UX_KAMPANIS_NTONTOGLOU\\UX_KAMPANIS_NTONTOGLOU\\obj"
   ],
-  "SelectedNode": "\\projects - Panagiotis Topalidis\\Log In, Register, Database\\Aggelies-FormsApp\\Aggelies-FormsApp.csproj",
+  "SelectedNode": "\\Aggelies-FormsApp\\SQL_Database_Achilleas_Gekas",
   "PreviewInSolutionExplorer": false
 }
