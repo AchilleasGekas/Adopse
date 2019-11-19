@@ -20,7 +20,7 @@ namespace UX_KAMPANIS_NTONTOGLOU
     /// </summary>
     public partial class MainWindow : Window
     {
-        //dokimi
+        //dokimi v.2 
         public MainWindow()
         {
             InitializeComponent();
