@@ -1,0 +1,10 @@
+C:\Users\gkeka\Source\Repos\AchilleasGekas\Adopse\Aggelies-FormsApp\UX_Adholic_v.1\bin\Debug\UX_Session1_v.1.exe.config
+C:\Users\gkeka\Source\Repos\AchilleasGekas\Adopse\Aggelies-FormsApp\UX_Adholic_v.1\bin\Debug\UX_Session1_v.1.exe
+C:\Users\gkeka\Source\Repos\AchilleasGekas\Adopse\Aggelies-FormsApp\UX_Adholic_v.1\bin\Debug\UX_Session1_v.1.pdb
+C:\Users\gkeka\Source\Repos\AchilleasGekas\Adopse\Aggelies-FormsApp\UX_Adholic_v.1\obj\Debug\UX_Session1_v.1.csprojAssemblyReference.cache
+C:\Users\gkeka\Source\Repos\AchilleasGekas\Adopse\Aggelies-FormsApp\UX_Adholic_v.1\obj\Debug\UX_Session1_v._1.Form1.resources
+C:\Users\gkeka\Source\Repos\AchilleasGekas\Adopse\Aggelies-FormsApp\UX_Adholic_v.1\obj\Debug\UX_Session1_v._1.Form2.resources
+C:\Users\gkeka\Source\Repos\AchilleasGekas\Adopse\Aggelies-FormsApp\UX_Adholic_v.1\obj\Debug\UX_Session1_v._1.Properties.Resources.resources
+C:\Users\gkeka\Source\Repos\AchilleasGekas\Adopse\Aggelies-FormsApp\UX_Adholic_v.1\obj\Debug\UX_Session1_v.1.csproj.GenerateResource.cache
+C:\Users\gkeka\Source\Repos\AchilleasGekas\Adopse\Aggelies-FormsApp\UX_Adholic_v.1\obj\Debug\UX_Session1_v.1.exe
+C:\Users\gkeka\Source\Repos\AchilleasGekas\Adopse\Aggelies-FormsApp\UX_Adholic_v.1\obj\Debug\UX_Session1_v.1.pdb
