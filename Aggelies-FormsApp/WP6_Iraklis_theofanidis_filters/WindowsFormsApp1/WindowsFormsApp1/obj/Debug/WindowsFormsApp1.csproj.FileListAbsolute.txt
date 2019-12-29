@@ -1,0 +1,11 @@
+C:\Users\Lalik\Desktop\asp_dokimes\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Lalik\Desktop\asp_dokimes\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Lalik\Desktop\asp_dokimes\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Lalik\Desktop\asp_dokimes\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Lalik\Desktop\asp_dokimes\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\Lalik\Desktop\asp_dokimes\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Lalik\Desktop\asp_dokimes\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Lalik\Desktop\asp_dokimes\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Lalik\Desktop\asp_dokimes\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Lalik\Desktop\asp_dokimes\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\ebookstoredb.mdb
+C:\Users\Lalik\Desktop\asp_dokimes\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
