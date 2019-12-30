@@ -32,7 +32,7 @@
             this.AdsGV = new System.Windows.Forms.DataGridView();
             this.searchTB = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.aDTITLEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dESCRIPTIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRICEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,12 +43,15 @@
             this.dISCOUNTPRICEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aDSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet = new WP9_SearchBar_EK.Database1DataSet();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.aDSTableAdapter = new WP9_SearchBar_EK.Database1DataSetTableAdapters.ADSTableAdapter();
             this.aCTIVITY_USERTableAdapter = new WP9_SearchBar_EK.Database1DataSetTableAdapters.ACTIVITY_USERTableAdapter();
+            this.sEARCHED_DATATableAdapter = new WP9_SearchBar_EK.Database1DataSetTableAdapters.SEARCHED_DATATableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.AdsGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // AdsGV
@@ -87,11 +90,11 @@
             this.searchBtn.UseVisualStyleBackColor = true;
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
             // 
-            // bindingSource1
+            // bindingSource2
             // 
-            this.bindingSource1.DataMember = "ACTIVITY_USER";
-            this.bindingSource1.DataSource = this.database1DataSet;
-            this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
+            this.bindingSource2.DataMember = "SEARCHED_DATA";
+            this.bindingSource2.DataSource = this.database1DataSet;
+            this.bindingSource2.CurrentChanged += new System.EventHandler(this.bindingSource2_CurrentChanged);
             // 
             // aDTITLEDataGridViewTextBoxColumn
             // 
@@ -151,6 +154,12 @@
             this.database1DataSet.DataSetName = "Database1DataSet";
             this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataMember = "ACTIVITY_USER";
+            this.bindingSource1.DataSource = this.database1DataSet;
+            this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
+            // 
             // aDSTableAdapter
             // 
             this.aDSTableAdapter.ClearBeforeFill = true;
@@ -158,6 +167,10 @@
             // aCTIVITY_USERTableAdapter
             // 
             this.aCTIVITY_USERTableAdapter.ClearBeforeFill = true;
+            // 
+            // sEARCHED_DATATableAdapter
+            // 
+            this.sEARCHED_DATATableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -171,9 +184,10 @@
             this.Text = "Search Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AdsGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +211,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dISCOUNTPRICEDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource bindingSource1;
         private Database1DataSetTableAdapters.ACTIVITY_USERTableAdapter aCTIVITY_USERTableAdapter;
+        private System.Windows.Forms.BindingSource bindingSource2;
+        private Database1DataSetTableAdapters.SEARCHED_DATATableAdapter sEARCHED_DATATableAdapter;
     }
 }
 
