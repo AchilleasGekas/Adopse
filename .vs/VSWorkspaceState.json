@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\Aggelies-FormsApp",
-    "\\Aggelies-FormsApp\\SQL_Database_Achilleas_Gekas"
+    "\\Aggelies-FormsApp\\SQL_Database_Achilleas_Gekas",
+    "\\Aggelies-FormsApp\\SQL_Database_Achilleas_Gekas\\photos",
+    "\\Aggelies-FormsApp\\SQL_Database_Achilleas_Gekas\\photos\\Users"
   ],
-  "SelectedNode": "\\Aggelies-FormsApp\\SQL_Database_Achilleas_Gekas\\Database1.mdb",
+  "SelectedNode": "\\Aggelies-FormsApp\\SQL_Database_Achilleas_Gekas\\photos",
   "PreviewInSolutionExplorer": false
 }
