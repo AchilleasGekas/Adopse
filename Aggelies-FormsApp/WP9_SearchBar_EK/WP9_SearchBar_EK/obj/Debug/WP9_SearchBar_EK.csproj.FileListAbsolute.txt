@@ -1,0 +1,14 @@
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\bin\Debug\WP9_SearchBar_EK.exe.config
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\bin\Debug\WP9_SearchBar_EK.exe
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\bin\Debug\WP9_SearchBar_EK.pdb
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\obj\Debug\WP9_SearchBar_EK.csprojAssemblyReference.cache
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\obj\Debug\WP9_SearchBar_EK.Properties.Resources.resources
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\obj\Debug\WP9_SearchBar_EK.csproj.GenerateResource.cache
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\obj\Debug\WP9_SearchBar_EK.exe
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\obj\Debug\WP9_SearchBar_EK.pdb
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\obj\Debug\WP9_SearchBar_EK.Form1.resources
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\bin\Debug\Lucene.Net.dll
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\bin\Debug\Lucene.Net.pdb
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\bin\Debug\Lucene.Net.xml
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP9_SearchBar_EK\WP9_SearchBar_EK\obj\Debug\WP9_SearchBar_EK.csproj.CopyComplete
