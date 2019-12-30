@@ -30,11 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AdsGV = new System.Windows.Forms.DataGridView();
-            this.aDSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.database1DataSet = new WP9_SearchBar_EK.Database1DataSet();
-            this.aDSTableAdapter = new WP9_SearchBar_EK.Database1DataSetTableAdapters.ADSTableAdapter();
             this.searchTB = new System.Windows.Forms.TextBox();
             this.searchBtn = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.aDTITLEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dESCRIPTIONDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pRICEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,7 +41,12 @@
             this.uSERIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sTATUSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dISCOUNTPRICEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aDSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new WP9_SearchBar_EK.Database1DataSet();
+            this.aDSTableAdapter = new WP9_SearchBar_EK.Database1DataSetTableAdapters.ADSTableAdapter();
+            this.aCTIVITY_USERTableAdapter = new WP9_SearchBar_EK.Database1DataSetTableAdapters.ACTIVITY_USERTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.AdsGV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             this.SuspendLayout();
@@ -67,20 +70,6 @@
             this.AdsGV.Size = new System.Drawing.Size(744, 203);
             this.AdsGV.TabIndex = 0;
             // 
-            // aDSBindingSource
-            // 
-            this.aDSBindingSource.DataMember = "ADS";
-            this.aDSBindingSource.DataSource = this.database1DataSet;
-            // 
-            // database1DataSet
-            // 
-            this.database1DataSet.DataSetName = "Database1DataSet";
-            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // aDSTableAdapter
-            // 
-            this.aDSTableAdapter.ClearBeforeFill = true;
-            // 
             // searchTB
             // 
             this.searchTB.Location = new System.Drawing.Point(1, 28);
@@ -97,6 +86,12 @@
             this.searchBtn.Text = "Search me";
             this.searchBtn.UseVisualStyleBackColor = true;
             this.searchBtn.Click += new System.EventHandler(this.searchBtn_Click);
+            // 
+            // bindingSource1
+            // 
+            this.bindingSource1.DataMember = "ACTIVITY_USER";
+            this.bindingSource1.DataSource = this.database1DataSet;
+            this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
             // 
             // aDTITLEDataGridViewTextBoxColumn
             // 
@@ -146,6 +141,24 @@
             this.dISCOUNTPRICEDataGridViewTextBoxColumn.HeaderText = "DISCOUNT PRICE";
             this.dISCOUNTPRICEDataGridViewTextBoxColumn.Name = "dISCOUNTPRICEDataGridViewTextBoxColumn";
             // 
+            // aDSBindingSource
+            // 
+            this.aDSBindingSource.DataMember = "ADS";
+            this.aDSBindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // aDSTableAdapter
+            // 
+            this.aDSTableAdapter.ClearBeforeFill = true;
+            // 
+            // aCTIVITY_USERTableAdapter
+            // 
+            this.aCTIVITY_USERTableAdapter.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,6 +171,7 @@
             this.Text = "Search Form";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.AdsGV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
             this.ResumeLayout(false);
@@ -181,6 +195,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn uSERIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn sTATUSDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dISCOUNTPRICEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private Database1DataSetTableAdapters.ACTIVITY_USERTableAdapter aCTIVITY_USERTableAdapter;
     }
 }
 

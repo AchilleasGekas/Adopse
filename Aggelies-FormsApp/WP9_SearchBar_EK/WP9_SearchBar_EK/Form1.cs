@@ -26,9 +26,12 @@ namespace WP9_SearchBar_EK
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'database1DataSet.ACTIVITY_USER' table. You can move, or remove it, as needed.
+            this.aCTIVITY_USERTableAdapter.Fill(this.database1DataSet.ACTIVITY_USER);
             // TODO: This line of code loads data into the 'database1DataSet.ADS' table. You can move, or remove it, as needed.
             this.aDSTableAdapter.Fill(this.database1DataSet.ADS);
-
+            
+            
         }
 
         private void searchBtn_Click(object sender, EventArgs e)
@@ -37,7 +40,7 @@ namespace WP9_SearchBar_EK
 
             var results = search(query);
             AdsGV.DataSource = results;
-
+            this.aCTIVITY_USERTableAdapter.InsertUserActivity("George", DateTime.Today,"searched",Global.getIP());
         }
         Directory createIndex(DataTable table)
         {
@@ -105,6 +108,9 @@ namespace WP9_SearchBar_EK
             return table;
         }
 
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }
