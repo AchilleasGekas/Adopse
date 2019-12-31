@@ -38,12 +38,9 @@ namespace WindowsFormsApp1
         {
             foreach (DataGridViewRow row in dataGridView1.Rows)
             {
-               
-                   
+                 
                     dokimi = e.RowIndex;
-                   
-
-                
+    
             }
             Form2 mp = new Form2();
             this.Hide();
