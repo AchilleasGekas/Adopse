@@ -344,7 +344,7 @@ namespace WindowsFormsApp1
         private void pcBtn_Click(object sender, EventArgs e)
         {
             onomaKatigorias = "Υπολογιστής";
-            voithitikosArithmos = 2;
+            voithitikosArithmos = 1;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -355,7 +355,7 @@ namespace WindowsFormsApp1
         private void telephoneBtn_Click(object sender, EventArgs e)
         {
             onomaKatigorias = "Τηλεφωνια";
-            voithitikosArithmos = 1;
+            voithitikosArithmos = 2;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -486,7 +486,7 @@ namespace WindowsFormsApp1
         private void prof_housesBtn_Click(object sender, EventArgs e)
         {
             onomaKatigorias = "Επαγγελματικοί Χώροι";
-            voithitikosArithmos = 2;
+            voithitikosArithmos = 15;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
