@@ -21,14 +21,7 @@ namespace WindowsFormsApp1
             searchboxTxtBox.AutoSize = false;
 
         }
-        /*public Welcome_Page(Main_Page mple)
-        {
-            InitializeComponent();
-            textBox1.AutoSize = false;
-            change_language_label.Click += new EventHandler(change_language_label_Click);
-            mple = mp;
-        }
-        */
+        
         int movX;
         int movY;
         int mov;
@@ -80,40 +73,124 @@ namespace WindowsFormsApp1
 
         private void Welcome_Page_Load(object sender, EventArgs e)
         {
-            if (Program.change_lang == false)
+            // TODO: This line of code loads data into the 'database1DataSet.AD_CATEGORY2' table. You can move, or remove it, as needed.
+            this.aD_CATEGORY2TableAdapter.Fill(this.database1DataSet.AD_CATEGORY2);
+            // TODO: This line of code loads data into the 'database1DataSet.AD_CATEGORY1' table. You can move, or remove it, as needed.
+            this.aD_CATEGORY1TableAdapter.Fill(this.database1DataSet.AD_CATEGORY1);
+            // TODO: This line of code loads data into the 'database1DataSet.AD_CATEGORY' table. You can move, or remove it, as needed.
+            this.aD_CATEGORYTableAdapter.Fill(this.database1DataSet.AD_CATEGORY);
+            ProsthikiTimwnStaButtons();
+            /*  if (Program.change_lang == false)
+              {
+                  //Welcome page
+
+
+                  pcBtn.Text = "Pc and Laptop";
+                  telephoneBtn.Text = "Telephone";
+                  sound_devicesBtn.Text = "Sound Devices";
+                  televisionBtn.Text = "TV";
+                  photoBtn.Text = "Photography";
+                  house_devices.Text = "Home Appliances";
+                  tech_label.Text = "Technology";
+
+                  autoBtn.Text = "Automobile";
+                  motoBtn.Text = "Motorcycles";
+                  prof_vehiclesBtn.Text = "Commercial Vehicles";
+                  boatBtn.Text = "Yachts and Boats";
+                  more_vehicles.Text = "Other Vehicles";
+                  accesoriesBtn.Text = "Spare parts";
+                  auto_label.Text = "Vehicles";
+
+                  apartmentsBtn.Text = "Apartments";
+                  vilesBtn.Text = "Detached and Luxury houses";
+                  prof_housesBtn.Text = "Professional Spaces";
+                  landBtn.Text = "Land";
+                  summer_housesBtn.Text = "Vacation houses";
+                  parkingBtn.Text = "Parking";
+                  home_label.Text = "Houses";
+
+                  Search_button.Text = "Search";
+                  Log_in_label.Text = "Log in / Resister";
+              }*/
+        }
+        private void ProsthikiTimwnStaButtons()
+        {
+            dataGridView1.Hide();
+            dataGridView2.Hide();
+            dataGridView3.Hide();
+            
+
+            for (int i = 0; i < 18; i++)
             {
-                //Welcome page
+                switch (i)
+                {
+                    case 0:
+                        telephoneBtn.Text = this.dataGridView1.Rows[0].Cells[0].Value.ToString();
+                        break;
+                    case 1:
+                        pcBtn.Text = this.dataGridView1.Rows[1].Cells[0].Value.ToString();
+                        break;
+                    case 2:
+                        sound_devicesBtn.Text = this.dataGridView1.Rows[2].Cells[0].Value.ToString();
+                        break;
+                    case 3:
+                        televisionBtn.Text = this.dataGridView1.Rows[3].Cells[0].Value.ToString();
+                        break;
+                    case 4:
+                        photoBtn.Text = this.dataGridView1.Rows[4].Cells[0].Value.ToString();
+                        break;
+                    case 5:
+                        house_devices.Text = this.dataGridView1.Rows[5].Cells[0].Value.ToString();
+                        break;
+                    case 6:
+                        autoBtn.Text = this.dataGridView2.Rows[0].Cells[0].Value.ToString();
+                        break;
 
+                    case 7:
+                        motoBtn.Text = this.dataGridView2.Rows[1].Cells[0].Value.ToString();
+                        break;
 
-                pcBtn.Text = "Pc and Laptop";
-                telephoneBtn.Text = "Telephone";
-                sound_devicesBtn.Text = "Sound Devices";
-                televisionBtn.Text = "TV";
-                photoBtn.Text = "Photography";
-                house_devices.Text = "Home Appliances";
-                tech_label.Text = "Technology";
+                    case 8:
+                        prof_vehiclesBtn.Text = this.dataGridView2.Rows[2].Cells[0].Value.ToString();
+                        break;
 
-                autoBtn.Text = "Automobile";
-                motoBtn.Text = "Motorcycles";
-                prof_vehiclesBtn.Text = "Commercial Vehicles";
-                boatBtn.Text = "Yachts and Boats";
-                more_vehicles.Text = "Other Vehicles";
-                accesoriesBtn.Text = "Spare parts";
-                auto_label.Text = "Vehicles";
+                    case 9:
+                        boatBtn.Text = this.dataGridView2.Rows[3].Cells[0].Value.ToString();
+                        break;
 
-                apartmentsBtn.Text = "Apartments";
-                vilesBtn.Text = "Detached and Luxury houses";
-                prof_housesBtn.Text = "Professional Spaces";
-                landBtn.Text = "Land";
-                summer_housesBtn.Text = "Vacation houses";
-                parkingBtn.Text = "Parking";
-                home_label.Text = "Houses";
+                    case 10:
+                        more_vehicles.Text = this.dataGridView2.Rows[4].Cells[0].Value.ToString();
 
-                Search_button.Text = "Search";
-                Log_in_label.Text = "Log in / Resister";
+                        break;
+
+                    case 11:
+                        accesoriesBtn.Text = this.dataGridView2.Rows[5].Cells[0].Value.ToString();
+                        break;
+                    case 12:
+                        apartmentsBtn.Text= this.dataGridView3.Rows[0].Cells[0].Value.ToString();
+                        break;
+                    case 13:
+                        vilesBtn.Text= this.dataGridView3.Rows[1].Cells[0].Value.ToString();
+                        break;
+                    case 14:
+                        prof_housesBtn.Text= this.dataGridView3.Rows[2].Cells[0].Value.ToString();
+                        break;
+                    case 15:
+                        landBtn.Text= this.dataGridView3.Rows[3].Cells[0].Value.ToString();
+                        break;
+                    case 16:
+                        summer_housesBtn.Text= this.dataGridView3.Rows[4].Cells[0].Value.ToString();
+                        break;
+                    case 17:
+                        parkingBtn.Text= this.dataGridView3.Rows[5].Cells[0].Value.ToString();
+                        break;
+                    default:
+
+                        break;
+                }
             }
-            }
 
+        }
         private void Search_panel_Paint(object sender, PaintEventArgs e)
         {
 
@@ -260,11 +337,14 @@ namespace WindowsFormsApp1
             this.Opacity = 1;
         }
 
-
+        public static string onomaKatigorias;
+        public static int voithitikosArithmos;
         //go to main page
         //Τεχνολογια main page
         private void pcBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Υπολογιστής";
+            voithitikosArithmos = 2;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -274,6 +354,8 @@ namespace WindowsFormsApp1
 
         private void telephoneBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Τηλεφωνια";
+            voithitikosArithmos = 1;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -282,6 +364,8 @@ namespace WindowsFormsApp1
 
         private void sound_devicesBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Ηχείο";
+            voithitikosArithmos = 3;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -290,6 +374,8 @@ namespace WindowsFormsApp1
 
         private void televisionBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Τηλεόραση";
+            voithitikosArithmos = 4;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -298,6 +384,8 @@ namespace WindowsFormsApp1
 
         private void photoBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Φωτογραφική Μηχανή";
+            voithitikosArithmos = 5;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -306,6 +394,8 @@ namespace WindowsFormsApp1
 
         private void house_devices_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Οικιακές συσκευές";
+            voithitikosArithmos = 6;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -315,6 +405,8 @@ namespace WindowsFormsApp1
         //Οχήματα main page
         private void autoBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Αυτοκίνητα";
+            voithitikosArithmos = 7;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -323,6 +415,8 @@ namespace WindowsFormsApp1
 
         private void motoBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Μηχανές";
+            voithitikosArithmos = 8;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -331,6 +425,8 @@ namespace WindowsFormsApp1
 
         private void boatBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Σκάφοι";
+            voithitikosArithmos = 10;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -339,6 +435,8 @@ namespace WindowsFormsApp1
 
         private void more_vehicles_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Άλλα Οχήματα";
+            voithitikosArithmos = 11;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -347,6 +445,8 @@ namespace WindowsFormsApp1
 
         private void accesoriesBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Ανταλλακτικα";
+            voithitikosArithmos = 12;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -354,6 +454,8 @@ namespace WindowsFormsApp1
         }
         private void prof_vehiclesBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Εππαγγελματικά Οχήματα";
+            voithitikosArithmos = 9;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -363,6 +465,8 @@ namespace WindowsFormsApp1
         //Σπίτι main page
         private void apartmentsBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Διαμερίσματα";
+            voithitikosArithmos = 13;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -371,6 +475,8 @@ namespace WindowsFormsApp1
 
         private void vilesBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Βίλες";
+            voithitikosArithmos = 14;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -379,6 +485,8 @@ namespace WindowsFormsApp1
 
         private void prof_housesBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Επαγγελματικοί Χώροι";
+            voithitikosArithmos = 2;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -387,6 +495,8 @@ namespace WindowsFormsApp1
 
         private void landBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Οικόπεδα";
+            voithitikosArithmos = 16;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -395,6 +505,8 @@ namespace WindowsFormsApp1
 
         private void summer_housesBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Εξωχικά";
+            voithitikosArithmos = 17;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -403,6 +515,8 @@ namespace WindowsFormsApp1
 
         private void parkingBtn_Click(object sender, EventArgs e)
         {
+            onomaKatigorias = "Πάρκινγκ";
+            voithitikosArithmos = 18;
             Main_Page mp = new Main_Page();
             this.Hide();
             mp.ShowDialog();
@@ -425,7 +539,7 @@ namespace WindowsFormsApp1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == 0)
+          /* if (comboBox1.SelectedIndex == 0)
             {
                 Program.change_lang = true;
                 pcBtn.Text = "Pc και Laptop";
@@ -486,7 +600,7 @@ namespace WindowsFormsApp1
                 Search_button.Text = "Search";
                 Log_in_label.Text = "Log in / Resister";
             }
-
+            */
         }
     }
 }

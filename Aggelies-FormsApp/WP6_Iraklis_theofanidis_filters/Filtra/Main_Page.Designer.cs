@@ -48,7 +48,7 @@
             this.usern_main_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.left_panel_options = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
+            this.onomaKatigorias = new System.Windows.Forms.Label();
             this.main_panel.SuspendLayout();
             this.panel_login_register.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -302,24 +302,21 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.left_panel_options.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.left_panel_options.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
-            this.left_panel_options.Controls.Add(this.flowLayoutPanel2);
+            this.left_panel_options.Controls.Add(this.onomaKatigorias);
             this.left_panel_options.Location = new System.Drawing.Point(0, 145);
             this.left_panel_options.Margin = new System.Windows.Forms.Padding(2);
             this.left_panel_options.Name = "left_panel_options";
             this.left_panel_options.Size = new System.Drawing.Size(229, 353);
             this.left_panel_options.TabIndex = 0;
             // 
-            // flowLayoutPanel2
+            // onomaKatigorias
             // 
-            this.flowLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel2.AutoScroll = true;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(3, -2);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(223, 352);
-            this.flowLayoutPanel2.TabIndex = 1;
-            this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
+            this.onomaKatigorias.AutoSize = true;
+            this.onomaKatigorias.Location = new System.Drawing.Point(79, 35);
+            this.onomaKatigorias.Name = "onomaKatigorias";
+            this.onomaKatigorias.Size = new System.Drawing.Size(35, 13);
+            this.onomaKatigorias.TabIndex = 0;
+            this.onomaKatigorias.Text = "label1";
             // 
             // Main_Page
             // 
@@ -345,6 +342,7 @@
             this.panel_user.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.left_panel_options.ResumeLayout(false);
+            this.left_panel_options.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -356,7 +354,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel left_panel_options;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel navigation_panel;
         private System.Windows.Forms.Panel panel_back;
@@ -371,5 +368,6 @@
         public System.Windows.Forms.Button back_button_main;
         public System.Windows.Forms.Label Log_in_label_main;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label onomaKatigorias;
     }
 }

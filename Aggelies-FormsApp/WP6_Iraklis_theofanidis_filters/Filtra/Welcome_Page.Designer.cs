@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome_Page));
             this.main_panel = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.Search_button = new System.Windows.Forms.Button();
             this.searchboxTxtBox = new System.Windows.Forms.TextBox();
             this.Bottom_panel = new System.Windows.Forms.Panel();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tech_panel = new System.Windows.Forms.Panel();
             this.tech_label = new System.Windows.Forms.Label();
             this.house_devices = new System.Windows.Forms.Button();
@@ -69,9 +72,24 @@
             this.close = new System.Windows.Forms.PictureBox();
             this.Minimize = new System.Windows.Forms.PictureBox();
             this.Maximize = new System.Windows.Forms.PictureBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.cATEGORYTITLEDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cATEGORYIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aDCATEGORY1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.database1DataSet = new WindowsFormsApp1.Database1DataSet();
+            this.cATEGORYTITLEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.aDCATEGORYBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aD_CATEGORYTableAdapter = new WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORYTableAdapter();
+            this.aD_CATEGORY1TableAdapter = new WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORY1TableAdapter();
+            this.aDCATEGORY2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.aD_CATEGORY2TableAdapter = new WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORY2TableAdapter();
+            this.cATEGORYTITLEDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cATEGORYIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.main_panel.SuspendLayout();
             this.panel6.SuspendLayout();
             this.Bottom_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tech_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.auto_panel.SuspendLayout();
@@ -84,6 +102,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDCATEGORY1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDCATEGORYBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDCATEGORY2BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // main_panel
@@ -120,10 +143,34 @@
             // 
             resources.ApplyResources(this.Bottom_panel, "Bottom_panel");
             this.Bottom_panel.BackColor = System.Drawing.Color.White;
+            this.Bottom_panel.Controls.Add(this.dataGridView3);
+            this.Bottom_panel.Controls.Add(this.dataGridView2);
+            this.Bottom_panel.Controls.Add(this.dataGridView1);
             this.Bottom_panel.Controls.Add(this.tech_panel);
             this.Bottom_panel.Controls.Add(this.auto_panel);
             this.Bottom_panel.Controls.Add(this.house_panel);
             this.Bottom_panel.Name = "Bottom_panel";
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cATEGORYTITLEDataGridViewTextBoxColumn1,
+            this.cATEGORYIDDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.aDCATEGORY1BindingSource;
+            resources.ApplyResources(this.dataGridView2, "dataGridView2");
+            this.dataGridView2.Name = "dataGridView2";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cATEGORYTITLEDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.aDCATEGORYBindingSource;
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
+            this.dataGridView1.Name = "dataGridView1";
             // 
             // tech_panel
             // 
@@ -426,6 +473,79 @@
             this.Maximize.TabStop = false;
             this.Maximize.Click += new System.EventHandler(this.Maximize_Click);
             // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AutoGenerateColumns = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.cATEGORYTITLEDataGridViewTextBoxColumn2,
+            this.cATEGORYIDDataGridViewTextBoxColumn1});
+            this.dataGridView3.DataSource = this.aDCATEGORY2BindingSource;
+            resources.ApplyResources(this.dataGridView3, "dataGridView3");
+            this.dataGridView3.Name = "dataGridView3";
+            // 
+            // cATEGORYTITLEDataGridViewTextBoxColumn1
+            // 
+            this.cATEGORYTITLEDataGridViewTextBoxColumn1.DataPropertyName = "CATEGORY_TITLE";
+            resources.ApplyResources(this.cATEGORYTITLEDataGridViewTextBoxColumn1, "cATEGORYTITLEDataGridViewTextBoxColumn1");
+            this.cATEGORYTITLEDataGridViewTextBoxColumn1.Name = "cATEGORYTITLEDataGridViewTextBoxColumn1";
+            // 
+            // cATEGORYIDDataGridViewTextBoxColumn
+            // 
+            this.cATEGORYIDDataGridViewTextBoxColumn.DataPropertyName = "CATEGORY_ID";
+            resources.ApplyResources(this.cATEGORYIDDataGridViewTextBoxColumn, "cATEGORYIDDataGridViewTextBoxColumn");
+            this.cATEGORYIDDataGridViewTextBoxColumn.Name = "cATEGORYIDDataGridViewTextBoxColumn";
+            // 
+            // aDCATEGORY1BindingSource
+            // 
+            this.aDCATEGORY1BindingSource.DataMember = "AD_CATEGORY1";
+            this.aDCATEGORY1BindingSource.DataSource = this.database1DataSet;
+            // 
+            // database1DataSet
+            // 
+            this.database1DataSet.DataSetName = "Database1DataSet";
+            this.database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cATEGORYTITLEDataGridViewTextBoxColumn
+            // 
+            this.cATEGORYTITLEDataGridViewTextBoxColumn.DataPropertyName = "CATEGORY_TITLE";
+            resources.ApplyResources(this.cATEGORYTITLEDataGridViewTextBoxColumn, "cATEGORYTITLEDataGridViewTextBoxColumn");
+            this.cATEGORYTITLEDataGridViewTextBoxColumn.Name = "cATEGORYTITLEDataGridViewTextBoxColumn";
+            // 
+            // aDCATEGORYBindingSource
+            // 
+            this.aDCATEGORYBindingSource.DataMember = "AD_CATEGORY";
+            this.aDCATEGORYBindingSource.DataSource = this.database1DataSet;
+            // 
+            // aD_CATEGORYTableAdapter
+            // 
+            this.aD_CATEGORYTableAdapter.ClearBeforeFill = true;
+            // 
+            // aD_CATEGORY1TableAdapter
+            // 
+            this.aD_CATEGORY1TableAdapter.ClearBeforeFill = true;
+            // 
+            // aDCATEGORY2BindingSource
+            // 
+            this.aDCATEGORY2BindingSource.DataMember = "AD_CATEGORY2";
+            this.aDCATEGORY2BindingSource.DataSource = this.database1DataSet;
+            // 
+            // aD_CATEGORY2TableAdapter
+            // 
+            this.aD_CATEGORY2TableAdapter.ClearBeforeFill = true;
+            // 
+            // cATEGORYTITLEDataGridViewTextBoxColumn2
+            // 
+            this.cATEGORYTITLEDataGridViewTextBoxColumn2.DataPropertyName = "CATEGORY_TITLE";
+            resources.ApplyResources(this.cATEGORYTITLEDataGridViewTextBoxColumn2, "cATEGORYTITLEDataGridViewTextBoxColumn2");
+            this.cATEGORYTITLEDataGridViewTextBoxColumn2.Name = "cATEGORYTITLEDataGridViewTextBoxColumn2";
+            // 
+            // cATEGORYIDDataGridViewTextBoxColumn1
+            // 
+            this.cATEGORYIDDataGridViewTextBoxColumn1.DataPropertyName = "CATEGORY_ID";
+            resources.ApplyResources(this.cATEGORYIDDataGridViewTextBoxColumn1, "cATEGORYIDDataGridViewTextBoxColumn1");
+            this.cATEGORYIDDataGridViewTextBoxColumn1.Name = "cATEGORYIDDataGridViewTextBoxColumn1";
+            // 
             // Welcome_Page
             // 
             resources.ApplyResources(this, "$this");
@@ -438,6 +558,8 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.Bottom_panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tech_panel.ResumeLayout(false);
             this.tech_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -454,6 +576,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Maximize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDCATEGORY1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDCATEGORYBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.aDCATEGORY2BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -500,6 +627,21 @@
         private System.Windows.Forms.Panel panel6;
         public System.Windows.Forms.Button pcBtn;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private Database1DataSet database1DataSet;
+        private System.Windows.Forms.BindingSource aDCATEGORYBindingSource;
+        private Database1DataSetTableAdapters.AD_CATEGORYTableAdapter aD_CATEGORYTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cATEGORYTITLEDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.BindingSource aDCATEGORY1BindingSource;
+        private Database1DataSetTableAdapters.AD_CATEGORY1TableAdapter aD_CATEGORY1TableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cATEGORYTITLEDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cATEGORYIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.BindingSource aDCATEGORY2BindingSource;
+        private Database1DataSetTableAdapters.AD_CATEGORY2TableAdapter aD_CATEGORY2TableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cATEGORYTITLEDataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cATEGORYIDDataGridViewTextBoxColumn1;
     }
 }
 

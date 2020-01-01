@@ -20,9 +20,23 @@ namespace WindowsFormsApp1
         public Main_Page()
         {
             InitializeComponent();
+            filtra();
         }
 
+        private void filtra()
 
+        {
+            onomaKatigorias.Text = Welcome_Page.onomaKatigorias;
+            //   pROPERTIESTableAdapter.GetRamKinitou();
+
+
+
+           
+
+
+
+
+        }
 
         int movX;
         int movY;
@@ -44,7 +58,7 @@ namespace WindowsFormsApp1
                 Log_in_label_main.Text = "Σύνδεση / Εγγραφή";
             }
             populateItems();
-            populateItems2();
+            
         }
 
         
@@ -78,26 +92,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void populateItems2()
-        {
-            Filters_left[] listItems = new Filters_left[20];
-
-            for (int i = 0; i < listItems.Length; i++)
-            {
-                listItems[i] = new Filters_left();
-                listItems[i].Title = "mple";
-
-                // if (flowLayoutPanel1.Controls.Count > 0)
-                // {
-                //    flowLayoutPanel1.Controls.Clear();
-                //}
-                //else
-                flowLayoutPanel2.Controls.Add(listItems[i]);
-
-
-            }
-
-        }
+       
 
         
         private void panel1_Paint_1(object sender, PaintEventArgs e)
@@ -106,11 +101,6 @@ namespace WindowsFormsApp1
         }
 
         private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 
         }
