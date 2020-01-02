@@ -52,14 +52,16 @@
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.pROPERTIES17BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataSet14 = new WindowsFormsApp1.DataSet1();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.onomaKatigorias = new System.Windows.Forms.Label();
             this.pROPERTIESBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.pROPERTIES1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1 = new WindowsFormsApp1.DataSet1();
+            this.pROPERTIES1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pROPERTIES8BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pROPERTIESTableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIESTableAdapter();
@@ -96,8 +98,6 @@
             this.pROPERTIES15TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES15TableAdapter();
             this.pROPERTIES16BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pROPERTIES16TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES16TableAdapter();
-            this.dataSet14 = new WindowsFormsApp1.DataSet1();
-            this.pROPERTIES17BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pROPERTIES17TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES17TableAdapter();
             this.main_panel.SuspendLayout();
             this.panel_login_register.SuspendLayout();
@@ -109,10 +109,12 @@
             this.panel_user.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.left_panel_options.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES17BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIESBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES8BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).BeginInit();
@@ -132,8 +134,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES14BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES15BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES16BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES17BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // main_panel
@@ -251,7 +251,7 @@
             this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(234, 180);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(972, 318);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(972, 311);
             this.flowLayoutPanel1.TabIndex = 2;
             this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
@@ -387,7 +387,7 @@
             this.left_panel_options.Location = new System.Drawing.Point(0, 145);
             this.left_panel_options.Margin = new System.Windows.Forms.Padding(2);
             this.left_panel_options.Name = "left_panel_options";
-            this.left_panel_options.Size = new System.Drawing.Size(229, 353);
+            this.left_panel_options.Size = new System.Drawing.Size(229, 346);
             this.left_panel_options.TabIndex = 0;
             // 
             // comboBox4
@@ -414,6 +414,16 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 4;
+            // 
+            // pROPERTIES17BindingSource
+            // 
+            this.pROPERTIES17BindingSource.DataMember = "PROPERTIES17";
+            this.pROPERTIES17BindingSource.DataSource = this.dataSet14;
+            // 
+            // dataSet14
+            // 
+            this.dataSet14.DataSetName = "DataSet1";
+            this.dataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label3
             // 
@@ -456,11 +466,6 @@
             this.pROPERTIESBindingSource.DataMember = "PROPERTIES";
             this.pROPERTIESBindingSource.DataSource = this.dataSet1BindingSource1;
             // 
-            // pROPERTIES1BindingSource
-            // 
-            this.pROPERTIES1BindingSource.DataMember = "PROPERTIES1";
-            this.pROPERTIES1BindingSource.DataSource = this.dataSet1BindingSource1;
-            // 
             // dataSet1BindingSource1
             // 
             this.dataSet1BindingSource1.DataSource = this.dataSet1;
@@ -470,6 +475,11 @@
             // 
             this.dataSet1.DataSetName = "DataSet1";
             this.dataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pROPERTIES1BindingSource
+            // 
+            this.pROPERTIES1BindingSource.DataMember = "PROPERTIES1";
+            this.pROPERTIES1BindingSource.DataSource = this.dataSet1BindingSource1;
             // 
             // pROPERTIES8BindingSource
             // 
@@ -634,16 +644,6 @@
             // 
             this.pROPERTIES16TableAdapter.ClearBeforeFill = true;
             // 
-            // dataSet14
-            // 
-            this.dataSet14.DataSetName = "DataSet1";
-            this.dataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // pROPERTIES17BindingSource
-            // 
-            this.pROPERTIES17BindingSource.DataMember = "PROPERTIES17";
-            this.pROPERTIES17BindingSource.DataSource = this.dataSet14;
-            // 
             // pROPERTIES17TableAdapter
             // 
             this.pROPERTIES17TableAdapter.ClearBeforeFill = true;
@@ -673,10 +673,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.left_panel_options.ResumeLayout(false);
             this.left_panel_options.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES17BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataSet14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIESBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES8BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet11)).EndInit();
@@ -696,8 +698,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES14BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES15BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES16BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataSet14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES17BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

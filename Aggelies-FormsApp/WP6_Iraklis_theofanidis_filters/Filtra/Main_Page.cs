@@ -122,6 +122,9 @@ namespace WindowsFormsApp1
                     comboBox2.DataSource = pROPERTIES5TableAdapter.GetTypeOikiakisSiskeuis();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
+
+                    comboBox3.Hide();
+                    comboBox4.Hide();
                     break;
             }
             
@@ -166,6 +169,10 @@ namespace WindowsFormsApp1
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    comboBox3.Hide();
+                    comboBox4.Hide();
+
+
                     break;
 
                 case 10:
@@ -187,6 +194,9 @@ namespace WindowsFormsApp1
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    comboBox3.Hide();
+                    comboBox4.Hide();
+
                     
                     break;
 
@@ -194,6 +204,9 @@ namespace WindowsFormsApp1
                     comboBox2.DataSource = pROPERTIES11TableAdapter.GetTypeAntallaktikwn();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
+
+                    comboBox4.Hide();
+                    comboBox3.Hide();
                     break;
             }
 
@@ -212,6 +225,8 @@ namespace WindowsFormsApp1
                     comboBox3.DataSource = pROPERTIES12TableAdapter.GetExtraDiamerismatos();
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
+
+                    comboBox4.Hide();
 
                     break;
 
@@ -256,6 +271,8 @@ namespace WindowsFormsApp1
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    comboBox4.Hide();
+
                     break;
                 case 17:
                     comboBox2.DataSource = pROPERTIES16TableAdapter.GetTMEksoxikwn();
@@ -278,6 +295,9 @@ namespace WindowsFormsApp1
                     comboBox2.DataSource = pROPERTIES17TableAdapter.GetTypeParking();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
+
+                    comboBox3.Hide();
+                    comboBox4.Hide();
                     break;
             }
 
