@@ -343,7 +343,7 @@ namespace WindowsFormsApp1
         //Τεχνολογια main page
         private void pcBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Υπολογιστής";
+            onomaKatigorias = "Επιλέξτε τι είδους υπολογιστή θέλετε";
             voithitikosArithmos = 1;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -354,7 +354,7 @@ namespace WindowsFormsApp1
 
         private void telephoneBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Τηλεφωνια";
+            onomaKatigorias = "Επιλέξτε τι είδους κινητό θέλετε";
             voithitikosArithmos = 2;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -364,7 +364,7 @@ namespace WindowsFormsApp1
 
         private void sound_devicesBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Ηχείο";
+            onomaKatigorias = "Επιλέξτε τι είδους ηχείο θέλετε";
             voithitikosArithmos = 3;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -374,7 +374,7 @@ namespace WindowsFormsApp1
 
         private void televisionBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Τηλεόραση";
+            onomaKatigorias = "Επιλέξτε τι είδους τηλεόραση θέλετε";
             voithitikosArithmos = 4;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -384,7 +384,7 @@ namespace WindowsFormsApp1
 
         private void photoBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Φωτογραφική Μηχανή";
+            onomaKatigorias = "Επιλέξτε τι είδους φωτογραφική θέλετε";
             voithitikosArithmos = 5;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -394,7 +394,7 @@ namespace WindowsFormsApp1
 
         private void house_devices_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Οικιακές συσκευές";
+            onomaKatigorias = "Επιλέξτε τι είδους οικιακή συσκευή θέλετε";
             voithitikosArithmos = 6;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -405,7 +405,7 @@ namespace WindowsFormsApp1
         //Οχήματα main page
         private void autoBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Αυτοκίνητα";
+            onomaKatigorias = "Επιλέξτε τι είδους αυτοκίνητο θέλετε";
             voithitikosArithmos = 7;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -415,7 +415,7 @@ namespace WindowsFormsApp1
 
         private void motoBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Μηχανές";
+            onomaKatigorias = "Επιλέξτε τι είδους μηχανή θέλετε";
             voithitikosArithmos = 8;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -425,7 +425,7 @@ namespace WindowsFormsApp1
 
         private void boatBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Σκάφοι";
+            onomaKatigorias = "Επιλέξτε τι είδους σκάφος θέλετε";
             voithitikosArithmos = 10;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -435,7 +435,7 @@ namespace WindowsFormsApp1
 
         private void more_vehicles_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Άλλα Οχήματα";
+            onomaKatigorias = "Επιλέξτε τι είδους όχημα θέλετε";
             voithitikosArithmos = 11;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -445,7 +445,7 @@ namespace WindowsFormsApp1
 
         private void accesoriesBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Ανταλλακτικα";
+            onomaKatigorias = "Επιλέξτε τι είδους ανταλλακτικά θέλετε";
             voithitikosArithmos = 12;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -454,7 +454,7 @@ namespace WindowsFormsApp1
         }
         private void prof_vehiclesBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Εππαγγελματικά Οχήματα";
+            onomaKatigorias = "Επιλέξτε τι επαγγελματικό όχημα θέλετε";
             voithitikosArithmos = 9;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -465,7 +465,7 @@ namespace WindowsFormsApp1
         //Σπίτι main page
         private void apartmentsBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Διαμερίσματα";
+            onomaKatigorias = "Επιλέξτε τι είδους διαμέρισμα θέλετε";
             voithitikosArithmos = 13;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -475,7 +475,7 @@ namespace WindowsFormsApp1
 
         private void vilesBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Βίλες";
+            onomaKatigorias = "Επιλέξτε τι είδους βίλα θέλετε";
             voithitikosArithmos = 14;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -485,7 +485,7 @@ namespace WindowsFormsApp1
 
         private void prof_housesBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Επαγγελματικοί Χώροι";
+            onomaKatigorias = "Επιλέξτε τι επαγγελματικό χώρο θέλετε";
             voithitikosArithmos = 15;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -495,7 +495,7 @@ namespace WindowsFormsApp1
 
         private void landBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Οικόπεδα";
+            onomaKatigorias = "Επιλέξτε τι είδους οικόπεδο θέλετε";
             voithitikosArithmos = 16;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -505,7 +505,7 @@ namespace WindowsFormsApp1
 
         private void summer_housesBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Εξωχικά";
+            onomaKatigorias = "Επιλέξτε τι είδους εξωχικό θέλετε";
             voithitikosArithmos = 17;
             Main_Page mp = new Main_Page();
             this.Hide();
@@ -515,7 +515,7 @@ namespace WindowsFormsApp1
 
         private void parkingBtn_Click(object sender, EventArgs e)
         {
-            onomaKatigorias = "Πάρκινγκ";
+            onomaKatigorias = "Επιλέξτε τι είδους χώρο πάρκινγκ θέλετε";
             voithitikosArithmos = 18;
             Main_Page mp = new Main_Page();
             this.Hide();

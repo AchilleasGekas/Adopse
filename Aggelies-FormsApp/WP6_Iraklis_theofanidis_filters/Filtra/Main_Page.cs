@@ -46,83 +46,98 @@ namespace WindowsFormsApp1
           switch(Welcome_Page.voithitikosArithmos)
           {
                 case 1:
+                    filtro1.Text = "Marka: ";
+
                     comboBox2.DataSource = pROPERTIES1TableAdapter.GetMarkaPC();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Screen: ";
                     comboBox3.DataSource = pROPERTIES1TableAdapter.GetScreenPC();
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Text = "CPU: ";
                     comboBox4.DataSource = pROPERTIES1TableAdapter.GetCpuPC();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
                     break;
                
-                case 2:   
+                case 2:
+                    filtro1.Text = "Marka: ";
                     comboBox2.DataSource = pROPERTIESTableAdapter.GetMarkaTilefonou();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Ram: ";
                     comboBox3.DataSource = pROPERTIESTableAdapter.GetRamTilefonou();
-   
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Text = "BATTERY: ";
                     comboBox4.DataSource = pROPERTIESTableAdapter.GetBatteryTilefonou();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
                 break;
 
                 case 3:
+                    filtro1.Text = "Type: ";
                     comboBox2.DataSource = pROPERTIES2TableAdapter.GetTypeYxiou();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Watt: ";
                     comboBox3.DataSource = pROPERTIES2TableAdapter.GetWattYxiou();
-
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Text = "Inputs: ";
                     comboBox4.DataSource = pROPERTIES2TableAdapter.GetInputsYxiou();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
                break;
 
                 case 4:
+                    filtro1.Text = "Marka: ";
                     comboBox2.DataSource = pROPERTIES3TableAdapter.GetMarkaTileorasis();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Inches: ";
                     comboBox3.DataSource = pROPERTIES3TableAdapter.GetInchesTileorasis();
-
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Text = "Resolution: ";
                     comboBox4.DataSource = pROPERTIES3TableAdapter.GetResolutionTileorasis();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
                     break;
                 case 5:
+                    filtro1.Text = "Type: ";
                     comboBox2.DataSource = pROPERTIES4TableAdapter.GetTypeFotografikis();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Sensor: ";
                     comboBox3.DataSource = pROPERTIES4TableAdapter.GetSensorFotografikis();
-
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Text = "Features: ";
                     comboBox4.DataSource = pROPERTIES4TableAdapter.GetFeaturesFotografikis();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
                     break;
 
                 case 6:
+                    filtro1.Text = "Type: ";
                     comboBox2.DataSource = pROPERTIES5TableAdapter.GetTypeOikiakisSiskeuis();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Hide();
+                    filtro3.Hide();
                     comboBox3.Hide();
                     comboBox4.Hide();
                     break;
@@ -136,39 +151,47 @@ namespace WindowsFormsApp1
             switch (Welcome_Page.voithitikosArithmos)
             {
                 case 7:
+                    filtro1.Text = "Type: ";
                     comboBox2.DataSource = pROPERTIES6TableAdapter.GetTypeAutokinitou();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Marka: ";
                     comboBox3.DataSource = pROPERTIES6TableAdapter.GetMarkaAutokinitou();
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Text = "Kuvika: ";
                     comboBox4.DataSource = pROPERTIES6TableAdapter.GetKibikaAutokinitou();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
                     break;
 
                 case 8:
+                    filtro1.Text = "Marka: ";
                     comboBox2.DataSource = pROPERTIES7TableAdapter.GetMarkaMixanis();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Kuvika: ";
                     comboBox3.DataSource = pROPERTIES7TableAdapter.GetKibikaMixanis();
-
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Text = "Xronologia: ";
                     comboBox4.DataSource = pROPERTIES7TableAdapter.GetXronologiaMixanis();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
                     break;
 
                 case 9:
+                    filtro1.Text = "Type: ";
                     comboBox2.DataSource = pROPERTIES8TableAdapter.GetTypeEpaggelmatikou();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Hide();
+                    filtro3.Hide();
                     comboBox3.Hide();
                     comboBox4.Hide();
 
@@ -176,24 +199,29 @@ namespace WindowsFormsApp1
                     break;
 
                 case 10:
+                    filtro1.Text = "Mhkos: ";
                     comboBox2.DataSource = pROPERTIES9TableAdapter.GetMhkosSkafous();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Xronologia: ";
                     comboBox3.DataSource = pROPERTIES9TableAdapter.GetXronologiaSkafous();
-
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Text = "Zhmia: ";
                     comboBox4.DataSource = pROPERTIES9TableAdapter.GetZhmiaSkafous();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
                     break;
                 case 11:
+                    filtro1.Text = "Type: ";
                     comboBox2.DataSource = pROPERTIES10TableAdapter.GetTypeAllwnOximatwn();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Hide();
+                    filtro3.Hide();
                     comboBox3.Hide();
                     comboBox4.Hide();
 
@@ -201,10 +229,13 @@ namespace WindowsFormsApp1
                     break;
 
                 case 12:
+                    filtro1.Text = "Type: ";
                     comboBox2.DataSource = pROPERTIES11TableAdapter.GetTypeAntallaktikwn();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Hide();
+                    filtro3.Hide();
                     comboBox4.Hide();
                     comboBox3.Hide();
                     break;
@@ -218,43 +249,54 @@ namespace WindowsFormsApp1
             switch (Welcome_Page.voithitikosArithmos)
             {
                 case 13:
-                    comboBox2.DataSource = pROPERTIES12TableAdapter.GetXrhshDiamerismatos();
+                    filtro1.Text = "TM: ";
+                    comboBox2.DataSource = pROPERTIES12TableAdapter.GetTMDiamerismatos();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
-                    comboBox3.DataSource = pROPERTIES12TableAdapter.GetExtraDiamerismatos();
+                    filtro2.Text = "Xrhsh: ";
+                    comboBox3.DataSource = pROPERTIES12TableAdapter.GetXrhshDiamerismatos();
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
-                    comboBox4.Hide();
+                    filtro3.Text = "Extra: ";
+                    comboBox4.DataSource = pROPERTIES12TableAdapter.GetExtraDiamerismatos();
+                    comboBox4.DisplayMember = "SUBTITLE";
+                    comboBox4.ValueMember = "SUBTITLE";
+
+                    
 
                     break;
 
                 case 14:
+                    filtro1.Text = "TM: ";
                     comboBox2.DataSource = pROPERTIES13TableAdapter.GetTMMonokatikoias();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Xrhsh: ";
                     comboBox3.DataSource = pROPERTIES13TableAdapter.GetXrhshMonokatoikias();
-
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Text = "Extra: ";
                     comboBox4.DataSource = pROPERTIES13TableAdapter.GetExtraMonoikatikias();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
                     break;
 
                 case 15:
+                    filtro1.Text = "TM: ";
                     comboBox2.DataSource = pROPERTIES14TableAdapter.GetTMEpaggelmatikwnXwrwn();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Xrhsh: ";
                     comboBox3.DataSource = pROPERTIES14TableAdapter.GetXrhshEpaggelmatikwnXwrwn();
-
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Text = "Extra: ";
                     comboBox4.DataSource = pROPERTIES14TableAdapter.GetExtraEpaggelmatikwnXwrwn();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
@@ -262,28 +304,32 @@ namespace WindowsFormsApp1
                     break;
 
                 case 16:
+                    filtro1.Text = "TM: ";
                     comboBox2.DataSource = pROPERTIES15TableAdapter.GetTMOikopedwn();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Xrhsh: ";
                     comboBox3.DataSource = pROPERTIES15TableAdapter.GetXrhshOikopedwn();
-
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Hide();
                     comboBox4.Hide();
 
                     break;
                 case 17:
+                    filtro1.Text = "TM: ";
                     comboBox2.DataSource = pROPERTIES16TableAdapter.GetTMEksoxikwn();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Text = "Xrhsh: ";
                     comboBox3.DataSource = pROPERTIES16TableAdapter.GetXrhshEksoxikwn();
-
                     comboBox3.DisplayMember = "SUBTITLE";
                     comboBox3.ValueMember = "SUBTITLE";
 
+                    filtro3.Text = "Extra: ";
                     comboBox4.DataSource = pROPERTIES16TableAdapter.GetExtraEksoxikwn();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
@@ -292,10 +338,13 @@ namespace WindowsFormsApp1
                     break;
 
                 case 18:
+                    filtro1.Text = "Type: ";
                     comboBox2.DataSource = pROPERTIES17TableAdapter.GetTypeParking();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
 
+                    filtro2.Hide();
+                    filtro3.Hide();
                     comboBox3.Hide();
                     comboBox4.Hide();
                     break;

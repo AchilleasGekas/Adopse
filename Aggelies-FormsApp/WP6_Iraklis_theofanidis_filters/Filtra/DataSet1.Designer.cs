@@ -12133,7 +12133,7 @@ namespace WindowsFormsApp1.DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[2];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[3];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT SUBTITLE, PROPERTIES_ID FROM PROPERTIES WHERE (CATEGORY_ID = 16) AND (TITL" +
@@ -12144,6 +12144,11 @@ namespace WindowsFormsApp1.DataSet1TableAdapters {
             this._commandCollection[1].CommandText = "SELECT SUBTITLE, PROPERTIES_ID FROM PROPERTIES WHERE (CATEGORY_ID = 16) AND (TITL" +
                 "E = \'EXTRA\')";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[2] = new global::System.Data.OleDb.OleDbCommand();
+            this._commandCollection[2].Connection = this.Connection;
+            this._commandCollection[2].CommandText = "SELECT SUBTITLE, PROPERTIES_ID FROM PROPERTIES WHERE (CATEGORY_ID = 16) AND (TITL" +
+                "E = \'TM\')";
+            this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -12189,6 +12194,30 @@ namespace WindowsFormsApp1.DataSet1TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual DataSet1.PROPERTIES12DataTable GetExtraDiamerismatos() {
             this.Adapter.SelectCommand = this.CommandCollection[1];
+            DataSet1.PROPERTIES12DataTable dataTable = new DataSet1.PROPERTIES12DataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy1(DataSet1.PROPERTIES12DataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSet1.PROPERTIES12DataTable GetTMDiamerismatos() {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             DataSet1.PROPERTIES12DataTable dataTable = new DataSet1.PROPERTIES12DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

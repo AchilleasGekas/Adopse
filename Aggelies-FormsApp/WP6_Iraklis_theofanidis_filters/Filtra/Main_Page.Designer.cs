@@ -54,9 +54,9 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.pROPERTIES17BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet14 = new WindowsFormsApp1.DataSet1();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.filtro3 = new System.Windows.Forms.Label();
+            this.filtro2 = new System.Windows.Forms.Label();
+            this.filtro1 = new System.Windows.Forms.Label();
             this.onomaKatigorias = new System.Windows.Forms.Label();
             this.pROPERTIESBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataSet1BindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -380,9 +380,9 @@
             this.left_panel_options.Controls.Add(this.comboBox4);
             this.left_panel_options.Controls.Add(this.comboBox3);
             this.left_panel_options.Controls.Add(this.comboBox2);
-            this.left_panel_options.Controls.Add(this.label3);
-            this.left_panel_options.Controls.Add(this.label2);
-            this.left_panel_options.Controls.Add(this.label1);
+            this.left_panel_options.Controls.Add(this.filtro3);
+            this.left_panel_options.Controls.Add(this.filtro2);
+            this.left_panel_options.Controls.Add(this.filtro1);
             this.left_panel_options.Controls.Add(this.onomaKatigorias);
             this.left_panel_options.Location = new System.Drawing.Point(0, 145);
             this.left_panel_options.Margin = new System.Windows.Forms.Padding(2);
@@ -425,37 +425,37 @@
             this.dataSet14.DataSetName = "DataSet1";
             this.dataSet14.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // label3
+            // filtro3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 227);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
+            this.filtro3.AutoSize = true;
+            this.filtro3.Location = new System.Drawing.Point(11, 227);
+            this.filtro3.Name = "filtro3";
+            this.filtro3.Size = new System.Drawing.Size(35, 13);
+            this.filtro3.TabIndex = 3;
+            this.filtro3.Text = "label3";
             // 
-            // label2
+            // filtro2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 157);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "label2";
+            this.filtro2.AutoSize = true;
+            this.filtro2.Location = new System.Drawing.Point(11, 157);
+            this.filtro2.Name = "filtro2";
+            this.filtro2.Size = new System.Drawing.Size(35, 13);
+            this.filtro2.TabIndex = 2;
+            this.filtro2.Text = "label2";
             // 
-            // label1
+            // filtro1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.filtro1.AutoSize = true;
+            this.filtro1.Location = new System.Drawing.Point(11, 90);
+            this.filtro1.Name = "filtro1";
+            this.filtro1.Size = new System.Drawing.Size(35, 13);
+            this.filtro1.TabIndex = 1;
+            this.filtro1.Text = "label1";
             // 
             // onomaKatigorias
             // 
             this.onomaKatigorias.AutoSize = true;
-            this.onomaKatigorias.Location = new System.Drawing.Point(79, 35);
+            this.onomaKatigorias.Location = new System.Drawing.Point(6, 35);
             this.onomaKatigorias.Name = "onomaKatigorias";
             this.onomaKatigorias.Size = new System.Drawing.Size(35, 13);
             this.onomaKatigorias.TabIndex = 0;
@@ -727,9 +727,9 @@
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label filtro3;
+        private System.Windows.Forms.Label filtro2;
+        private System.Windows.Forms.Label filtro1;
         private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource dataSet1BindingSource;
         private System.Windows.Forms.BindingSource dataSet1BindingSource1;
