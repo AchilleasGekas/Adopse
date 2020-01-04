@@ -563,6 +563,23 @@ namespace WindowsFormsApp1
                 Log_in_label_main.Text = "Log in / Register";
             }
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            DataRow selectedDataRow = ((DataRowView)comboBox2.SelectedItem).Row;
+            string Dok = selectedDataRow["SUBTITLE"].ToString();
+            
+
+            DataRow selectedDataRow2 = ((DataRowView)comboBox3.SelectedItem).Row;
+            string Dok2 = selectedDataRow2["SUBTITLE"].ToString();
+         
+
+            DataRow selectedDataRow3 = ((DataRowView)comboBox4.SelectedItem).Row;
+             string Dok3 = selectedDataRow3["SUBTITLE"].ToString();
+            
+            dok.Text = Dok +" " +Dok2 +" " +Dok3;
+
+        }
     }
 }
     

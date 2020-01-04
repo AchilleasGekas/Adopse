@@ -99,6 +99,8 @@
             this.pROPERTIES16BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pROPERTIES16TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES16TableAdapter();
             this.pROPERTIES17TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES17TableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dok = new System.Windows.Forms.Label();
             this.main_panel.SuspendLayout();
             this.panel_login_register.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -377,6 +379,8 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.left_panel_options.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.left_panel_options.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
+            this.left_panel_options.Controls.Add(this.dok);
+            this.left_panel_options.Controls.Add(this.button1);
             this.left_panel_options.Controls.Add(this.comboBox4);
             this.left_panel_options.Controls.Add(this.comboBox3);
             this.left_panel_options.Controls.Add(this.comboBox2);
@@ -648,6 +652,25 @@
             // 
             this.pROPERTIES17TableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(32, 272);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Επιλογή Φίλτρων";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // dok
+            // 
+            this.dok.AutoSize = true;
+            this.dok.Location = new System.Drawing.Point(64, 311);
+            this.dok.Name = "dok";
+            this.dok.Size = new System.Drawing.Size(35, 13);
+            this.dok.TabIndex = 8;
+            this.dok.Text = "label1";
+            // 
             // Main_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -773,5 +796,7 @@
         private DataSet1 dataSet14;
         private System.Windows.Forms.BindingSource pROPERTIES17BindingSource;
         private DataSet1TableAdapters.PROPERTIES17TableAdapter pROPERTIES17TableAdapter;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label dok;
     }
 }
