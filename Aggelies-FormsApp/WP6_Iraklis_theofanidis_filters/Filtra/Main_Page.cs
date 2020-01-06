@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -40,7 +41,7 @@ namespace WindowsFormsApp1
                        
 
         }
-        
+        public static int arithmosfiltrwn;
         private void filtraTexnologias()
         {
           switch(Welcome_Page.voithitikosArithmos)
@@ -61,13 +62,14 @@ namespace WindowsFormsApp1
                     comboBox4.DataSource = pROPERTIES1TableAdapter.GetCpuPC();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
+                    
                     break;
                
                 case 2:
                     filtro1.Text = "Marka: ";
                     comboBox2.DataSource = pROPERTIESTableAdapter.GetMarkaTilefonou();
-                    comboBox2.DisplayMember = "SUBTITLE";
-                    comboBox2.ValueMember = "SUBTITLE";
+                    comboBox2.DisplayMember = "Subtitle";
+                    comboBox2.ValueMember = "Subtitle";
 
                     filtro2.Text = "Ram: ";
                     comboBox3.DataSource = pROPERTIESTableAdapter.GetRamTilefonou();
@@ -352,6 +354,59 @@ namespace WindowsFormsApp1
 
 
         }
+
+        public static string Dok, Dok2, Dok3;
+        private void arithmosFiltrwn()
+        {
+            if(comboBox2.Visible == true && comboBox3.Visible == true && comboBox4.Visible == true )
+            {
+                arithmosfiltrwn = 3;
+                ArithmosFiltrwn.Text = "3";
+                DataRow selectedDataRow = ((DataRowView)comboBox2.SelectedItem).Row;
+                 Dok = selectedDataRow["PROPERTIES_ID"].ToString();
+                
+
+                DataRow selectedDataRow2 = ((DataRowView)comboBox3.SelectedItem).Row;
+                 Dok2 = selectedDataRow2["PROPERTIES_ID"].ToString();
+
+
+                DataRow selectedDataRow3 = ((DataRowView)comboBox4.SelectedItem).Row;
+                 Dok3 = selectedDataRow3["PROPERTIES_ID"].ToString();
+
+                dok.Text = Dok + " " + Dok2 + " " + Dok3;
+
+                dataGridView1.DataSource = GetAggeliesList();
+            }
+            else if(comboBox2.Visible == true && comboBox3.Visible==true && comboBox4.Visible==false)
+            {
+                arithmosfiltrwn = 2;
+                ArithmosFiltrwn.Text = "2";
+
+                DataRow selectedDataRow = ((DataRowView)comboBox2.SelectedItem).Row;
+                 Dok = selectedDataRow["SUBTITLE"].ToString();
+
+
+                DataRow selectedDataRow2 = ((DataRowView)comboBox3.SelectedItem).Row;
+                Dok2 = selectedDataRow2["SUBTITLE"].ToString();
+
+                Dok3 = "";
+                dok.Text = Dok + " " + Dok2 ;
+            }
+            else
+            {
+                DataRow selectedDataRow = ((DataRowView)comboBox2.SelectedItem).Row;
+                 Dok = selectedDataRow["SUBTITLE"].ToString();
+                arithmosfiltrwn = 1;
+                ArithmosFiltrwn.Text = "1";
+
+                Dok2 = "";
+                Dok3 = "";
+
+                dok.Text = Dok ;
+            }
+
+        }
+
         int movX;
         int movY;
         int mov;
@@ -406,12 +461,35 @@ namespace WindowsFormsApp1
                 back_button_main.Text = "     Πίσω";
                 usern_main_label.Text = "Χρήστης";
                 Log_in_label_main.Text = "Σύνδεση / Εγγραφή";
-            }
-            populateItems();
-            
+            }   
         }
 
-        
+        private DataTable GetAggeliesList()
+        {
+            DataTable dtEmployees = new DataTable();
+            string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|Database1.mdb";
+            using (OleDbConnection con = new OleDbConnection(connString))
+            {
+                con.Open();
+                string query = "SELECT AD_TITLE,INSERT_DATE,FINISH_DATE,MODIFY_DATE,PRICE,DESCRIPTION,STATUS FROM ADS INNER JOIN PROPERTIES_VALUE ON ADS.AD_ID = PROPERTIES_VALUE.AD_ID" +
+                    " WHERE PROPERTIES1 = @PROPERTIES1 AND PROPERTIES2 = @PROPERTIES2 AND PROPERTIES3 = @PROPERTIES3 ";
+                using (OleDbCommand cmd = new OleDbCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@PROPERTIES1", Dok);
+                    cmd.Parameters.AddWithValue("@PROPERTIES2", Dok2);
+                    cmd.Parameters.AddWithValue("@PROPERTIES3", Dok3);
+
+
+                    OleDbDataReader reader = cmd.ExecuteReader();
+
+                    dtEmployees.Load(reader);
+                }
+                con.Close();
+
+            }
+            return dtEmployees;
+        }
+
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -421,30 +499,7 @@ namespace WindowsFormsApp1
         {
 
         }
-        private void populateItems()
-        {
-            Ad_ListItem[] listItems = new Ad_ListItem[20];
-
-            for (int i = 0; i < listItems.Length; i++)
-            {
-                listItems[i] = new Ad_ListItem();
-                listItems[i].Title = "mple";
-                listItems[i].Message = "7.30";
-
-               // if (flowLayoutPanel1.Controls.Count > 0)
-               // {
-                //    flowLayoutPanel1.Controls.Clear();
-                //}
-                //else
-                    flowLayoutPanel1.Controls.Add(listItems[i]);
-                
-            }
-
-        }
-
-       
-
-        
+     
         private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
 
@@ -566,18 +621,9 @@ namespace WindowsFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            DataRow selectedDataRow = ((DataRowView)comboBox2.SelectedItem).Row;
-            string Dok = selectedDataRow["SUBTITLE"].ToString();
-            
+            arithmosFiltrwn();
 
-            DataRow selectedDataRow2 = ((DataRowView)comboBox3.SelectedItem).Row;
-            string Dok2 = selectedDataRow2["SUBTITLE"].ToString();
-         
-
-            DataRow selectedDataRow3 = ((DataRowView)comboBox4.SelectedItem).Row;
-             string Dok3 = selectedDataRow3["SUBTITLE"].ToString();
             
-            dok.Text = Dok +" " +Dok2 +" " +Dok3;
 
         }
     }

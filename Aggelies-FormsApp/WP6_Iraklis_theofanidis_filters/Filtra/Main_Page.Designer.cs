@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Page));
             this.main_panel = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel_login_register = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Log_in_label_main = new System.Windows.Forms.Label();
@@ -38,7 +39,6 @@
             this.Minimize = new System.Windows.Forms.PictureBox();
             this.close = new System.Windows.Forms.PictureBox();
             this.Maximize = new System.Windows.Forms.PictureBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.navigation_panel = new System.Windows.Forms.Panel();
             this.home_button_main = new System.Windows.Forms.Button();
             this.panel_back = new System.Windows.Forms.Panel();
@@ -49,6 +49,9 @@
             this.usern_main_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.left_panel_options = new System.Windows.Forms.Panel();
+            this.ArithmosFiltrwn = new System.Windows.Forms.Label();
+            this.dok = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -99,9 +102,8 @@
             this.pROPERTIES16BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pROPERTIES16TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES16TableAdapter();
             this.pROPERTIES17TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES17TableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
-            this.dok = new System.Windows.Forms.Label();
             this.main_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel_login_register.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).BeginInit();
@@ -144,9 +146,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.main_panel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.main_panel.Controls.Add(this.dataGridView1);
             this.main_panel.Controls.Add(this.panel_login_register);
             this.main_panel.Controls.Add(this.panel5);
-            this.main_panel.Controls.Add(this.flowLayoutPanel1);
             this.main_panel.Controls.Add(this.navigation_panel);
             this.main_panel.Controls.Add(this.panel_user);
             this.main_panel.Controls.Add(this.left_panel_options);
@@ -156,6 +158,14 @@
             this.main_panel.Size = new System.Drawing.Size(1209, 498);
             this.main_panel.TabIndex = 0;
             this.main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(281, 220);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(762, 150);
+            this.dataGridView1.TabIndex = 14;
             // 
             // panel_login_register
             // 
@@ -243,19 +253,6 @@
             this.Maximize.TabIndex = 14;
             this.Maximize.TabStop = false;
             this.Maximize.Click += new System.EventHandler(this.Maximize_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(234, 180);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(972, 311);
-            this.flowLayoutPanel1.TabIndex = 2;
-            this.flowLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel1_Paint);
             // 
             // navigation_panel
             // 
@@ -379,6 +376,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.left_panel_options.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.left_panel_options.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
+            this.left_panel_options.Controls.Add(this.ArithmosFiltrwn);
             this.left_panel_options.Controls.Add(this.dok);
             this.left_panel_options.Controls.Add(this.button1);
             this.left_panel_options.Controls.Add(this.comboBox4);
@@ -393,6 +391,34 @@
             this.left_panel_options.Name = "left_panel_options";
             this.left_panel_options.Size = new System.Drawing.Size(229, 346);
             this.left_panel_options.TabIndex = 0;
+            // 
+            // ArithmosFiltrwn
+            // 
+            this.ArithmosFiltrwn.AutoSize = true;
+            this.ArithmosFiltrwn.Location = new System.Drawing.Point(175, 277);
+            this.ArithmosFiltrwn.Name = "ArithmosFiltrwn";
+            this.ArithmosFiltrwn.Size = new System.Drawing.Size(35, 13);
+            this.ArithmosFiltrwn.TabIndex = 9;
+            this.ArithmosFiltrwn.Text = "label1";
+            // 
+            // dok
+            // 
+            this.dok.AutoSize = true;
+            this.dok.Location = new System.Drawing.Point(29, 313);
+            this.dok.Name = "dok";
+            this.dok.Size = new System.Drawing.Size(35, 13);
+            this.dok.TabIndex = 8;
+            this.dok.Text = "label1";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(32, 272);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(116, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Επιλογή Φίλτρων";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // comboBox4
             // 
@@ -652,25 +678,6 @@
             // 
             this.pROPERTIES17TableAdapter.ClearBeforeFill = true;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(32, 272);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Επιλογή Φίλτρων";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
-            // dok
-            // 
-            this.dok.AutoSize = true;
-            this.dok.Location = new System.Drawing.Point(64, 311);
-            this.dok.Name = "dok";
-            this.dok.Size = new System.Drawing.Size(35, 13);
-            this.dok.TabIndex = 8;
-            this.dok.Text = "label1";
-            // 
             // Main_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -684,6 +691,7 @@
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Main_Page_Load);
             this.main_panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel_login_register.ResumeLayout(false);
             this.panel_login_register.PerformLayout();
             this.panel5.ResumeLayout(false);
@@ -731,7 +739,6 @@
         private System.Windows.Forms.Panel panel_user;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel left_panel_options;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel navigation_panel;
         private System.Windows.Forms.Panel panel_back;
@@ -798,5 +805,7 @@
         private DataSet1TableAdapters.PROPERTIES17TableAdapter pROPERTIES17TableAdapter;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label dok;
+        private System.Windows.Forms.Label ArithmosFiltrwn;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
