@@ -18,6 +18,7 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             filtra();
+            EmfanisiArxikwnAggeliwn();
         }
 
         private void filtra()
@@ -354,6 +355,44 @@ namespace WindowsFormsApp1
 
 
         }
+
+        private void EmfanisiArxikwnAggeliwn()
+        {
+            int a;
+            if (Welcome_Page.voithitikosArithmos == 1)
+            {
+                a = Welcome_Page.voithitikosArithmos + 4;
+            }
+            else if (Welcome_Page.voithitikosArithmos == 2)
+            {
+                a = Welcome_Page.voithitikosArithmos + 2;
+            }
+            else
+            {
+                a = Welcome_Page.voithitikosArithmos + 3;
+            }
+            DataTable dtEmployees = new DataTable();
+            string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|Database1.mdb";
+            using (OleDbConnection con = new OleDbConnection(connString))
+            {
+                con.Open();
+                string query = "SELECT AD_TITLE,INSERT_DATE,FINISH_DATE,MODIFY_DATE,PRICE,DESCRIPTION,STATUS FROM ADS " +
+                    " WHERE CATEGORY_ID = @CATEGORY_ID ";
+                using (OleDbCommand cmd = new OleDbCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@CATEGORY_ID", a);
+                   
+
+                    OleDbDataReader reader = cmd.ExecuteReader();
+
+                    dtEmployees.Load(reader);
+                }
+                con.Close();
+
+            }
+            dataGridView1.DataSource= dtEmployees;
+        }
+
 
         public static string Dok, Dok2, Dok3;
         private void arithmosFiltrwn()
