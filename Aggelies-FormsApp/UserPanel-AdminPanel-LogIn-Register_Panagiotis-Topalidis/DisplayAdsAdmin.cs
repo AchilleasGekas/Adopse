@@ -95,7 +95,7 @@ namespace LogInRegister
         private void button2_Click(object sender, EventArgs e)
         {
             int follow = 0;//used to check if the registration will close or not
-            //total report, in case data inputed are not as expected
+            //total report, in case data inputted are not as expected
             String report = "REGISTRATION IS NOT COMPLETE\n\n";
             try
             {
