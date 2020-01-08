@@ -1,0 +1,34 @@
+C:\Users\zero\source\repos\LogInRegister\bin\Debug\LogInRegister.exe.config
+C:\Users\zero\source\repos\LogInRegister\bin\Debug\LogInRegister.exe
+C:\Users\zero\source\repos\LogInRegister\bin\Debug\LogInRegister.pdb
+C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.Form1.resources
+C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.Properties.Resources.resources
+C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.csproj.GenerateResource.cache
+C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.exe
+C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.pdb
+C:\Users\zero\source\repos\LogInRegister\obj\Debug\LogInRegister.Form2.resources
+C:\Users\Akuma\source\repos\Log_In_Register - Topalidis_Panagiotis\LogInRegister\bin\Debug\LogInRegister.exe.config
+C:\Users\Akuma\source\repos\Log_In_Register - Topalidis_Panagiotis\LogInRegister\bin\Debug\LogInRegister.exe
+C:\Users\Akuma\source\repos\Log_In_Register - Topalidis_Panagiotis\LogInRegister\bin\Debug\LogInRegister.pdb
+C:\Users\Akuma\source\repos\Log_In_Register - Topalidis_Panagiotis\LogInRegister\obj\Debug\LogInRegister.csprojAssemblyReference.cache
+C:\Users\Akuma\source\repos\Log_In_Register - Topalidis_Panagiotis\LogInRegister\obj\Debug\LogInRegister.Form1.resources
+C:\Users\Akuma\source\repos\Log_In_Register - Topalidis_Panagiotis\LogInRegister\obj\Debug\LogInRegister.Form2.resources
+C:\Users\Akuma\source\repos\Log_In_Register - Topalidis_Panagiotis\LogInRegister\obj\Debug\LogInRegister.Form3.resources
+C:\Users\Akuma\source\repos\Log_In_Register - Topalidis_Panagiotis\LogInRegister\obj\Debug\LogInRegister.Properties.Resources.resources
+C:\Users\Akuma\source\repos\Log_In_Register - Topalidis_Panagiotis\LogInRegister\obj\Debug\LogInRegister.csproj.GenerateResource.cache
+C:\Users\Akuma\source\repos\Log_In_Register - Topalidis_Panagiotis\LogInRegister\obj\Debug\LogInRegister.exe
+C:\Users\Akuma\source\repos\Log_In_Register - Topalidis_Panagiotis\LogInRegister\obj\Debug\LogInRegister.pdb
+C:\Users\Akuma\source\repos\LogInRegister\bin\Debug\LogInRegister.exe.config
+C:\Users\Akuma\source\repos\LogInRegister\bin\Debug\LogInRegister.exe
+C:\Users\Akuma\source\repos\LogInRegister\bin\Debug\LogInRegister.pdb
+C:\Users\Akuma\source\repos\LogInRegister\obj\Debug\LogInRegister.csprojAssemblyReference.cache
+C:\Users\Akuma\source\repos\LogInRegister\obj\Debug\LogInRegister.Properties.Resources.resources
+C:\Users\Akuma\source\repos\LogInRegister\obj\Debug\LogInRegister.csproj.GenerateResource.cache
+C:\Users\Akuma\source\repos\LogInRegister\obj\Debug\LogInRegister.exe
+C:\Users\Akuma\source\repos\LogInRegister\obj\Debug\LogInRegister.pdb
+C:\Users\Akuma\source\repos\LogInRegister\obj\Debug\LogInRegister.DisplayUsersAdmin.resources
+C:\Users\Akuma\source\repos\LogInRegister\obj\Debug\LogInRegister.DisplayAdsAdmin.resources
+C:\Users\Akuma\source\repos\LogInRegister\obj\Debug\LogInRegister.Login.resources
+C:\Users\Akuma\source\repos\LogInRegister\obj\Debug\LogInRegister.Register.resources
+C:\Users\Akuma\source\repos\LogInRegister\obj\Debug\LogInRegister.UserPanel.resources
+C:\Users\Akuma\source\repos\LogInRegister\obj\Debug\LogInRegister.AdminPanel.resources
