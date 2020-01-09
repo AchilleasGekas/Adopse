@@ -223,7 +223,7 @@ namespace LogInRegister
             }
             finally
             {
-                //closing up and initiating the LogInUI Form
+                //closing up
                 conn.Close();
                 if (follow == 0)
                 {
