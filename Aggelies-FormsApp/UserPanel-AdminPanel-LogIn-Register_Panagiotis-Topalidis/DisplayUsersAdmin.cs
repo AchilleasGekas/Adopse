@@ -348,7 +348,7 @@ namespace LogInRegister
 
                 }
 
-                if (Regex.IsMatch(textboxADD.Text, @"^[a-zA-Z0-9\s]+$") && textboxADD.Text.Length < 15)
+                if (Regex.IsMatch(textboxADD.Text, @"^[a-zA-Z0-9 \s]+$") && textboxADD.Text.Length < 15)
                 {
                     command.Parameters.AddWithValue("@address", textboxADD.Text);
                 }
