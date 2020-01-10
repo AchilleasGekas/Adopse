@@ -44,7 +44,7 @@ namespace WP9_SearchBar_EK
             var results = search(query);
             AdsGV.DataSource = results;
             //this.aCTIVITY_USERTableAdapter.InsertUserActivity("George", DateTime.Today,"searched",Global.getIP());
-          //  this.sEARCHED_DATATableAdapter.Insert("George", searchTB.Text,DateTime.Today);
+           this.sEARCHED_DATATableAdapter.Insert("Karanikas", searchTB.Text,DateTime.Today);
         }
         Directory createIndex(DataTable table)
         {

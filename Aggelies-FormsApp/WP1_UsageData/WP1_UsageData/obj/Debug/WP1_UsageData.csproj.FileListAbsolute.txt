@@ -1,0 +1,9 @@
+C:\Users\ekal6\source\repos\WP1_UsageData\WP1_UsageData\bin\Debug\WP1_UsageData.exe.config
+C:\Users\ekal6\source\repos\WP1_UsageData\WP1_UsageData\bin\Debug\WP1_UsageData.exe
+C:\Users\ekal6\source\repos\WP1_UsageData\WP1_UsageData\bin\Debug\WP1_UsageData.pdb
+C:\Users\ekal6\source\repos\WP1_UsageData\WP1_UsageData\obj\Debug\WP1_UsageData.csprojAssemblyReference.cache
+C:\Users\ekal6\source\repos\WP1_UsageData\WP1_UsageData\obj\Debug\WP1_UsageData.Form1.resources
+C:\Users\ekal6\source\repos\WP1_UsageData\WP1_UsageData\obj\Debug\WP1_UsageData.Properties.Resources.resources
+C:\Users\ekal6\source\repos\WP1_UsageData\WP1_UsageData\obj\Debug\WP1_UsageData.csproj.GenerateResource.cache
+C:\Users\ekal6\source\repos\WP1_UsageData\WP1_UsageData\obj\Debug\WP1_UsageData.exe
+C:\Users\ekal6\source\repos\WP1_UsageData\WP1_UsageData\obj\Debug\WP1_UsageData.pdb
