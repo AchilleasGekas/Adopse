@@ -29,3 +29,4 @@ C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8_
 C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8.csproj.GenerateResource.cache
 C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8_Test.exe
 C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8_Test.pdb
+C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\bin\Debug\Database1.mdb

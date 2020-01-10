@@ -23,13 +23,21 @@ namespace WP8_Test
             // Show the Donation form
             donation.Show();
         }
-
+        static string  user_id = "5";
         private void Form1_Load(object sender, EventArgs e)
         {
+           
             // TODO: This line of code loads data into the 'database1DataSet.ADS' table. You can move, or remove it, as needed.
             this.aDSTableAdapter.Fill(this.database1DataSet.ADS);
             // TODO: This line of code loads data into the 'database1DataSet.FAVORITES' table. You can move, or remove it, as needed.
             this.fAVORITESTableAdapter.Fill(this.database1DataSet.FAVORITES);
+            //dataGridView2.DataSource = fAVORITESTableAdapter.FillByFAVORITE(this.database1DataSet.FAVORITES, User_id);
+            dataGridView2.DataSource = fAVORITESTableAdapter.GetDataByFavorite(user_id);
+            this.dataGridView2.Columns["ID"].Visible = false;
+            this.dataGridView2.Columns["USER_ID"].Visible = false;
+            this.dataGridView2.Columns["AD_ID"].Visible = false;
+            dataGridView1[FAVORITES.Name, 6].Value = "<3";
+
 
         }
 
@@ -43,7 +51,7 @@ namespace WP8_Test
                 var id = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
                 label1.Text = id.ToString();
 
-                int User_id = 3;
+                //int User_id = 3;
 
                 this.fAVORITESTableAdapter.InsertQuery(9, 9);
 
@@ -57,5 +65,7 @@ namespace WP8_Test
     */
 
         }
+
+       
     }
 }
