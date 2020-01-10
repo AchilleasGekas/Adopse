@@ -40,3 +40,25 @@ C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\
 C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Customer_Support.resources
 C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Report.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\bin\Debug\Database1.mdb
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Add_description_v.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Ad_ListItem.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Customer_Support.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.description_of_add.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Filters_left.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.gr.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Register.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Main_Page.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Report.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.test_data.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Welcome_Page.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.en.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

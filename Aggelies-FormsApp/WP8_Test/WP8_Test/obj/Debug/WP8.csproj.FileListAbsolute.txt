@@ -18,3 +18,14 @@ C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8_
 C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8.csproj.GenerateResource.cache
 C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8_Test.exe
 C:\Users\ekal6\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8_Test.pdb
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\bin\Debug\Database1.mdb
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\bin\Debug\WP8_Test.exe.config
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\bin\Debug\WP8_Test.exe
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\bin\Debug\WP8_Test.pdb
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8.csprojAssemblyReference.cache
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8_Test.DonationForm.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8_Test.Form1.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8_Test.Properties.Resources.resources
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8.csproj.GenerateResource.cache
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8_Test.exe
+C:\Users\Lalik\Desktop\Adopse\Aggelies-FormsApp\WP8_Test\WP8_Test\obj\Debug\WP8_Test.pdb
