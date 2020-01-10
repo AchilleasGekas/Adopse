@@ -400,7 +400,7 @@ namespace WindowsFormsApp1
             if(comboBox2.Visible == true && comboBox3.Visible == true && comboBox4.Visible == true )
             {
                 arithmosfiltrwn = 3;
-                ArithmosFiltrwn.Text = "3";
+                
                 DataRow selectedDataRow = ((DataRowView)comboBox2.SelectedItem).Row;
                  Dok = selectedDataRow["PROPERTIES_ID"].ToString();
                 
@@ -412,14 +412,14 @@ namespace WindowsFormsApp1
                 DataRow selectedDataRow3 = ((DataRowView)comboBox4.SelectedItem).Row;
                  Dok3 = selectedDataRow3["PROPERTIES_ID"].ToString();
 
-                dok.Text = Dok + " " + Dok2 + " " + Dok3;
+                
 
                 dataGridView1.DataSource = GetAggeliesList();
             }
             else if(comboBox2.Visible == true && comboBox3.Visible==true && comboBox4.Visible==false)
             {
                 arithmosfiltrwn = 2;
-                ArithmosFiltrwn.Text = "2";
+                
 
                 DataRow selectedDataRow = ((DataRowView)comboBox2.SelectedItem).Row;
                  Dok = selectedDataRow["SUBTITLE"].ToString();
@@ -429,19 +429,19 @@ namespace WindowsFormsApp1
                 Dok2 = selectedDataRow2["SUBTITLE"].ToString();
 
                 Dok3 = "";
-                dok.Text = Dok + " " + Dok2 ;
+               
             }
             else
             {
                 DataRow selectedDataRow = ((DataRowView)comboBox2.SelectedItem).Row;
                  Dok = selectedDataRow["SUBTITLE"].ToString();
                 arithmosfiltrwn = 1;
-                ArithmosFiltrwn.Text = "1";
+              
 
                 Dok2 = "";
                 Dok3 = "";
 
-                dok.Text = Dok ;
+              
             }
 
         }

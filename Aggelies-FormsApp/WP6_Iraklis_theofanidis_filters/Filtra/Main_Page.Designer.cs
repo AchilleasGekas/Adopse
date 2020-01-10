@@ -49,8 +49,6 @@
             this.usern_main_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.left_panel_options = new System.Windows.Forms.Panel();
-            this.ArithmosFiltrwn = new System.Windows.Forms.Label();
-            this.dok = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -376,8 +374,6 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.left_panel_options.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.left_panel_options.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
-            this.left_panel_options.Controls.Add(this.ArithmosFiltrwn);
-            this.left_panel_options.Controls.Add(this.dok);
             this.left_panel_options.Controls.Add(this.button1);
             this.left_panel_options.Controls.Add(this.comboBox4);
             this.left_panel_options.Controls.Add(this.comboBox3);
@@ -391,24 +387,6 @@
             this.left_panel_options.Name = "left_panel_options";
             this.left_panel_options.Size = new System.Drawing.Size(229, 346);
             this.left_panel_options.TabIndex = 0;
-            // 
-            // ArithmosFiltrwn
-            // 
-            this.ArithmosFiltrwn.AutoSize = true;
-            this.ArithmosFiltrwn.Location = new System.Drawing.Point(175, 277);
-            this.ArithmosFiltrwn.Name = "ArithmosFiltrwn";
-            this.ArithmosFiltrwn.Size = new System.Drawing.Size(35, 13);
-            this.ArithmosFiltrwn.TabIndex = 9;
-            this.ArithmosFiltrwn.Text = "label1";
-            // 
-            // dok
-            // 
-            this.dok.AutoSize = true;
-            this.dok.Location = new System.Drawing.Point(29, 313);
-            this.dok.Name = "dok";
-            this.dok.Size = new System.Drawing.Size(35, 13);
-            this.dok.TabIndex = 8;
-            this.dok.Text = "label1";
             // 
             // button1
             // 
@@ -804,8 +782,6 @@
         private System.Windows.Forms.BindingSource pROPERTIES17BindingSource;
         private DataSet1TableAdapters.PROPERTIES17TableAdapter pROPERTIES17TableAdapter;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label dok;
-        private System.Windows.Forms.Label ArithmosFiltrwn;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

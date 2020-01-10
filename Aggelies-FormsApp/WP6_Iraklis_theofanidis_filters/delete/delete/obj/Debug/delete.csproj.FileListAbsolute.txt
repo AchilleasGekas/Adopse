@@ -1,0 +1,10 @@
+C:\Users\Lalik\Desktop\asp_dokimes\delete\delete\bin\Debug\Database1.mdb
+C:\Users\Lalik\Desktop\asp_dokimes\delete\delete\bin\Debug\delete.exe.config
+C:\Users\Lalik\Desktop\asp_dokimes\delete\delete\bin\Debug\delete.exe
+C:\Users\Lalik\Desktop\asp_dokimes\delete\delete\bin\Debug\delete.pdb
+C:\Users\Lalik\Desktop\asp_dokimes\delete\delete\obj\Debug\delete.csprojAssemblyReference.cache
+C:\Users\Lalik\Desktop\asp_dokimes\delete\delete\obj\Debug\delete.Form1.resources
+C:\Users\Lalik\Desktop\asp_dokimes\delete\delete\obj\Debug\delete.Properties.Resources.resources
+C:\Users\Lalik\Desktop\asp_dokimes\delete\delete\obj\Debug\delete.csproj.GenerateResource.cache
+C:\Users\Lalik\Desktop\asp_dokimes\delete\delete\obj\Debug\delete.exe
+C:\Users\Lalik\Desktop\asp_dokimes\delete\delete\obj\Debug\delete.pdb
