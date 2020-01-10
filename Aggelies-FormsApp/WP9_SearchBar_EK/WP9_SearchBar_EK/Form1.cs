@@ -32,6 +32,7 @@ namespace WP9_SearchBar_EK
             this.aCTIVITY_USERTableAdapter.Fill(this.database1DataSet.ACTIVITY_USER);
             // TODO: This line of code loads data into the 'database1DataSet.ADS' table. You can move, or remove it, as needed.
             this.aDSTableAdapter.Fill(this.database1DataSet.ADS);
+
             
             
         }
@@ -42,8 +43,8 @@ namespace WP9_SearchBar_EK
 
             var results = search(query);
             AdsGV.DataSource = results;
-            this.aCTIVITY_USERTableAdapter.InsertUserActivity("George", DateTime.Today,"searched",Global.getIP());
-            this.sEARCHED_DATATableAdapter.Insert("George", searchTB.Text,DateTime.Today);
+            //this.aCTIVITY_USERTableAdapter.InsertUserActivity("George", DateTime.Today,"searched",Global.getIP());
+          //  this.sEARCHED_DATATableAdapter.Insert("George", searchTB.Text,DateTime.Today);
         }
         Directory createIndex(DataTable table)
         {
