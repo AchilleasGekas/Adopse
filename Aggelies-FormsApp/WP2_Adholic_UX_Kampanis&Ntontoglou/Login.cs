@@ -71,7 +71,7 @@ namespace WindowsFormsApp1
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            r.Left -= 10;
+            r.Left -= 230;
             if (r.Left >= 525)
             {
                 

@@ -52,17 +52,29 @@
     <Compile Include="Add_description_v.Designer.cs">
       <DependentUpon>Add_description_v.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ad_ListItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Ad_ListItem.Designer.cs">
       <DependentUpon>Ad_ListItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Global.cs" />
-    <Compile Include="Database1DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    <Compile Include="DisplayAdsAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayAdsAdmin.Designer.cs">
+      <DependentUpon>DisplayAdsAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DisplayUsersAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DisplayUsersAdmin.Designer.cs">
+      <DependentUpon>DisplayUsersAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="description_of_add.cs">
       <SubType>UserControl</SubType>
@@ -98,11 +110,11 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
-    <Compile Include="test_data.cs">
+    <Compile Include="UserPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="test_data.Designer.cs">
-      <DependentUpon>test_data.cs</DependentUpon>
+    <Compile Include="UserPanel.Designer.cs">
+      <DependentUpon>UserPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Welcome_Page.cs">
       <SubType>Form</SubType>
@@ -121,11 +133,20 @@
     <EmbeddedResource Include="Add_description_v.resx">
       <DependentUpon>Add_description_v.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Ad_ListItem.resx">
       <DependentUpon>Ad_ListItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="description_of_add.resx">
       <DependentUpon>description_of_add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayAdsAdmin.resx">
+      <DependentUpon>DisplayAdsAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DisplayUsersAdmin.resx">
+      <DependentUpon>DisplayUsersAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Filters_left.resx">
       <DependentUpon>Filters_left.cs</DependentUpon>
@@ -147,8 +168,8 @@
     <EmbeddedResource Include="Main_Page.resx">
       <DependentUpon>Main_Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="test_data.resx">
-      <DependentUpon>test_data.cs</DependentUpon>
+    <EmbeddedResource Include="UserPanel.resx">
+      <DependentUpon>UserPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Welcome_Page.resx">
       <DependentUpon>Welcome_Page.cs</DependentUpon>
@@ -163,17 +184,6 @@
       <DependentUpon>en.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Database1DataSet.xsc">
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </None>
-    <None Include="Database1DataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Database1DataSet.xss">
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -186,11 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Database1.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

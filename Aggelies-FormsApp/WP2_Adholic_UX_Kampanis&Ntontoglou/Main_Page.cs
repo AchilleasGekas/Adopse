@@ -223,6 +223,11 @@ namespace WindowsFormsApp1
                 Log_in_label_main.Text = "Log in / Register";
             }
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
     

@@ -186,7 +186,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
-            this.ClientSize = new System.Drawing.Size(320, 578);
+            this.ClientSize = new System.Drawing.Size(320, 689);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.registerBtn);
             this.Controls.Add(this.loginBtn);
