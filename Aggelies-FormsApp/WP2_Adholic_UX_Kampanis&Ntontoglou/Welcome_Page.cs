@@ -76,7 +76,7 @@ namespace WindowsFormsApp1
         }
 
 
-
+        /*
         private void Maximize_Click(object sender, EventArgs e)
         {
             if (this.WindowState == FormWindowState.Normal)
@@ -177,6 +177,7 @@ namespace WindowsFormsApp1
                 parkingBtn.Location = new Point(161, 235);
             }
         }
+        */
 
         private void Minimize_Click(object sender, EventArgs e)
         {
