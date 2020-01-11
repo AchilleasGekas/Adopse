@@ -81,7 +81,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.PictureBox();
             this.Minimize = new System.Windows.Forms.PictureBox();
-            this.Maximize = new System.Windows.Forms.PictureBox();
             this.aD_CATEGORYTableAdapter = new WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORYTableAdapter();
             this.aD_CATEGORY1TableAdapter = new WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORY1TableAdapter();
             this.aD_CATEGORY2TableAdapter = new WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORY2TableAdapter();
@@ -106,7 +105,6 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximize)).BeginInit();
             this.SuspendLayout();
             // 
             // main_panel
@@ -119,7 +117,6 @@
             this.main_panel.Controls.Add(this.logo);
             this.main_panel.Controls.Add(this.panel4);
             this.main_panel.Name = "main_panel";
-            this.main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.main_panel_Paint);
             // 
             // panel6
             // 
@@ -134,6 +131,7 @@
             resources.ApplyResources(this.Search_button, "Search_button");
             this.Search_button.Name = "Search_button";
             this.Search_button.UseVisualStyleBackColor = false;
+            this.Search_button.Click += new System.EventHandler(this.Search_button_Click);
             // 
             // searchboxTxtBox
             // 
@@ -145,8 +143,6 @@
             resources.ApplyResources(this.Bottom_panel, "Bottom_panel");
             this.Bottom_panel.BackColor = System.Drawing.Color.White;
             this.Bottom_panel.Controls.Add(this.dataGridView3);
-            this.Bottom_panel.Controls.Add(this.dataGridView2);
-            this.Bottom_panel.Controls.Add(this.dataGridView1);
             this.Bottom_panel.Controls.Add(this.tech_panel);
             this.Bottom_panel.Controls.Add(this.auto_panel);
             this.Bottom_panel.Controls.Add(this.house_panel);
@@ -239,6 +235,7 @@
             resources.ApplyResources(this.tech_panel, "tech_panel");
             this.tech_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
             this.tech_panel.Controls.Add(this.tech_label);
+            this.tech_panel.Controls.Add(this.dataGridView1);
             this.tech_panel.Controls.Add(this.house_devices);
             this.tech_panel.Controls.Add(this.photoBtn);
             this.tech_panel.Controls.Add(this.televisionBtn);
@@ -319,6 +316,7 @@
             resources.ApplyResources(this.auto_panel, "auto_panel");
             this.auto_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
             this.auto_panel.Controls.Add(this.auto_label);
+            this.auto_panel.Controls.Add(this.dataGridView2);
             this.auto_panel.Controls.Add(this.accesoriesBtn);
             this.auto_panel.Controls.Add(this.more_vehicles);
             this.auto_panel.Controls.Add(this.boatBtn);
@@ -508,7 +506,6 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(224)))));
             this.panel4.Controls.Add(this.close);
             this.panel4.Controls.Add(this.Minimize);
-            this.panel4.Controls.Add(this.Maximize);
             this.panel4.Name = "panel4";
             this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
             this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseMove);
@@ -527,13 +524,6 @@
             this.Minimize.Name = "Minimize";
             this.Minimize.TabStop = false;
             this.Minimize.Click += new System.EventHandler(this.Minimize_Click);
-            // 
-            // Maximize
-            // 
-            resources.ApplyResources(this.Maximize, "Maximize");
-            this.Maximize.Name = "Maximize";
-            this.Maximize.TabStop = false;
-            this.Maximize.Click += new System.EventHandler(this.Maximize_Click);
             // 
             // aD_CATEGORYTableAdapter
             // 
@@ -581,7 +571,6 @@
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -592,7 +581,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox close;
         private System.Windows.Forms.PictureBox Minimize;
-        private System.Windows.Forms.PictureBox Maximize;
         private System.Windows.Forms.Label Log_in_label;
         private System.Windows.Forms.Button Search_button;
         private System.Windows.Forms.PictureBox logo;

@@ -36,11 +36,12 @@ namespace WindowsFormsApp1
             // TODO: This line of code loads data into the 'database1DataSet.AD_CATEGORY' table. You can move, or remove it, as needed.
             this.aD_CATEGORYTableAdapter.Fill(this.database1DataSet.AD_CATEGORY);
             ProsthikiTimwnStaButtons();
+            /*
               if (Program.change_lang == false)
               {
                   //Welcome page
 
-               /*
+               
                   pcBtn.Text = "Pc and Laptop";
                   telephoneBtn.Text = "Telephone";
                   sound_devicesBtn.Text = "Sound Devices";
@@ -64,10 +65,11 @@ namespace WindowsFormsApp1
                   summer_housesBtn.Text = "Vacation houses";
                   parkingBtn.Text = "Parking";
                   home_label.Text = "Houses";
-                */
-                  Search_button.Text = "Search";
+                
+            Search_button.Text = "Search";
                   Log_in_label.Text = "Log in / Resister";
               }
+              */
         }
         private void ProsthikiTimwnStaButtons()
         {
@@ -148,106 +150,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void Maximize_Click(object sender, EventArgs e)
-        {
-            if (this.WindowState == FormWindowState.Normal)
-            {
-                this.WindowState = FormWindowState.Maximized;
-                tech_panel.Size = new Size(531,480);
-                auto_panel.Size = new Size(531, 480);
-                auto_panel.Location = new Point(664, 57);
-                house_panel.Size = new Size(531, 480);
-                house_panel.Location = new Point(1291, 57);
-                panel6.Size = new Size(1100, 38);
-                searchboxTxtBox.Size = new Size(916, 38);
-                Search_button.Location = new Point(917, 0);
-                //tech panel
-                pcBtn.Size = new Size(278,77);
-                telephoneBtn.Size = new Size(278, 77);
-                telephoneBtn.Location = new Point(258, 81);
-                sound_devicesBtn.Size = new Size(278, 77);
-                sound_devicesBtn.Location = new Point(258, 162);
-                televisionBtn.Size = new Size(278, 77);
-                televisionBtn.Location = new Point(258, 243);
-                photoBtn.Size = new Size(278, 77);
-                photoBtn.Location = new Point(258, 324);
-                house_devices.Size = new Size(278, 77);
-                house_devices.Location = new Point(258, 405);
-
-                //auto panel
-                autoBtn.Size = new Size(278, 77);
-                motoBtn.Size = new Size(278, 77);
-                motoBtn.Location = new Point(261, 81);
-                prof_vehiclesBtn.Size = new Size(278, 77);
-                prof_vehiclesBtn.Location = new Point(261, 162);
-                boatBtn.Size = new Size(278, 77);
-                boatBtn.Location = new Point(261, 243);
-                more_vehicles.Size = new Size(278, 77);
-                more_vehicles.Location = new Point(261, 324);
-                accesoriesBtn.Size = new Size(278, 77);
-                accesoriesBtn.Location = new Point(261, 405);
-                //house panel
-                apartmentsBtn.Size = new Size(278, 77);
-                vilesBtn.Size = new Size(278, 77);
-                vilesBtn.Location = new Point(261, 81);
-                prof_housesBtn.Size = new Size(278, 77);
-                prof_housesBtn.Location = new Point(261, 162);
-                landBtn.Size = new Size(278, 77);
-                landBtn.Location = new Point(261, 243);
-                summer_housesBtn.Size = new Size(278, 77);
-                summer_housesBtn.Location = new Point(261, 324);
-                parkingBtn.Size = new Size(278, 77);
-                parkingBtn.Location = new Point(261, 405);
-            }
-            else
-            {
-                this.WindowState = FormWindowState.Normal;
-                tech_panel.Size = new Size(331, 280);
-                auto_panel.Size = new Size(331, 280);
-                auto_panel.Location = new Point(414, 57);
-                house_panel.Size = new Size(331, 280);
-                house_panel.Location = new Point(791, 57);
-                panel6.Size = new Size(638, 38);
-                searchboxTxtBox.Size = new Size(470, 38);
-                Search_button.Location = new Point(471, 0);
-                //tech panel
-                pcBtn.Size = new Size(173, 45);
-                telephoneBtn.Size = new Size(173, 45);
-                telephoneBtn.Location = new Point(158, 47);
-                sound_devicesBtn.Size = new Size(173, 45);
-                sound_devicesBtn.Location = new Point(158, 94);
-                televisionBtn.Size = new Size(173, 45);
-                televisionBtn.Location = new Point(158, 141);
-                photoBtn.Size = new Size(173, 45);
-                photoBtn.Location = new Point(158, 188);
-                house_devices.Size = new Size(173, 45);
-                house_devices.Location = new Point(158, 235);
-                //auto panel
-                autoBtn.Size = new Size(173, 45);
-                motoBtn.Size = new Size(173, 45);
-                motoBtn.Location = new Point(161, 47);
-                prof_vehiclesBtn.Size = new Size(173, 45);
-                prof_vehiclesBtn.Location = new Point(161, 94);
-                boatBtn.Size = new Size(173, 45);
-                boatBtn.Location = new Point(161, 141);
-                more_vehicles.Size = new Size(173, 45);
-                more_vehicles.Location = new Point(161, 188);
-                accesoriesBtn.Size = new Size(173, 45);
-                accesoriesBtn.Location = new Point(161, 235);
-                //house panel
-                apartmentsBtn.Size = new Size(173, 45);
-                vilesBtn.Size = new Size(173, 45);
-                vilesBtn.Location = new Point(161, 47);
-                prof_housesBtn.Size = new Size(173, 45);
-                prof_housesBtn.Location = new Point(161, 94);
-                landBtn.Size = new Size(173, 45);
-                landBtn.Location = new Point(161, 141);
-                summer_housesBtn.Size = new Size(173, 45);
-                summer_housesBtn.Location = new Point(161, 188);
-                parkingBtn.Size = new Size(173, 45);
-                parkingBtn.Location = new Point(161, 235);
-            }
-        }
+        
 
         private void Minimize_Click(object sender, EventArgs e)
         {
@@ -477,6 +380,7 @@ namespace WindowsFormsApp1
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            /*
            if (comboBox1.SelectedIndex == 0)
             {
 
@@ -506,7 +410,7 @@ namespace WindowsFormsApp1
                     summer_housesBtn.Text = "Εξοχικά";
                     parkingBtn.Text = "Parking";
                     home_label.Text = "Σπίτι";
-                */
+                
                 Search_button.Text = "Αναζήτηση";
                 Log_in_label.Text = "Σύνδεση / Εγγραφή";
 
@@ -514,7 +418,7 @@ namespace WindowsFormsApp1
             else 
             {
                 Program.change_lang = false;
-                /*
+                
                
                 pcBtn.Text = "Pc and Laptop";
                 telephoneBtn.Text = "Telephone";
@@ -539,15 +443,18 @@ namespace WindowsFormsApp1
                 summer_housesBtn.Text = "Vacation houses";
                 parkingBtn.Text = "Parking";
                 home_label.Text = "Houses";
-                */
+                
                 Search_button.Text = "Search";
                 Log_in_label.Text = "Log in / Resister";
-            }            
-        }
+                */
+            }
 
-        private void main_panel_Paint(object sender, PaintEventArgs e)
+        private void Search_button_Click(object sender, EventArgs e)
         {
 
         }
     }
-}
+
+      
+    }
+
