@@ -31,8 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Page));
             this.main_panel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.reportBtn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Customer_supportBtn = new System.Windows.Forms.Button();
+            this.prosforesBtn = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel_login_register = new System.Windows.Forms.Panel();
+            this.donationBtn = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Log_in_label_main = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -49,6 +56,7 @@
             this.usern_main_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.left_panel_options = new System.Windows.Forms.Panel();
+            this.epilogiFiltrwn = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -99,8 +107,9 @@
             this.pROPERTIES16BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pROPERTIES16TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES16TableAdapter();
             this.pROPERTIES17TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES17TableAdapter();
-            this.epilogiFiltrwn = new System.Windows.Forms.Button();
             this.main_panel.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel_login_register.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -144,6 +153,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.main_panel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.main_panel.Controls.Add(this.panel3);
             this.main_panel.Controls.Add(this.dataGridView1);
             this.main_panel.Controls.Add(this.panel_login_register);
             this.main_panel.Controls.Add(this.panel5);
@@ -156,8 +166,94 @@
             this.main_panel.Size = new System.Drawing.Size(1209, 498);
             this.main_panel.TabIndex = 0;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.reportBtn);
+            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Controls.Add(this.Customer_supportBtn);
+            this.panel3.Controls.Add(this.prosforesBtn);
+            this.panel3.Location = new System.Drawing.Point(433, 38);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 138);
+            this.panel3.TabIndex = 21;
+            // 
+            // reportBtn
+            // 
+            this.reportBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
+            this.reportBtn.FlatAppearance.BorderSize = 0;
+            this.reportBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.reportBtn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reportBtn.ForeColor = System.Drawing.Color.Black;
+            this.reportBtn.Image = ((System.Drawing.Image)(resources.GetObject("reportBtn.Image")));
+            this.reportBtn.Location = new System.Drawing.Point(13, 9);
+            this.reportBtn.Name = "reportBtn";
+            this.reportBtn.Size = new System.Drawing.Size(138, 32);
+            this.reportBtn.TabIndex = 17;
+            this.reportBtn.Text = "  Αναφορά";
+            this.reportBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.reportBtn.UseVisualStyleBackColor = false;
+            this.reportBtn.Click += new System.EventHandler(this.reportBtn_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Red;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.panel1.ForeColor = System.Drawing.Color.White;
+            this.panel1.Location = new System.Drawing.Point(127, 90);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(47, 20);
+            this.panel1.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(3, 2);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "SALES";
+            this.label1.UseMnemonic = false;
+            // 
+            // Customer_supportBtn
+            // 
+            this.Customer_supportBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
+            this.Customer_supportBtn.FlatAppearance.BorderSize = 0;
+            this.Customer_supportBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Customer_supportBtn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Customer_supportBtn.ForeColor = System.Drawing.Color.Black;
+            this.Customer_supportBtn.Image = ((System.Drawing.Image)(resources.GetObject("Customer_supportBtn.Image")));
+            this.Customer_supportBtn.Location = new System.Drawing.Point(13, 52);
+            this.Customer_supportBtn.Name = "Customer_supportBtn";
+            this.Customer_supportBtn.Size = new System.Drawing.Size(138, 32);
+            this.Customer_supportBtn.TabIndex = 16;
+            this.Customer_supportBtn.Text = "  Υποστήριξη";
+            this.Customer_supportBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Customer_supportBtn.UseVisualStyleBackColor = false;
+            this.Customer_supportBtn.Click += new System.EventHandler(this.Customer_supportBtn_Click);
+            // 
+            // prosforesBtn
+            // 
+            this.prosforesBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
+            this.prosforesBtn.FlatAppearance.BorderSize = 0;
+            this.prosforesBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prosforesBtn.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prosforesBtn.ForeColor = System.Drawing.Color.Black;
+            this.prosforesBtn.Location = new System.Drawing.Point(13, 94);
+            this.prosforesBtn.Name = "prosforesBtn";
+            this.prosforesBtn.Size = new System.Drawing.Size(138, 32);
+            this.prosforesBtn.TabIndex = 15;
+            this.prosforesBtn.Text = "Προσφορές";
+            this.prosforesBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.prosforesBtn.UseVisualStyleBackColor = false;
+            this.prosforesBtn.Click += new System.EventHandler(this.prosforesBtn_Click);
+            // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(281, 220);
             this.dataGridView1.Name = "dataGridView1";
@@ -168,15 +264,33 @@
             // 
             this.panel_login_register.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel_login_register.Controls.Add(this.donationBtn);
             this.panel_login_register.Controls.Add(this.comboBox1);
             this.panel_login_register.Controls.Add(this.Log_in_label_main);
             this.panel_login_register.Location = new System.Drawing.Point(905, 37);
             this.panel_login_register.Name = "panel_login_register";
-            this.panel_login_register.Size = new System.Drawing.Size(301, 78);
+            this.panel_login_register.Size = new System.Drawing.Size(301, 106);
             this.panel_login_register.TabIndex = 13;
+            // 
+            // donationBtn
+            // 
+            this.donationBtn.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.donationBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.donationBtn.Cursor = System.Windows.Forms.Cursors.Default;
+            this.donationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.donationBtn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.donationBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.donationBtn.Location = new System.Drawing.Point(171, 68);
+            this.donationBtn.Name = "donationBtn";
+            this.donationBtn.Size = new System.Drawing.Size(120, 27);
+            this.donationBtn.TabIndex = 17;
+            this.donationBtn.Text = "Στηρίξτε μας :)";
+            this.donationBtn.UseVisualStyleBackColor = false;
+            this.donationBtn.Click += new System.EventHandler(this.donationBtn_Click);
             // 
             // comboBox1
             // 
+            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(224)))));
             this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
@@ -195,7 +309,7 @@
             this.Log_in_label_main.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Log_in_label_main.AutoSize = true;
             this.Log_in_label_main.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.Log_in_label_main.Location = new System.Drawing.Point(106, 9);
+            this.Log_in_label_main.Location = new System.Drawing.Point(100, 9);
             this.Log_in_label_main.Name = "Log_in_label_main";
             this.Log_in_label_main.Size = new System.Drawing.Size(192, 22);
             this.Log_in_label_main.TabIndex = 13;
@@ -384,6 +498,16 @@
             this.left_panel_options.Name = "left_panel_options";
             this.left_panel_options.Size = new System.Drawing.Size(229, 346);
             this.left_panel_options.TabIndex = 0;
+            // 
+            // epilogiFiltrwn
+            // 
+            this.epilogiFiltrwn.Location = new System.Drawing.Point(51, 274);
+            this.epilogiFiltrwn.Name = "epilogiFiltrwn";
+            this.epilogiFiltrwn.Size = new System.Drawing.Size(121, 23);
+            this.epilogiFiltrwn.TabIndex = 7;
+            this.epilogiFiltrwn.Text = "Επιλογή Φίλτρων";
+            this.epilogiFiltrwn.UseVisualStyleBackColor = true;
+            this.epilogiFiltrwn.Click += new System.EventHandler(this.epilogiFiltrwn_Click);
             // 
             // comboBox4
             // 
@@ -643,16 +767,6 @@
             // 
             this.pROPERTIES17TableAdapter.ClearBeforeFill = true;
             // 
-            // epilogiFiltrwn
-            // 
-            this.epilogiFiltrwn.Location = new System.Drawing.Point(51, 274);
-            this.epilogiFiltrwn.Name = "epilogiFiltrwn";
-            this.epilogiFiltrwn.Size = new System.Drawing.Size(121, 23);
-            this.epilogiFiltrwn.TabIndex = 7;
-            this.epilogiFiltrwn.Text = "Επιλογή Φίλτρων";
-            this.epilogiFiltrwn.UseVisualStyleBackColor = true;
-            this.epilogiFiltrwn.Click += new System.EventHandler(this.epilogiFiltrwn_Click);
-            // 
             // Main_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -666,6 +780,9 @@
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Main_Page_Load);
             this.main_panel.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel_login_register.ResumeLayout(false);
             this.panel_login_register.PerformLayout();
@@ -781,5 +898,12 @@
        // private System.Windows.Forms.Button EpilogiFiltrwn;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button epilogiFiltrwn;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button reportBtn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button Customer_supportBtn;
+        private System.Windows.Forms.Button prosforesBtn;
+        private System.Windows.Forms.Button donationBtn;
     }
 }

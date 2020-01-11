@@ -544,5 +544,10 @@ namespace WindowsFormsApp1
                 Log_in_label.Text = "Log in / Resister";
             }            
         }
+
+        private void main_panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

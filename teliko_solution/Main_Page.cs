@@ -561,6 +561,32 @@ namespace WindowsFormsApp1
             this.Close();
         }
 
+        
+
+        private void reportBtn_Click(object sender, EventArgs e)
+        {
+            Report rs = new Report();
+            rs.ShowDialog();
+        }
+
+        private void Customer_supportBtn_Click(object sender, EventArgs e)
+        {
+            Customer_Support cs = new Customer_Support();
+            cs.ShowDialog();
+        }
+
+        private void donationBtn_Click(object sender, EventArgs e)
+        {
+            DonationForm dn = new DonationForm();
+            dn.ShowDialog();
+        }
+
+        private void prosforesBtn_Click(object sender, EventArgs e)
+        {
+            Prosfores ps = new Prosfores();
+            ps.ShowDialog();
+        }
+
         private void Log_in_label_Click(object sender, EventArgs e)
         {
             Login l = new Login();

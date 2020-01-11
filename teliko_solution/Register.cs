@@ -42,6 +42,8 @@ namespace WindowsFormsApp1
                 emailTxtBox_reg.Text = "E-mail";
                 phone_numberTxtBox_reg.Text = "Phone Number" ;
                 registerBtn_reg.Text = "Register";
+                fnameTxtBox_reg.Text = "First name";
+                lnameTextBox_reg.Text = "Last name";
             }
             else
             {
@@ -51,6 +53,8 @@ namespace WindowsFormsApp1
                 emailTxtBox_reg.Text = "E-mail";
                 phone_numberTxtBox_reg.Text = "Αριθμός τηλεφώνου";
                 registerBtn_reg.Text = "Εγγραφή";
+                fnameTxtBox_reg.Text = "Όνομα";
+                lnameTextBox_reg.Text = "Επώνυμο";
             }
         }
 
@@ -72,6 +76,12 @@ namespace WindowsFormsApp1
 
             panel5.BackColor = Color.White;
             addressTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+           
+            panel6.BackColor = Color.White;
+            fnameTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+            
+            panel7.BackColor = Color.White;
+            lnameTextBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
         }
 
         private void passwdTxtBox_Click(object sender, EventArgs e)
@@ -92,6 +102,12 @@ namespace WindowsFormsApp1
 
             panel5.BackColor = Color.White;
             addressTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel6.BackColor = Color.White;
+            fnameTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel7.BackColor = Color.White;
+            lnameTextBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
         }
         private void emailTxtBox_Click(object sender, EventArgs e)
         {
@@ -110,6 +126,12 @@ namespace WindowsFormsApp1
 
             panel5.BackColor = Color.White;
             addressTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel6.BackColor = Color.White;
+            fnameTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel7.BackColor = Color.White;
+            lnameTextBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -134,6 +156,12 @@ namespace WindowsFormsApp1
 
             panel5.BackColor = Color.White;
             addressTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel6.BackColor = Color.White;
+            fnameTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel7.BackColor = Color.White;
+            lnameTextBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
         }
 
         private void addressTxtBox_Click(object sender, EventArgs e)
@@ -153,11 +181,62 @@ namespace WindowsFormsApp1
 
             panel3.BackColor = Color.White;
             addressTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel6.BackColor = Color.White;
+            fnameTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel7.BackColor = Color.White;
+            lnameTextBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
         }
 
-        private void usernameTxtBox_reg_TextChanged(object sender, EventArgs e)
+        private void fnameTxtBox_reg_Click(object sender, EventArgs e)
         {
+            fnameTxtBox_reg.Clear();
+            panel6.BackColor = Color.FromArgb(90, 82, 255);
+            emailTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
 
+            panel1.BackColor = Color.White;
+            usernameTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel2.BackColor = Color.White;
+            passwdTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel4.BackColor = Color.White;
+            phone_numberTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel3.BackColor = Color.White;
+            addressTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel5.BackColor = Color.White;
+            addressTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel7.BackColor = Color.White;
+            lnameTextBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+        }
+
+        private void lnameTextBox_reg_Click(object sender, EventArgs e)
+        {
+            lnameTextBox_reg.Clear();
+            panel7.BackColor = Color.FromArgb(90, 82, 255);
+            emailTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel1.BackColor = Color.White;
+            usernameTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel2.BackColor = Color.White;
+            passwdTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel4.BackColor = Color.White;
+            phone_numberTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel3.BackColor = Color.White;
+            addressTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel6.BackColor = Color.White;
+            fnameTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel5.BackColor = Color.White;
+            addressTxtBox_reg.ForeColor = Color.FromArgb(90, 82, 255);
         }
     }
 }

@@ -2732,10 +2732,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1155, 747</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>1037, 638</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2745,6 +2742,30 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>cATEGORYTITLEDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cATEGORYIDDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>cATEGORYIDDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;cATEGORYIDDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aDCATEGORY2BindingSource.Name" xml:space="preserve">
+    <value>aDCATEGORY2BindingSource</value>
+  </data>
+  <data name="&gt;&gt;aDCATEGORY2BindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;database1DataSet.Name" xml:space="preserve">
+    <value>database1DataSet</value>
+  </data>
+  <data name="&gt;&gt;database1DataSet.Type" xml:space="preserve">
+    <value>WindowsFormsApp1.Database1DataSet, Database1DataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn1.Name" xml:space="preserve">
     <value>cATEGORYTITLEDataGridViewTextBoxColumn1</value>
@@ -2763,12 +2784,6 @@
   </data>
   <data name="&gt;&gt;aDCATEGORY1BindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;database1DataSet.Name" xml:space="preserve">
-    <value>database1DataSet</value>
-  </data>
-  <data name="&gt;&gt;database1DataSet.Type" xml:space="preserve">
-    <value>WindowsFormsApp1.Database1DataSet, Database1DataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>cATEGORYTITLEDataGridViewTextBoxColumn</value>
@@ -2794,29 +2809,11 @@
   <data name="&gt;&gt;aD_CATEGORY1TableAdapter.Type" xml:space="preserve">
     <value>WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORY1TableAdapter, Database1DataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;aDCATEGORY2BindingSource.Name" xml:space="preserve">
-    <value>aDCATEGORY2BindingSource</value>
-  </data>
-  <data name="&gt;&gt;aDCATEGORY2BindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;aD_CATEGORY2TableAdapter.Name" xml:space="preserve">
     <value>aD_CATEGORY2TableAdapter</value>
   </data>
   <data name="&gt;&gt;aD_CATEGORY2TableAdapter.Type" xml:space="preserve">
     <value>WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORY2TableAdapter, Database1DataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn2.Name" xml:space="preserve">
-    <value>cATEGORYTITLEDataGridViewTextBoxColumn2</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYIDDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>cATEGORYIDDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYIDDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Welcome_Page</value>
