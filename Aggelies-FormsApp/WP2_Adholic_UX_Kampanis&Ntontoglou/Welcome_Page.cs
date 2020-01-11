@@ -21,62 +21,12 @@ namespace WindowsFormsApp1
             searchboxTxtBox.AutoSize = false;
 
         }
-        /*public Welcome_Page(Main_Page mple)
-        {
-            InitializeComponent();
-            textBox1.AutoSize = false;
-            change_language_label.Click += new EventHandler(change_language_label_Click);
-            mple = mp;
-        }
-        */
+        
         int movX;
         int movY;
         int mov;
 
-        private void Bottom_panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void Welcome_Page_Load(object sender, EventArgs e)
         {
@@ -109,6 +59,7 @@ namespace WindowsFormsApp1
                 parkingBtn.Text = "Parking";
                 home_label.Text = "Houses";
 
+                
                 Search_button.Text = "Search";
                 Log_in_label.Text = "Log in / Resister";
             }
@@ -486,6 +437,11 @@ namespace WindowsFormsApp1
                 Search_button.Text = "Search";
                 Log_in_label.Text = "Log in / Resister";
             }
+
+        }
+
+        private void main_panel_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

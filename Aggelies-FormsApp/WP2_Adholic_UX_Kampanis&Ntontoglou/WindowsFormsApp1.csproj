@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add_description_v.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Add_description_v.Designer.cs">
-      <DependentUpon>Add_description_v.cs</DependentUpon>
-    </Compile>
     <Compile Include="AdminPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +57,12 @@
     </Compile>
     <Compile Include="Ad_ListItem.Designer.cs">
       <DependentUpon>Ad_ListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_Support.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_Support.Designer.cs">
+      <DependentUpon>Customer_Support.cs</DependentUpon>
     </Compile>
     <Compile Include="DisplayAdsAdmin.cs">
       <SubType>Form</SubType>
@@ -81,6 +81,12 @@
     </Compile>
     <Compile Include="description_of_add.Designer.cs">
       <DependentUpon>description_of_add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DonationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DonationForm.Designer.cs">
+      <DependentUpon>DonationForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Filters_left.cs">
       <SubType>UserControl</SubType>
@@ -104,11 +110,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Prosfores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prosfores.Designer.cs">
+      <DependentUpon>Prosfores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report.Designer.cs">
+      <DependentUpon>Report.cs</DependentUpon>
     </Compile>
     <Compile Include="UserPanel.cs">
       <SubType>Form</SubType>
@@ -130,14 +148,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Add_description_v.resx">
-      <DependentUpon>Add_description_v.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ad_ListItem.resx">
       <DependentUpon>Ad_ListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_Support.resx">
+      <DependentUpon>Customer_Support.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="description_of_add.resx">
       <DependentUpon>description_of_add.cs</DependentUpon>
@@ -147,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DisplayUsersAdmin.resx">
       <DependentUpon>DisplayUsersAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DonationForm.resx">
+      <DependentUpon>DonationForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Filters_left.resx">
       <DependentUpon>Filters_left.cs</DependentUpon>
@@ -162,11 +183,17 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Prosfores.resx">
+      <DependentUpon>Prosfores.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main_Page.resx">
       <DependentUpon>Main_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report.resx">
+      <DependentUpon>Report.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserPanel.resx">
       <DependentUpon>UserPanel.cs</DependentUpon>

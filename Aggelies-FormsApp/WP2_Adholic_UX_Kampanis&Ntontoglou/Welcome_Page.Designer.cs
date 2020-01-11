@@ -96,6 +96,7 @@
             this.main_panel.Controls.Add(this.logo);
             this.main_panel.Controls.Add(this.panel4);
             this.main_panel.Name = "main_panel";
+            this.main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.main_panel_Paint);
             // 
             // panel6
             // 

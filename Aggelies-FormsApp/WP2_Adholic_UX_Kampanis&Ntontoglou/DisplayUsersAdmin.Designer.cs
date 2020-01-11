@@ -110,6 +110,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(224)))));
             this.panel5.Controls.Add(this.close);
+            this.panel5.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(772, 32);
@@ -122,6 +123,7 @@
             // close
             // 
             this.close.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.close.Cursor = System.Windows.Forms.Cursors.Default;
             this.close.Image = ((System.Drawing.Image)(resources.GetObject("close.Image")));
             this.close.Location = new System.Drawing.Point(745, 4);
             this.close.Name = "close";
@@ -313,7 +315,7 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.textboxPASS);
             this.panel1.Controls.Add(this.textboxFNAME);
-            this.panel1.Location = new System.Drawing.Point(60, 29);
+            this.panel1.Location = new System.Drawing.Point(60, 32);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(269, 331);
             this.panel1.TabIndex = 109;

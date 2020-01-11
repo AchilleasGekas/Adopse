@@ -20,3 +20,7 @@ C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DisplayA
 C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DisplayUsersAdmin.resources
 C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AdminPanel.resources
 C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.UserPanel.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.DonationForm.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Customer_Support.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prosfores.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Report.resources

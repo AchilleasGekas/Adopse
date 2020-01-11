@@ -35,6 +35,11 @@ namespace WindowsFormsApp1
                 back_button_main.Text = "     Back";
                 usern_main_label.Text = "User";
                 Log_in_label_main.Text = "Log in / Register";
+                donationBtn.Text = "Support us :)";
+                Customer_supportBtn.Text = "Support";
+                reportBtn.Text = "  Report";
+                prosforesBtn.Text = "Sales";
+                
             }
             else
             {
@@ -42,6 +47,11 @@ namespace WindowsFormsApp1
                 back_button_main.Text = "     Πίσω";
                 usern_main_label.Text = "Χρήστης";
                 Log_in_label_main.Text = "Σύνδεση / Εγγραφή";
+                donationBtn.Text = "Στηρίξτε μας :)";
+                Customer_supportBtn.Text = "  Υποστήριξη";
+                reportBtn.Text = "  Αναφορά";
+                prosforesBtn.Text = "Προσφορές";
+
             }
             populateItems();
             populateItems2();
@@ -53,10 +63,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+       
         private void populateItems()
         {
             Ad_ListItem[] listItems = new Ad_ListItem[20];
@@ -197,11 +204,7 @@ namespace WindowsFormsApp1
             l.ShowDialog();
         }
         
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            
-        }
-
+       
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == 0)
@@ -211,7 +214,12 @@ namespace WindowsFormsApp1
                 back_button_main.Text = "     Πίσω";
                 usern_main_label.Text = "Χρήστης";
                 Log_in_label_main.Text = "Σύνδεση / Εγγραφή";
-                
+                donationBtn.Text = "Στηρίξτε μας :)";
+                Customer_supportBtn.Text = "  Υποστήριξη";
+                reportBtn.Text = "  Αναφορά";
+                prosforesBtn.Text = "Προσφορές";
+
+
 
             }
             else
@@ -221,12 +229,41 @@ namespace WindowsFormsApp1
                 back_button_main.Text = "     Back";
                 usern_main_label.Text = "User";
                 Log_in_label_main.Text = "Log in / Register";
+                donationBtn.Text = "Support us :)";
+                Customer_supportBtn.Text = "  Support";
+                reportBtn.Text = "  Report";
+                prosforesBtn.Text = "Sales";
+
             }
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void donationBtn_Click(object sender, EventArgs e)
+        {
+            DonationForm dn = new DonationForm();
+            dn.ShowDialog();
+        }
+
+        private void reportBtn_Click(object sender, EventArgs e)
+        {
+            Report rs = new Report();
+            rs.ShowDialog();
+        }
+
+        private void Customer_supportBtn_Click(object sender, EventArgs e)
+        {
+            Customer_Support cs = new Customer_Support();
+            cs.ShowDialog();
+        }
+
+        private void prosforesBtn_Click(object sender, EventArgs e)
+        {
+            Prosfores ps = new Prosfores();
+            ps.ShowDialog();
         }
     }
 }
