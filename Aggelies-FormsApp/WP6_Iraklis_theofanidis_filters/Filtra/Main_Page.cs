@@ -13,7 +13,6 @@ namespace WindowsFormsApp1
 {
     public partial class Main_Page : Form
     {
-
         public Main_Page()
         {
             InitializeComponent();
@@ -22,7 +21,6 @@ namespace WindowsFormsApp1
         }
 
         private void filtra()
-
         {
             onomaKatigorias.Text = Welcome_Page.onomaKatigorias;
             //   pROPERTIESTableAdapter.GetRamKinitou();
@@ -38,8 +36,7 @@ namespace WindowsFormsApp1
             else
             {
                 filtraSpitiwn();
-            }
-                       
+            }            
 
         }
         public static int arithmosfiltrwn;
@@ -49,7 +46,6 @@ namespace WindowsFormsApp1
           {
                 case 1:
                     filtro1.Text = "Marka: ";
-
                     comboBox2.DataSource = pROPERTIES1TableAdapter.GetMarkaPC();
                     comboBox2.DisplayMember = "SUBTITLE";
                     comboBox2.ValueMember = "SUBTITLE";
@@ -145,8 +141,6 @@ namespace WindowsFormsApp1
                     comboBox4.Hide();
                     break;
             }
-            
-
         }
 
         private void filtraOximatwn()
@@ -197,8 +191,6 @@ namespace WindowsFormsApp1
                     filtro3.Hide();
                     comboBox3.Hide();
                     comboBox4.Hide();
-
-
                     break;
 
                 case 10:
@@ -217,6 +209,7 @@ namespace WindowsFormsApp1
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
                     break;
+
                 case 11:
                     filtro1.Text = "Type: ";
                     comboBox2.DataSource = pROPERTIES10TableAdapter.GetTypeAllwnOximatwn();
@@ -226,9 +219,7 @@ namespace WindowsFormsApp1
                     filtro2.Hide();
                     filtro3.Hide();
                     comboBox3.Hide();
-                    comboBox4.Hide();
-
-                    
+                    comboBox4.Hide();                  
                     break;
 
                 case 12:
@@ -243,8 +234,6 @@ namespace WindowsFormsApp1
                     comboBox3.Hide();
                     break;
             }
-
-
         }
 
         private void filtraSpitiwn()
@@ -265,10 +254,7 @@ namespace WindowsFormsApp1
                     filtro3.Text = "Extra: ";
                     comboBox4.DataSource = pROPERTIES12TableAdapter.GetExtraDiamerismatos();
                     comboBox4.DisplayMember = "SUBTITLE";
-                    comboBox4.ValueMember = "SUBTITLE";
-
-                    
-
+                    comboBox4.ValueMember = "SUBTITLE";          
                     break;
 
                 case 14:
@@ -303,7 +289,6 @@ namespace WindowsFormsApp1
                     comboBox4.DataSource = pROPERTIES14TableAdapter.GetExtraEpaggelmatikwnXwrwn();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
-
                     break;
 
                 case 16:
@@ -319,7 +304,6 @@ namespace WindowsFormsApp1
 
                     filtro3.Hide();
                     comboBox4.Hide();
-
                     break;
                 case 17:
                     filtro1.Text = "TM: ";
@@ -336,8 +320,6 @@ namespace WindowsFormsApp1
                     comboBox4.DataSource = pROPERTIES16TableAdapter.GetExtraEksoxikwn();
                     comboBox4.DisplayMember = "SUBTITLE";
                     comboBox4.ValueMember = "SUBTITLE";
-
-
                     break;
 
                 case 18:
@@ -352,24 +334,22 @@ namespace WindowsFormsApp1
                     comboBox4.Hide();
                     break;
             }
-
-
         }
 
         private void EmfanisiArxikwnAggeliwn()
         {
-            int a;
+            int category_id;
             if (Welcome_Page.voithitikosArithmos == 1)
             {
-                a = Welcome_Page.voithitikosArithmos + 4;
+                category_id = Welcome_Page.voithitikosArithmos + 4;
             }
             else if (Welcome_Page.voithitikosArithmos == 2)
             {
-                a = Welcome_Page.voithitikosArithmos + 2;
+                category_id = Welcome_Page.voithitikosArithmos + 2;
             }
             else
             {
-                a = Welcome_Page.voithitikosArithmos + 3;
+                category_id = Welcome_Page.voithitikosArithmos + 3;
             }
             DataTable dtEmployees = new DataTable();
             string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|Database1.mdb";
@@ -380,19 +360,19 @@ namespace WindowsFormsApp1
                     " WHERE CATEGORY_ID = @CATEGORY_ID ";
                 using (OleDbCommand cmd = new OleDbCommand(query, con))
                 {
-                    cmd.Parameters.AddWithValue("@CATEGORY_ID", a);
-                   
-
+                    cmd.Parameters.AddWithValue("@CATEGORY_ID", category_id);                  
                     OleDbDataReader reader = cmd.ExecuteReader();
-
                     dtEmployees.Load(reader);
                 }
                 con.Close();
-
             }
             dataGridView1.DataSource= dtEmployees;
         }
 
+        private void epilogiFiltrwn_Click(object sender, EventArgs e)
+        {
+            arithmosFiltrwn();
+        }
 
         public static string Dok, Dok2, Dok3;
         private void arithmosFiltrwn()
@@ -403,47 +383,58 @@ namespace WindowsFormsApp1
                 
                 DataRow selectedDataRow = ((DataRowView)comboBox2.SelectedItem).Row;
                  Dok = selectedDataRow["PROPERTIES_ID"].ToString();
-                
-
+               
                 DataRow selectedDataRow2 = ((DataRowView)comboBox3.SelectedItem).Row;
                  Dok2 = selectedDataRow2["PROPERTIES_ID"].ToString();
 
-
                 DataRow selectedDataRow3 = ((DataRowView)comboBox4.SelectedItem).Row;
                  Dok3 = selectedDataRow3["PROPERTIES_ID"].ToString();
-
                 
-
                 dataGridView1.DataSource = GetAggeliesList();
             }
             else if(comboBox2.Visible == true && comboBox3.Visible==true && comboBox4.Visible==false)
             {
-                arithmosfiltrwn = 2;
-                
-
+                arithmosfiltrwn = 2;                
                 DataRow selectedDataRow = ((DataRowView)comboBox2.SelectedItem).Row;
-                 Dok = selectedDataRow["SUBTITLE"].ToString();
-
+                 Dok = selectedDataRow["PROPERTIES_ID"].ToString();
 
                 DataRow selectedDataRow2 = ((DataRowView)comboBox3.SelectedItem).Row;
-                Dok2 = selectedDataRow2["SUBTITLE"].ToString();
+                Dok2 = selectedDataRow2["PROPERTIES_ID"].ToString();
 
-                Dok3 = "";
-               
+                Dok3 = "";               
             }
             else
             {
                 DataRow selectedDataRow = ((DataRowView)comboBox2.SelectedItem).Row;
-                 Dok = selectedDataRow["SUBTITLE"].ToString();
+                 Dok = selectedDataRow["PROPERTIES_ID"].ToString();
                 arithmosfiltrwn = 1;
               
-
                 Dok2 = "";
-                Dok3 = "";
-
-              
+                Dok3 = "";              
             }
+        }
 
+        private DataTable GetAggeliesList()
+        {
+            DataTable dtEmployees = new DataTable();
+            string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|Database1.mdb";
+            using (OleDbConnection con = new OleDbConnection(connString))
+            {
+                con.Open();
+                string query = "SELECT AD_TITLE,INSERT_DATE,FINISH_DATE,MODIFY_DATE,PRICE,DESCRIPTION,STATUS FROM ADS INNER JOIN PROPERTIES_VALUE ON ADS.AD_ID = PROPERTIES_VALUE.AD_ID" +
+                    " WHERE PROPERTIES1 = @PROPERTIES1 AND PROPERTIES2 = @PROPERTIES2 AND PROPERTIES3 = @PROPERTIES3 ";
+                using (OleDbCommand cmd = new OleDbCommand(query, con))
+                {
+                    cmd.Parameters.AddWithValue("@PROPERTIES1", Dok);
+                    cmd.Parameters.AddWithValue("@PROPERTIES2", Dok2);
+                    cmd.Parameters.AddWithValue("@PROPERTIES3", Dok3);
+
+                    OleDbDataReader reader = cmd.ExecuteReader();
+                    dtEmployees.Load(reader);
+                }
+                con.Close();
+            }
+            return dtEmployees;
         }
 
         int movX;
@@ -503,52 +494,6 @@ namespace WindowsFormsApp1
             }   
         }
 
-        private DataTable GetAggeliesList()
-        {
-            DataTable dtEmployees = new DataTable();
-            string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|Database1.mdb";
-            using (OleDbConnection con = new OleDbConnection(connString))
-            {
-                con.Open();
-                string query = "SELECT AD_TITLE,INSERT_DATE,FINISH_DATE,MODIFY_DATE,PRICE,DESCRIPTION,STATUS FROM ADS INNER JOIN PROPERTIES_VALUE ON ADS.AD_ID = PROPERTIES_VALUE.AD_ID" +
-                    " WHERE PROPERTIES1 = @PROPERTIES1 AND PROPERTIES2 = @PROPERTIES2 AND PROPERTIES3 = @PROPERTIES3 ";
-                using (OleDbCommand cmd = new OleDbCommand(query, con))
-                {
-                    cmd.Parameters.AddWithValue("@PROPERTIES1", Dok);
-                    cmd.Parameters.AddWithValue("@PROPERTIES2", Dok2);
-                    cmd.Parameters.AddWithValue("@PROPERTIES3", Dok3);
-
-
-                    OleDbDataReader reader = cmd.ExecuteReader();
-
-                    dtEmployees.Load(reader);
-                }
-                con.Close();
-
-            }
-            return dtEmployees;
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-     
-        private void panel1_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void close_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -594,11 +539,6 @@ namespace WindowsFormsApp1
             this.Opacity = 1;
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void home_button_Click(object sender, EventArgs e)
         {
             
@@ -609,19 +549,16 @@ namespace WindowsFormsApp1
             wp1.ShowDialog();
             this.Close();
             //Ad_ListItem.BringToFront();
-
         }
 
         private void back_button_Click(object sender, EventArgs e)
         {
-
             panel_back.Height = back_button_main.Height;
             panel_back.Top = back_button_main.Top;
             Welcome_Page wp = new Welcome_Page();
             this.Hide();
             wp.ShowDialog();
             this.Close();
-
         }
 
         private void Log_in_label_Click(object sender, EventArgs e)
@@ -631,11 +568,6 @@ namespace WindowsFormsApp1
             l.ShowDialog();
         }
         
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == 0)
@@ -644,9 +576,7 @@ namespace WindowsFormsApp1
                 home_button_main.Text = "     Αρχική";
                 back_button_main.Text = "     Πίσω";
                 usern_main_label.Text = "Χρήστης";
-                Log_in_label_main.Text = "Σύνδεση / Εγγραφή";
-                
-
+                Log_in_label_main.Text = "Σύνδεση / Εγγραφή";                
             }
             else
             {
@@ -656,15 +586,7 @@ namespace WindowsFormsApp1
                 usern_main_label.Text = "User";
                 Log_in_label_main.Text = "Log in / Register";
             }
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            arithmosFiltrwn();
-
-            
-
-        }
+        }       
     }
 }
     

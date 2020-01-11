@@ -26,51 +26,7 @@ namespace WindowsFormsApp1
         int movY;
         int mov;
 
-        private void Bottom_panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button19_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void Welcome_Page_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'database1DataSet.AD_CATEGORY2' table. You can move, or remove it, as needed.
@@ -80,11 +36,11 @@ namespace WindowsFormsApp1
             // TODO: This line of code loads data into the 'database1DataSet.AD_CATEGORY' table. You can move, or remove it, as needed.
             this.aD_CATEGORYTableAdapter.Fill(this.database1DataSet.AD_CATEGORY);
             ProsthikiTimwnStaButtons();
-            /*  if (Program.change_lang == false)
+              if (Program.change_lang == false)
               {
                   //Welcome page
 
-
+               /*
                   pcBtn.Text = "Pc and Laptop";
                   telephoneBtn.Text = "Telephone";
                   sound_devicesBtn.Text = "Sound Devices";
@@ -108,10 +64,10 @@ namespace WindowsFormsApp1
                   summer_housesBtn.Text = "Vacation houses";
                   parkingBtn.Text = "Parking";
                   home_label.Text = "Houses";
-
+                */
                   Search_button.Text = "Search";
                   Log_in_label.Text = "Log in / Resister";
-              }*/
+              }
         }
         private void ProsthikiTimwnStaButtons()
         {
@@ -191,17 +147,6 @@ namespace WindowsFormsApp1
             }
 
         }
-        private void Search_panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
 
         private void Maximize_Click(object sender, EventArgs e)
         {
@@ -462,7 +407,7 @@ namespace WindowsFormsApp1
             this.Close();
         }
 
-        //Σπίτι main page
+        //spiti main_page
         private void apartmentsBtn_Click(object sender, EventArgs e)
         {
             onomaKatigorias = "Επιλέξτε τι είδους διαμέρισμα θέλετε";
@@ -530,42 +475,38 @@ namespace WindowsFormsApp1
             l.ShowDialog();
         }
 
-
-        
-       
-             
-
-        
-
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-          /* if (comboBox1.SelectedIndex == 0)
+           if (comboBox1.SelectedIndex == 0)
             {
+
                 Program.change_lang = true;
-                pcBtn.Text = "Pc και Laptop";
-                telephoneBtn.Text = "Τηλεφωνία";
-                sound_devicesBtn.Text = "Συσκευές ήχου";
-                televisionBtn.Text = "Τηλεοράσεις";
-                photoBtn.Text = "Φωτογραφία και Βίντεο";
-                house_devices.Text = "Οικιακές Συσκευές";
-                tech_label.Text = "Τεχνολογία";
+                /*
+                    
+                    pcBtn.Text = "Pc και Laptop";
+                    telephoneBtn.Text = "Τηλεφωνία";
+                    sound_devicesBtn.Text = "Συσκευές ήχου";
+                    televisionBtn.Text = "Τηλεοράσεις";
+                    photoBtn.Text = "Φωτογραφία και Βίντεο";
+                    house_devices.Text = "Οικιακές Συσκευές";
+                    tech_label.Text = "Τεχνολογία";
 
-                autoBtn.Text = "Αυτοκίνητα";
-                motoBtn.Text = "Μηχανές";
-                prof_vehiclesBtn.Text = "Εππαγγελμπατικά Οχήματα";
-                boatBtn.Text = "Σκάφη";
-                more_vehicles.Text = "Άλλα Οχήματα";
-                accesoriesBtn.Text = "Ανταλλακτικά και Αξεσουάρ";
-                auto_label.Text = "Οχήματα";
+                    autoBtn.Text = "Αυτοκίνητα";
+                    motoBtn.Text = "Μηχανές";
+                    prof_vehiclesBtn.Text = "Εππαγγελμπατικά Οχήματα";
+                    boatBtn.Text = "Σκάφη";
+                    more_vehicles.Text = "Άλλα Οχήματα";
+                    accesoriesBtn.Text = "Ανταλλακτικά και Αξεσουάρ";
+                    auto_label.Text = "Οχήματα";
 
-                apartmentsBtn.Text = "Διαμερίσματα";
-                vilesBtn.Text = "Μονοκατοικίες και Βίλες";
-                prof_housesBtn.Text = "Εππαγγελματικοί χώροι";
-                landBtn.Text = "Οικόπεδα και Γή";
-                summer_housesBtn.Text = "Εξοχικά";
-                parkingBtn.Text = "Parking";
-                home_label.Text = "Σπίτι";
-
+                    apartmentsBtn.Text = "Διαμερίσματα";
+                    vilesBtn.Text = "Μονοκατοικίες και Βίλες";
+                    prof_housesBtn.Text = "Εππαγγελματικοί χώροι";
+                    landBtn.Text = "Οικόπεδα και Γή";
+                    summer_housesBtn.Text = "Εξοχικά";
+                    parkingBtn.Text = "Parking";
+                    home_label.Text = "Σπίτι";
+                */
                 Search_button.Text = "Αναζήτηση";
                 Log_in_label.Text = "Σύνδεση / Εγγραφή";
 
@@ -573,6 +514,8 @@ namespace WindowsFormsApp1
             else 
             {
                 Program.change_lang = false;
+                /*
+               
                 pcBtn.Text = "Pc and Laptop";
                 telephoneBtn.Text = "Telephone";
                 sound_devicesBtn.Text = "Sound Devices";
@@ -596,11 +539,10 @@ namespace WindowsFormsApp1
                 summer_housesBtn.Text = "Vacation houses";
                 parkingBtn.Text = "Parking";
                 home_label.Text = "Houses";
-
+                */
                 Search_button.Text = "Search";
                 Log_in_label.Text = "Log in / Resister";
-            }
-            */
+            }            
         }
     }
 }

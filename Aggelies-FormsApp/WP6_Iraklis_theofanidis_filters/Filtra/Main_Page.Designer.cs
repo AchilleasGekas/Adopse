@@ -49,7 +49,6 @@
             this.usern_main_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.left_panel_options = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -100,6 +99,7 @@
             this.pROPERTIES16BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pROPERTIES16TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES16TableAdapter();
             this.pROPERTIES17TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES17TableAdapter();
+            this.epilogiFiltrwn = new System.Windows.Forms.Button();
             this.main_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel_login_register.SuspendLayout();
@@ -155,7 +155,6 @@
             this.main_panel.Name = "main_panel";
             this.main_panel.Size = new System.Drawing.Size(1209, 498);
             this.main_panel.TabIndex = 0;
-            this.main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // dataGridView1
             // 
@@ -295,7 +294,6 @@
             this.panel_back.Name = "panel_back";
             this.panel_back.Size = new System.Drawing.Size(10, 51);
             this.panel_back.TabIndex = 4;
-            this.panel_back.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel4
             // 
@@ -345,7 +343,6 @@
             this.panel_user.Name = "panel_user";
             this.panel_user.Size = new System.Drawing.Size(147, 175);
             this.panel_user.TabIndex = 1;
-            this.panel_user.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_1);
             // 
             // usern_main_label
             // 
@@ -374,7 +371,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.left_panel_options.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.left_panel_options.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
-            this.left_panel_options.Controls.Add(this.button1);
+            this.left_panel_options.Controls.Add(this.epilogiFiltrwn);
             this.left_panel_options.Controls.Add(this.comboBox4);
             this.left_panel_options.Controls.Add(this.comboBox3);
             this.left_panel_options.Controls.Add(this.comboBox2);
@@ -387,16 +384,6 @@
             this.left_panel_options.Name = "left_panel_options";
             this.left_panel_options.Size = new System.Drawing.Size(229, 346);
             this.left_panel_options.TabIndex = 0;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(32, 272);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 23);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Επιλογή Φίλτρων";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // comboBox4
             // 
@@ -656,6 +643,16 @@
             // 
             this.pROPERTIES17TableAdapter.ClearBeforeFill = true;
             // 
+            // epilogiFiltrwn
+            // 
+            this.epilogiFiltrwn.Location = new System.Drawing.Point(51, 274);
+            this.epilogiFiltrwn.Name = "epilogiFiltrwn";
+            this.epilogiFiltrwn.Size = new System.Drawing.Size(121, 23);
+            this.epilogiFiltrwn.TabIndex = 7;
+            this.epilogiFiltrwn.Text = "Επιλογή Φίλτρων";
+            this.epilogiFiltrwn.UseVisualStyleBackColor = true;
+            this.epilogiFiltrwn.Click += new System.EventHandler(this.epilogiFiltrwn_Click);
+            // 
             // Main_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -781,7 +778,8 @@
         private DataSet1 dataSet14;
         private System.Windows.Forms.BindingSource pROPERTIES17BindingSource;
         private DataSet1TableAdapters.PROPERTIES17TableAdapter pROPERTIES17TableAdapter;
-        private System.Windows.Forms.Button button1;
+       // private System.Windows.Forms.Button EpilogiFiltrwn;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button epilogiFiltrwn;
     }
 }
