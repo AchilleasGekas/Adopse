@@ -2515,7 +2515,7 @@
 </value>
   </data>
   <data name="Minimize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1424, 4</value>
+    <value>1464, 4</value>
   </data>
   <data name="Minimize.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -2537,46 +2537,6 @@
   </data>
   <data name="&gt;&gt;Minimize.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="Maximize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="Maximize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAb9JREFUSEvt
-        lUsvA1EcxWdDYucbeA0hIR71TCqGeLRCTHUkVSWaIFRFoiTdSBobwkbEysIGldQjrIRJVMkQyXwAe3tf
-        4bjlTu5luFrrnuSX+5+c/7lnNp1KOWUlOQRNnkWqbA76T5RahD4p+UZxCKmiMLz0Ortqp2A4ZpBHH7NW
-        Ols1A4M+2tUyiSQd/y1HUHCHEmBmxzjOCDpPu8WEjRMak5zjggK3j5nuUSRdPij9fsTIWeyiJ7W/qNeP
-        OzpKPSRHR7u8GjM9I0iq5EJNg6KqKFTpSe0vUskuHaUhbrYpoDIz4MHbmAqdx88zDH3Uwos3GpN8HkHB
-        9AAzpwcFi0SRR/QtPWEjYqApyO3ys02LLmYuuMUFiQTy4ze4PLpGLMztzoty0W5mRnvEBWm9JlDwco6u
-        FW53WZRbU5i51vl3gaVVbpefbdpyMnOzPfOCDW53XZTbbWXmblvmBTvc7rYot9/IzP2mzAv2mtkPbU+U
-        O65jZrwO5/F6mBZH3zi0aPjgjMakg3pBwUV15m/9m05rBHfcVMIwHf//XKezV1WCz/W9DO1BxjPBJLN5
-        X8FI/UGScFeB59tywR9OTnZJ0jvyo1p6ymdKfgAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="Maximize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1464, 4</value>
-  </data>
-  <data name="Maximize.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="Maximize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 30</value>
-  </data>
-  <data name="Maximize.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;Maximize.Name" xml:space="preserve">
-    <value>Maximize</value>
-  </data>
-  <data name="&gt;&gt;Maximize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Maximize.Parent" xml:space="preserve">
-    <value>panel4</value>
-  </data>
-  <data name="&gt;&gt;Maximize.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>

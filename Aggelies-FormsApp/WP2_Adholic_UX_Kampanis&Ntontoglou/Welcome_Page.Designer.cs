@@ -68,7 +68,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.PictureBox();
             this.Minimize = new System.Windows.Forms.PictureBox();
-            this.Maximize = new System.Windows.Forms.PictureBox();
             this.main_panel.SuspendLayout();
             this.panel6.SuspendLayout();
             this.Bottom_panel.SuspendLayout();
@@ -83,7 +82,6 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximize)).BeginInit();
             this.SuspendLayout();
             // 
             // main_panel
@@ -400,7 +398,6 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(224)))));
             this.panel4.Controls.Add(this.close);
             this.panel4.Controls.Add(this.Minimize);
-            this.panel4.Controls.Add(this.Maximize);
             this.panel4.Name = "panel4";
             this.panel4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseDown);
             this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel4_MouseMove);
@@ -419,13 +416,6 @@
             this.Minimize.Name = "Minimize";
             this.Minimize.TabStop = false;
             this.Minimize.Click += new System.EventHandler(this.Minimize_Click);
-            // 
-            // Maximize
-            // 
-            resources.ApplyResources(this.Maximize, "Maximize");
-            this.Maximize.Name = "Maximize";
-            this.Maximize.TabStop = false;
-            this.Maximize.Click += new System.EventHandler(this.Maximize_Click);
             // 
             // Welcome_Page
             // 
@@ -454,7 +444,6 @@
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Maximize)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -465,7 +454,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox close;
         private System.Windows.Forms.PictureBox Minimize;
-        private System.Windows.Forms.PictureBox Maximize;
         private System.Windows.Forms.Label Log_in_label;
         private System.Windows.Forms.Button Search_button;
         private System.Windows.Forms.PictureBox logo;

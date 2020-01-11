@@ -8,7 +8,6 @@ C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Main_Pag
 C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Welcome_Page.resources
 C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Filters_left.resources
 C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Ad_ListItem.resources
-C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Add_description_v.resources
 C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.description_of_add.resources
 C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
 C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Register.resources
