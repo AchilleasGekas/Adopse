@@ -116,6 +116,7 @@
             this.donationBtn.TabIndex = 7;
             this.donationBtn.Text = "Go to Paypal";
             this.donationBtn.UseVisualStyleBackColor = false;
+            this.donationBtn.Click += new System.EventHandler(this.donationBtn_Click);
             // 
             // panel5
             // 

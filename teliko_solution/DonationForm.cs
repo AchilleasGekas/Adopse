@@ -52,5 +52,26 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void donationBtn_Click(object sender, EventArgs e)
+        {
+            string url = "";
+
+            string business = "";  // your paypal email
+            string description = descriptionTB.Text;
+            string country = "GR";                  // AU, US, etc.
+            string currency = currencyCB.Text;                 // EUR,AUD, USD, etc.
+
+            url += "https://www.paypal.com/cgi-bin/webscr" +
+                "?cmd=" + "_donations" +
+                "&business=" + business +
+                "&lc=" + country +
+                "&item_name=" + description +
+                "&currency_code=" + currency +
+                "&bn=" + "PP%2dDonationsBF";
+
+            System.Diagnostics.Process.Start(url);
+            this.Close();
+        }
     }
 }
