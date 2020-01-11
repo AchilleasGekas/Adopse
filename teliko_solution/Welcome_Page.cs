@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Lucene.Net.Analysis;
+using Lucene.Net.Analysis.Standard;
+using Lucene.Net.Documents;
+using Lucene.Net.Index;
+using Lucene.Net.QueryParsers;
+using Lucene.Net.Search;
+using Lucene.Net.Store;
 
 namespace WindowsFormsApp1
 {
@@ -29,6 +36,8 @@ namespace WindowsFormsApp1
       
         private void Welcome_Page_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'databaseLocal1.ADS' table. You can move, or remove it, as needed.
+            this.aDSTableAdapter.Fill(this.databaseLocal1.ADS);
             // TODO: This line of code loads data into the 'database1DataSet.AD_CATEGORY2' table. You can move, or remove it, as needed.
             this.aD_CATEGORY2TableAdapter.Fill(this.database1DataSet.AD_CATEGORY2);
             // TODO: This line of code loads data into the 'database1DataSet.AD_CATEGORY1' table. You can move, or remove it, as needed.
@@ -451,7 +460,93 @@ namespace WindowsFormsApp1
 
         private void Search_button_Click(object sender, EventArgs e)
         {
+            Main_Page mp = new Main_Page();
+            var query = searchboxTxtBox.Text.Trim();
+            var results = search(query);
+            mp.dataGridView1.DataSource = results;
+            //AdsGV.DataSource = results;
+            //this.aCTIVITY_USERTableAdapter.InsertUserActivity("George", DateTime.Today,"searched",Global.getIP());
+            //this.sEARCHED_DATATableAdapter.Insert("Karanikas", searchTB.Text, DateTime.Today);
+            voithitikosArithmos = 20;
+            mp.filtro1.Visible = false;
+            mp.filtro2.Visible = false;
+            mp.filtro3.Visible = false;
+            mp.epilogiFiltrwn.Visible = false;
+            mp.comboBox2.Visible = false;
+            mp.comboBox3.Visible = false;
+            mp.comboBox4.Visible = false;
+            mp.onomaKatigorias.Visible = false;
+            this.Hide();
+            mp.ShowDialog();
+            this.Close();
+            
+        }
 
+
+        Directory createIndex(DataTable table)
+        {
+            var directory = new RAMDirectory();
+            using (Analyzer analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
+            using (var writer = new IndexWriter(directory, analyzer, new IndexWriter.MaxFieldLength(1000)))
+            {
+                foreach (DataRow row in table.Rows)
+                {
+                    var document = new Document();
+                    document.Add(new Field("AD_TITLE", row["AD_TITLE"].ToString(), Field.Store.YES, Field.Index.ANALYZED));
+                    document.Add(new Field("DESCRIPTION", row["DESCRIPTION"].ToString(), Field.Store.YES, Field.Index.ANALYZED));
+                    document.Add(new Field("PRICE", row["PRICE"].ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
+                    document.Add(new Field("AD_ID", row["AD_ID"].ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
+                    document.Add(new Field("INSERT_DATE", row["INSERT_DATE"].ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
+
+
+                    document.Add(new Field("FullText", string.Format("{0} {1}", row["AD_TITLE"], row["DESCRIPTION"]), Field.Store.YES, Field.Index.ANALYZED));
+
+                    writer.AddDocument(document);
+                }
+                writer.Optimize();
+                writer.Flush(true, true, true);
+            }
+            return directory;
+        }
+
+        DataTable search(string textSearch)
+        {
+            var table = this.databaseLocal1.ADS.Clone();
+
+            var Index = createIndex(this.databaseLocal1.ADS);
+
+            using (var reader = IndexReader.Open(Index, true))
+            using (var searcher = new IndexSearcher(reader))
+            {
+                using (Analyzer analyzer = new StandardAnalyzer(Lucene.Net.Util.Version.LUCENE_30))
+                {
+                    var queryParser = new QueryParser(Lucene.Net.Util.Version.LUCENE_30, "FullText", analyzer);
+                    queryParser.AllowLeadingWildcard = true;
+
+                    var query = queryParser.Parse("*" + searchboxTxtBox.Text + "*");
+
+                    var collector = TopScoreDocCollector.Create(1000, true);
+
+                    searcher.Search(query, collector);
+
+                    var matches = collector.TopDocs().ScoreDocs;
+
+                    foreach (var item in matches)
+                    {
+                        var id = item.Doc;
+                        var doc = searcher.Doc(id);
+
+                        var row = table.NewRow();
+                        row["AD_ID"] = doc.GetField("AD_ID").StringValue;
+                        row["AD_TITLE"] = doc.GetField("AD_TITLE").StringValue;
+                        row["DESCRIPTION"] = doc.GetField("DESCRIPTION").StringValue;
+                        row["PRICE"] = doc.GetField("PRICE").StringValue;
+                        row["INSERT_DATE"] = doc.GetField("INSERT_DATE").StringValue;
+                        table.Rows.Add(row);
+                    }
+                }
+            }
+            return table;
         }
     }
 

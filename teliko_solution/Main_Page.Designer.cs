@@ -830,7 +830,6 @@
         private System.Windows.Forms.Panel main_panel;
         private System.Windows.Forms.Panel panel_user;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel left_panel_options;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel navigation_panel;
         private System.Windows.Forms.Panel panel_back;
@@ -845,13 +844,6 @@
         public System.Windows.Forms.Button back_button_main;
         public System.Windows.Forms.Label Log_in_label_main;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label onomaKatigorias;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label filtro3;
-        private System.Windows.Forms.Label filtro2;
-        private System.Windows.Forms.Label filtro1;
         private DataSet1 dataSet1;
         private System.Windows.Forms.BindingSource dataSet1BindingSource;
         private System.Windows.Forms.BindingSource dataSet1BindingSource1;
@@ -895,9 +887,6 @@
         private DataSet1 dataSet14;
         private System.Windows.Forms.BindingSource pROPERTIES17BindingSource;
         private DataSet1TableAdapters.PROPERTIES17TableAdapter pROPERTIES17TableAdapter;
-       // private System.Windows.Forms.Button EpilogiFiltrwn;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button epilogiFiltrwn;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button reportBtn;
         private System.Windows.Forms.Panel panel1;
@@ -905,5 +894,15 @@
         private System.Windows.Forms.Button Customer_supportBtn;
         private System.Windows.Forms.Button prosforesBtn;
         private System.Windows.Forms.Button donationBtn;
+        public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.Label filtro1;
+        public System.Windows.Forms.Panel left_panel_options;
+        public System.Windows.Forms.ComboBox comboBox4;
+        public System.Windows.Forms.ComboBox comboBox3;
+        public System.Windows.Forms.ComboBox comboBox2;
+        public System.Windows.Forms.Label filtro3;
+        public System.Windows.Forms.Label filtro2;
+        public System.Windows.Forms.Button epilogiFiltrwn;
+        public System.Windows.Forms.Label onomaKatigorias;
     }
 }

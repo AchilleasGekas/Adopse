@@ -339,34 +339,42 @@ namespace WindowsFormsApp1
         private void EmfanisiArxikwnAggeliwn()
         {
             int category_id;
-            if (Welcome_Page.voithitikosArithmos == 1)
+            if (Welcome_Page.voithitikosArithmos.Equals(20))
             {
-                category_id = Welcome_Page.voithitikosArithmos + 4;
-            }
-            else if (Welcome_Page.voithitikosArithmos == 2)
-            {
-                category_id = Welcome_Page.voithitikosArithmos + 2;
+                Console.WriteLine("EIMAIIIIIIIIIIIIIIIIIIIIIIII MESAAAAAAAAAAAAA");
+                filtro1.Visible = false;
             }
             else
             {
-                category_id = Welcome_Page.voithitikosArithmos + 3;
-            }
-            DataTable dtEmployees = new DataTable();
-            string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|Database1.mdb";
-            using (OleDbConnection con = new OleDbConnection(connString))
-            {
-                con.Open();
-                string query = "SELECT AD_TITLE,INSERT_DATE,FINISH_DATE,MODIFY_DATE,PRICE,DESCRIPTION,STATUS FROM ADS " +
-                    " WHERE CATEGORY_ID = @CATEGORY_ID ";
-                using (OleDbCommand cmd = new OleDbCommand(query, con))
+                if (Welcome_Page.voithitikosArithmos == 1)
                 {
-                    cmd.Parameters.AddWithValue("@CATEGORY_ID", category_id);                  
-                    OleDbDataReader reader = cmd.ExecuteReader();
-                    dtEmployees.Load(reader);
+                    category_id = Welcome_Page.voithitikosArithmos + 4;
                 }
-                con.Close();
+                else if (Welcome_Page.voithitikosArithmos == 2)
+                {
+                    category_id = Welcome_Page.voithitikosArithmos + 2;
+                }
+                else
+                {
+                    category_id = Welcome_Page.voithitikosArithmos + 3;
+                }
+                DataTable dtEmployees = new DataTable();
+                string connString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|Database1.mdb";
+                using (OleDbConnection con = new OleDbConnection(connString))
+                {
+                    con.Open();
+                    string query = "SELECT AD_TITLE,INSERT_DATE,FINISH_DATE,MODIFY_DATE,PRICE,DESCRIPTION,STATUS FROM ADS " +
+                        " WHERE CATEGORY_ID = @CATEGORY_ID ";
+                    using (OleDbCommand cmd = new OleDbCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@CATEGORY_ID", category_id);
+                        OleDbDataReader reader = cmd.ExecuteReader();
+                        dtEmployees.Load(reader);
+                    }
+                    con.Close();
+                }
+                dataGridView1.DataSource = dtEmployees;
             }
-            dataGridView1.DataSource= dtEmployees;
         }
 
         private void epilogiFiltrwn_Click(object sender, EventArgs e)

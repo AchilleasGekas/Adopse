@@ -172,3 +172,8 @@ C:\Users\ekal6\Desktop\Adopse\teliko_solution\obj\Debug\WindowsFormsApp1.Propert
 C:\Users\ekal6\Desktop\Adopse\teliko_solution\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 C:\Users\ekal6\Desktop\Adopse\teliko_solution\obj\Debug\WindowsFormsApp1.exe
 C:\Users\ekal6\Desktop\Adopse\teliko_solution\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\bin\Debug\Lucene.Net.dll
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\bin\Debug\Lucene.Net.pdb
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\bin\Debug\Lucene.Net.xml
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\obj\Debug\WindowsFormsApp1.csproj.CopyComplete

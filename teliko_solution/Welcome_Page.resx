@@ -2721,6 +2721,15 @@
   <metadata name="aD_CATEGORY2TableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>441, 56</value>
   </metadata>
+  <metadata name="databaseLocal1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>653, 56</value>
+  </metadata>
+  <metadata name="aDSBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>789, 56</value>
+  </metadata>
+  <metadata name="aDSTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>941, 56</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -2769,6 +2778,18 @@
   <data name="&gt;&gt;database1DataSet.Type" xml:space="preserve">
     <value>WindowsFormsApp1.Database1DataSet, Database1DataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cATEGORYTITLEDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aDCATEGORYBindingSource.Name" xml:space="preserve">
+    <value>aDCATEGORYBindingSource</value>
+  </data>
+  <data name="&gt;&gt;aDCATEGORYBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn1.Name" xml:space="preserve">
     <value>cATEGORYTITLEDataGridViewTextBoxColumn1</value>
   </data>
@@ -2785,18 +2806,6 @@
     <value>aDCATEGORY1BindingSource</value>
   </data>
   <data name="&gt;&gt;aDCATEGORY1BindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>cATEGORYTITLEDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aDCATEGORYBindingSource.Name" xml:space="preserve">
-    <value>aDCATEGORYBindingSource</value>
-  </data>
-  <data name="&gt;&gt;aDCATEGORYBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;aD_CATEGORYTableAdapter.Name" xml:space="preserve">
@@ -2816,6 +2825,24 @@
   </data>
   <data name="&gt;&gt;aD_CATEGORY2TableAdapter.Type" xml:space="preserve">
     <value>WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORY2TableAdapter, Database1DataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;databaseLocal1.Name" xml:space="preserve">
+    <value>databaseLocal1</value>
+  </data>
+  <data name="&gt;&gt;databaseLocal1.Type" xml:space="preserve">
+    <value>WindowsFormsApp1.DatabaseLocal, DatabaseLocal.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aDSBindingSource.Name" xml:space="preserve">
+    <value>aDSBindingSource</value>
+  </data>
+  <data name="&gt;&gt;aDSBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;aDSTableAdapter.Name" xml:space="preserve">
+    <value>aDSTableAdapter</value>
+  </data>
+  <data name="&gt;&gt;aDSTableAdapter.Type" xml:space="preserve">
+    <value>WindowsFormsApp1.DatabaseLocalTableAdapters.ADSTableAdapter, DatabaseLocal.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Welcome_Page</value>
