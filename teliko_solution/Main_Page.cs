@@ -484,6 +484,11 @@ namespace WindowsFormsApp1
                 back_button_main.Text = "     Back";
                 usern_main_label.Text = "User";
                 Log_in_label_main.Text = "Log in / Register";
+                donationBtn.Text = "Support us :)";
+                Customer_supportBtn.Text = "Support";
+                reportBtn.Text = "  Report";
+                prosforesBtn.Text = "Sales";
+
             }
             else
             {
@@ -491,7 +496,12 @@ namespace WindowsFormsApp1
                 back_button_main.Text = "     Πίσω";
                 usern_main_label.Text = "Χρήστης";
                 Log_in_label_main.Text = "Σύνδεση / Εγγραφή";
-            }   
+                donationBtn.Text = "Στηρίξτε μας :)";
+                Customer_supportBtn.Text = "  Υποστήριξη";
+                reportBtn.Text = "  Αναφορά";
+                prosforesBtn.Text = "Προσφορές";
+
+            }
         }
 
         private void close_Click(object sender, EventArgs e)
@@ -596,21 +606,29 @@ namespace WindowsFormsApp1
         
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedIndex == 0)
+            if (Program.change_lang == false)
             {
-                Program.change_lang = true;
-                home_button_main.Text = "     Αρχική";
-                back_button_main.Text = "     Πίσω";
-                usern_main_label.Text = "Χρήστης";
-                Log_in_label_main.Text = "Σύνδεση / Εγγραφή";                
-            }
-            else
-            {
-                Program.change_lang = false;
                 home_button_main.Text = "     Home";
                 back_button_main.Text = "     Back";
                 usern_main_label.Text = "User";
                 Log_in_label_main.Text = "Log in / Register";
+                donationBtn.Text = "Support us :)";
+                Customer_supportBtn.Text = "Support";
+                reportBtn.Text = "  Report";
+                prosforesBtn.Text = "Sales";
+
+            }
+            else
+            {
+                home_button_main.Text = "     Αρχική";
+                back_button_main.Text = "     Πίσω";
+                usern_main_label.Text = "Χρήστης";
+                Log_in_label_main.Text = "Σύνδεση / Εγγραφή";
+                donationBtn.Text = "Στηρίξτε μας :)";
+                Customer_supportBtn.Text = "  Υποστήριξη";
+                reportBtn.Text = "  Αναφορά";
+                prosforesBtn.Text = "Προσφορές";
+
             }
         }       
     }
