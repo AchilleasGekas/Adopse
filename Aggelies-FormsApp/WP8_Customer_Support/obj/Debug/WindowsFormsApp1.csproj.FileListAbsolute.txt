@@ -1,0 +1,43 @@
+C:\Users\panos\source\repos\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\panos\source\repos\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\panos\source\repos\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Main_Page.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Welcome_Page.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Filters_left.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Ad_ListItem.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Add_description_v.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.description_of_add.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\panos\source\repos\WindowsFormsApp1\bin\Debug\Database1.mdb
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.test_data.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Register.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.gr.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.en.resources
+C:\Users\panos\source\repos\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\bin\Debug\Database1.mdb
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Add_description_v.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Ad_ListItem.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.description_of_add.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Filters_left.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Login.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.gr.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Register.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Main_Page.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.test_data.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Welcome_Page.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.en.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Customer_Support.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Report.resources
+C:\Users\Χρήστος Ελμπασίδης\Desktop\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Prosfores.resources
