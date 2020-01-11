@@ -65,7 +65,7 @@ namespace WindowsFormsApp1
 
         private void manageAds_Click(object sender, EventArgs e)
         {
-            //displays for that edits any ad's details
+            //displays form that edits any ad's details
             DisplayAdsAdmin daa = new DisplayAdsAdmin();
             daa.ShowDialog();
         }
@@ -80,7 +80,7 @@ namespace WindowsFormsApp1
             label2.Text = "Admin: " + Login.uname;//printing admin's username
             try
             {
-                conn.Open();//displaying the population and totalads
+                conn.Open();//displaying the population and total ads
                 OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = conn;
 

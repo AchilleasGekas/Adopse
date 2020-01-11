@@ -270,6 +270,17 @@ namespace WindowsFormsApp1
             }
             conn.Close();
         }
+
+        private void LogOutButton_Click(object sender, EventArgs e)
+        {
+            Welcome_Page wp = new Welcome_Page();
+            MessageBox.Show("you have been logged out");
+            Login.uname = null;
+            this.Hide();
+            wp.ShowDialog();
+            this.Close();
+
+        }
     }
 }
     

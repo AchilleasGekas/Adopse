@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Page));
             this.main_panel = new System.Windows.Forms.Panel();
+            this.LogOutButton = new System.Windows.Forms.Button();
             this.panel_login_register = new System.Windows.Forms.Panel();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.Log_in_label_main = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.left_panel_options = new System.Windows.Forms.Panel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.LogOutButton = new System.Windows.Forms.Button();
             this.main_panel.SuspendLayout();
             this.panel_login_register.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -81,6 +81,16 @@
             this.main_panel.Size = new System.Drawing.Size(1209, 498);
             this.main_panel.TabIndex = 0;
             this.main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // LogOutButton
+            // 
+            this.LogOutButton.Location = new System.Drawing.Point(791, 37);
+            this.LogOutButton.Name = "LogOutButton";
+            this.LogOutButton.Size = new System.Drawing.Size(75, 23);
+            this.LogOutButton.TabIndex = 14;
+            this.LogOutButton.Text = "LogOut";
+            this.LogOutButton.UseVisualStyleBackColor = true;
+            this.LogOutButton.Click += new System.EventHandler(this.LogOutButton_Click);
             // 
             // panel_login_register
             // 
@@ -324,15 +334,6 @@
             this.flowLayoutPanel2.Size = new System.Drawing.Size(223, 352);
             this.flowLayoutPanel2.TabIndex = 1;
             this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
-            // 
-            // LogOutButton
-            // 
-            this.LogOutButton.Location = new System.Drawing.Point(791, 37);
-            this.LogOutButton.Name = "LogOutButton";
-            this.LogOutButton.Size = new System.Drawing.Size(75, 23);
-            this.LogOutButton.TabIndex = 14;
-            this.LogOutButton.Text = "LogOut";
-            this.LogOutButton.UseVisualStyleBackColor = true;
             // 
             // Main_Page
             // 

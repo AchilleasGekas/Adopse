@@ -15,7 +15,7 @@ namespace WindowsFormsApp1
     {
 
         //retrieve the username for the whole application from HERE
-        //this is the current session's username
+        //this is the current "session's" username
         public static String uname = "";
         //establishing a new connection
         OleDbConnection conn = new OleDbConnection();
@@ -53,7 +53,7 @@ namespace WindowsFormsApp1
 
         private void usernameTxtBox_Click(object sender, EventArgs e)
         {
-            //usernameTxtBox.Clear();
+            usernameTxtBox.Clear();
             panel1.BackColor = Color.FromArgb(90, 82, 255);
             usernameTxtBox.ForeColor = Color.FromArgb(90, 82, 255);
 
@@ -153,12 +153,16 @@ namespace WindowsFormsApp1
             finally
             {
                 //closing up
-                //for the time being there is no page to initiate
-                //the LogInUI remains until there will be a new page
                 conn.Close();
             }
 
-            //Redirection to the next form can be placed here
+            Main_Page mp = new Main_Page();
+            this.Hide();
+            mp.ShowDialog();
+            this.Close();
+            
+
+            //Any redirection to the next form can be placed here
         }
     }
 }

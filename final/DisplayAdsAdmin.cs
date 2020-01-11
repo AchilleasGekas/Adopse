@@ -66,7 +66,7 @@ namespace WindowsFormsApp1
             movY = e.Y;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void displayButton_Click(object sender, EventArgs e)
         {
             int isNull = 0;
             try
@@ -89,7 +89,7 @@ namespace WindowsFormsApp1
                 //double phase;//phase where id is double //were used only for testing
                 //Double.TryParse(textboxAdId.Text, out phase); //parsing String to double
 
-                //submitting the query for the user authentication later
+                //searching for the ad
                 command.CommandText = "SELECT * FROM ads WHERE AD_ID='" + textboxAdId.Text + "'";
 
                 OleDbDataReader reader = command.ExecuteReader();
@@ -112,7 +112,7 @@ namespace WindowsFormsApp1
 
                 }
 
-                if (isNull == 1)
+                if (isNull == 1)//checking if ad exists
                 {
                     MessageBox.Show("This ad doesn't exist");
                 }
@@ -128,11 +128,11 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void updateButton_Click(object sender, EventArgs e)
         {
-            int follow = 0;//used to check if the registration will close or not
+            int follow = 0;//used to check if the form will close or not
             //total report, in case data inputed are not as expected
-            String report = "REGISTRATION IS NOT COMPLETE\n\n";
+            String report = "UPDATE COULD NOT BE DONE\n\n";
             try
             {
                 //opening the new connection
@@ -140,7 +140,7 @@ namespace WindowsFormsApp1
                 OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = conn;
 
-                //submitting the query for the user authentication later
+                //searching for the ad
                 command1.CommandText = "SELECT ad_title,category_id,price,description,status,discount_price FROM ads " +
                                       "WHERE ad_id='" + textboxAdId.Text + "'";
 
@@ -180,7 +180,7 @@ namespace WindowsFormsApp1
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = conn;
 
-                //inserting in database any information submitted by the user
+                //inserting in database any information submitted by the admin
                 command.CommandText = "UPDATE ads " +
                                            "SET ad_title=@ad_title,category_id=@category_id,price=@price," +
                                            "description=@description,status=@status,discount_price=@discount_price " +
@@ -268,7 +268,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void delete_Click(object sender, EventArgs e)
+        private void eraseButton_Click(object sender, EventArgs e)
         {
             int isNull = 0;
             int isNull0 = 0;

@@ -73,12 +73,12 @@ namespace WindowsFormsApp1
             this.Close();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void updateButton_Click(object sender, EventArgs e)
         {
             int isNull = 0; //used for the pop up message 
             int follow = 0; //used to check if the update will be done or not
             //total report, in case data inputed are not as expected
-            String report = "REGISTRATION IS NOT COMPLETE\n\n";
+            String report = "UPDATE COULD NOT BE DONE\n\n";
             try
             {
                 //opening the new connection
@@ -86,7 +86,7 @@ namespace WindowsFormsApp1
                 OleDbCommand command1 = new OleDbCommand();
                 command1.Connection = conn;
 
-                //submitting the query for the user authentication later
+                //searching for the user
                 command1.CommandText = "SELECT * FROM users " +
                                       "WHERE username='" + textboxUNAME.Text + "'";
 
@@ -136,7 +136,7 @@ namespace WindowsFormsApp1
                 //Int32.TryParse(textboxID.Text, out idINT); //do not touch, only for testing
                 //textboxLNAME.Text = null;
 
-                //inserting in database any information submitted by the user
+                //inserting in database any information submitted by the admin
                 command.CommandText = "UPDATE users " +
                                            "SET passwd=@passwd,first_name =@first_name,last_name=@last_name," +
                                            "email=@email,address=@address,attr=@attr,telephone=@telephone " +
@@ -257,7 +257,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void displayButton_Click(object sender, EventArgs e)
         {
             try
             {
@@ -332,7 +332,7 @@ namespace WindowsFormsApp1
         
         }
 
-        private void delete_Click(object sender, EventArgs e)
+        private void eraseButton_Click(object sender, EventArgs e)
         {
             int check = 0;
             int check0 = 0;
