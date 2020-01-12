@@ -109,6 +109,9 @@
             this.pROPERTIES16TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES16TableAdapter();
             this.pROPERTIES17TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES17TableAdapter();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.databaseLocal = new WindowsFormsApp1.DatabaseLocal();
+            this.display_AdsTableAdapter = new WindowsFormsApp1.DatabaseLocalTableAdapters.Display_AdsTableAdapter();
             this.main_panel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -148,6 +151,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES15BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES16BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseLocal)).BeginInit();
             this.SuspendLayout();
             // 
             // main_panel
@@ -801,6 +806,20 @@
             // 
             this.pROPERTIES17TableAdapter.ClearBeforeFill = true;
             // 
+            // bindingSource2
+            // 
+            this.bindingSource2.DataMember = "Display_Ads";
+            this.bindingSource2.DataSource = this.databaseLocal;
+            // 
+            // databaseLocal
+            // 
+            this.databaseLocal.DataSetName = "DatabaseLocal";
+            this.databaseLocal.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // display_AdsTableAdapter
+            // 
+            this.display_AdsTableAdapter.ClearBeforeFill = true;
+            // 
             // Main_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -856,6 +875,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES15BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pROPERTIES16BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.databaseLocal)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -941,5 +962,8 @@
         public System.Windows.Forms.Label onomaKatigorias;
         private System.Windows.Forms.Button logOutButton;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.BindingSource bindingSource2;
+        private DatabaseLocal databaseLocal;
+        private DatabaseLocalTableAdapters.Display_AdsTableAdapter display_AdsTableAdapter;
     }
 }

@@ -36,6 +36,8 @@ namespace WindowsFormsApp1
       
         private void Welcome_Page_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'databaseLocal1.Display_Ads' table. You can move, or remove it, as needed.
+            this.display_AdsTableAdapter.Fill(this.databaseLocal1.Display_Ads);
             // TODO: This line of code loads data into the 'databaseLocal1.ACTIVITY_USER' table. You can move, or remove it, as needed.
             this.aCTIVITY_USERTableAdapter.Fill(this.databaseLocal1.ACTIVITY_USER);
             // TODO: This line of code loads data into the 'databaseLocal1.SEARCHED_DATA' table. You can move, or remove it, as needed.
@@ -501,7 +503,7 @@ namespace WindowsFormsApp1
                     document.Add(new Field("AD_TITLE", row["AD_TITLE"].ToString(), Field.Store.YES, Field.Index.ANALYZED));
                     document.Add(new Field("DESCRIPTION", row["DESCRIPTION"].ToString(), Field.Store.YES, Field.Index.ANALYZED));
                     document.Add(new Field("PRICE", row["PRICE"].ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
-                    document.Add(new Field("AD_ID", row["AD_ID"].ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
+                    //document.Add(new Field("AD_ID", row["AD_ID"].ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
                     document.Add(new Field("INSERT_DATE", row["INSERT_DATE"].ToString(), Field.Store.YES, Field.Index.NOT_ANALYZED));
 
 
@@ -517,9 +519,9 @@ namespace WindowsFormsApp1
 
         DataTable search(string textSearch)
         {
-            var table = this.databaseLocal1.ADS.Clone();
+            var table = this.databaseLocal1.Display_Ads.Clone();
 
-            var Index = createIndex(this.databaseLocal1.ADS);
+            var Index = createIndex(this.databaseLocal1.Display_Ads);
 
             using (var reader = IndexReader.Open(Index, true))
             using (var searcher = new IndexSearcher(reader))
@@ -543,7 +545,7 @@ namespace WindowsFormsApp1
                         var doc = searcher.Doc(id);
 
                         var row = table.NewRow();
-                        row["AD_ID"] = doc.GetField("AD_ID").StringValue;
+                        //row["AD_ID"] = doc.GetField("AD_ID").StringValue;
                         row["AD_TITLE"] = doc.GetField("AD_TITLE").StringValue;
                         row["DESCRIPTION"] = doc.GetField("DESCRIPTION").StringValue;
                         row["PRICE"] = doc.GetField("PRICE").StringValue;

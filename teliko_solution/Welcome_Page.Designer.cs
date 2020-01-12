@@ -92,6 +92,8 @@
             this.sEARCHED_DATATableAdapter = new WindowsFormsApp1.DatabaseLocalTableAdapters.SEARCHED_DATATableAdapter();
             this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.aCTIVITY_USERTableAdapter = new WindowsFormsApp1.DatabaseLocalTableAdapters.ACTIVITY_USERTableAdapter();
+            this.bindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.display_AdsTableAdapter = new WindowsFormsApp1.DatabaseLocalTableAdapters.Display_AdsTableAdapter();
             this.main_panel.SuspendLayout();
             this.panel6.SuspendLayout();
             this.Bottom_panel.SuspendLayout();
@@ -117,6 +119,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.aDSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).BeginInit();
             this.SuspendLayout();
             // 
             // main_panel
@@ -589,6 +592,15 @@
             // 
             this.aCTIVITY_USERTableAdapter.ClearBeforeFill = true;
             // 
+            // bindingSource3
+            // 
+            this.bindingSource3.DataMember = "Display_Ads";
+            this.bindingSource3.DataSource = this.databaseLocal1;
+            // 
+            // display_AdsTableAdapter
+            // 
+            this.display_AdsTableAdapter.ClearBeforeFill = true;
+            // 
             // Welcome_Page
             // 
             resources.ApplyResources(this, "$this");
@@ -627,6 +639,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.aDSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -695,6 +708,8 @@
         private DatabaseLocalTableAdapters.SEARCHED_DATATableAdapter sEARCHED_DATATableAdapter;
         private System.Windows.Forms.BindingSource bindingSource2;
         private DatabaseLocalTableAdapters.ACTIVITY_USERTableAdapter aCTIVITY_USERTableAdapter;
+        private System.Windows.Forms.BindingSource bindingSource3;
+        private DatabaseLocalTableAdapters.Display_AdsTableAdapter display_AdsTableAdapter;
     }
 }
 

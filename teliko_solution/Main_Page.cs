@@ -348,7 +348,7 @@ namespace WindowsFormsApp1
             int category_id;
             if (Welcome_Page.voithitikosArithmos.Equals(20))
             {
-                Console.WriteLine("EIMAIIIIIIIIIIIIIIIIIIIIIIII MESAAAAAAAAAAAAA");
+                
                 filtro1.Visible = false;
             }
             else
@@ -370,7 +370,7 @@ namespace WindowsFormsApp1
                 using (OleDbConnection con = new OleDbConnection(connString))
                 {
                     con.Open();
-                    string query = "SELECT AD_TITLE,INSERT_DATE,FINISH_DATE,MODIFY_DATE,PRICE,DESCRIPTION,STATUS FROM ADS " +
+                    string query = "SELECT AD_TITLE,INSERT_DATE,PRICE,DESCRIPTION FROM ADS " +
                         " WHERE CATEGORY_ID = @CATEGORY_ID ";
                     using (OleDbCommand cmd = new OleDbCommand(query, con))
                     {
@@ -437,7 +437,7 @@ namespace WindowsFormsApp1
             using (OleDbConnection con = new OleDbConnection(connString))
             {
                 con.Open();
-                string query = "SELECT AD_TITLE,INSERT_DATE,FINISH_DATE,MODIFY_DATE,PRICE,DESCRIPTION,STATUS FROM ADS INNER JOIN PROPERTIES_VALUE ON ADS.AD_ID = PROPERTIES_VALUE.AD_ID" +
+                string query = "SELECT AD_TITLE,INSERT_DATE,PRICE,DESCRIPTION FROM ADS INNER JOIN PROPERTIES_VALUE ON ADS.AD_ID = PROPERTIES_VALUE.AD_ID" +
                     " WHERE PROPERTIES1 = @PROPERTIES1 AND PROPERTIES2 = @PROPERTIES2 AND PROPERTIES3 = @PROPERTIES3 ";
                 using (OleDbCommand cmd = new OleDbCommand(query, con))
                 {
@@ -458,6 +458,8 @@ namespace WindowsFormsApp1
         int mov;
         private void Main_Page_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'databaseLocal.Display_Ads' table. You can move, or remove it, as needed.
+            this.display_AdsTableAdapter.Fill(this.databaseLocal.Display_Ads);
             // TODO: This line of code loads data into the 'dataSet14.PROPERTIES17' table. You can move, or remove it, as needed.
             this.pROPERTIES17TableAdapter.Fill(this.dataSet14.PROPERTIES17);
             // TODO: This line of code loads data into the 'dataSet1.PROPERTIES16' table. You can move, or remove it, as needed.
