@@ -29,8 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             this.aDSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.database1DataSet = new WP1_UsageData.Database1DataSet();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -55,6 +59,10 @@
             this.iPADDRESSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aCTIVITYUSERBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aCTIVITY_USERTableAdapter = new WP1_UsageData.Database1DataSetTableAdapters.ACTIVITY_USERTableAdapter();
+            this.choose_graph = new System.Windows.Forms.ComboBox();
+            this.activity_Graphs = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.load_GraphsBtn = new System.Windows.Forms.Button();
+            this.activity_Graphs2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             ((System.ComponentModel.ISupportInitialize)(this.aDSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.database1DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -68,6 +76,8 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aCTIVITYUSERBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.activity_Graphs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.activity_Graphs2)).BeginInit();
             this.SuspendLayout();
             // 
             // aDSBindingSource
@@ -161,7 +171,7 @@
             this.tabControl1.Location = new System.Drawing.Point(-2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(802, 452);
+            this.tabControl1.Size = new System.Drawing.Size(802, 506);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
@@ -182,10 +192,10 @@
             this.chart1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            chartArea10.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chart1.Legends.Add(legend10);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(274, 6);
             this.chart1.Name = "chart1";
             this.chart1.Size = new System.Drawing.Size(514, 327);
@@ -195,11 +205,15 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.activity_Graphs2);
+            this.tabPage2.Controls.Add(this.load_GraphsBtn);
+            this.tabPage2.Controls.Add(this.activity_Graphs);
+            this.tabPage2.Controls.Add(this.choose_graph);
             this.tabPage2.Controls.Add(this.dataGridView2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(794, 426);
+            this.tabPage2.Size = new System.Drawing.Size(794, 480);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "User Activity Tracker";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -220,7 +234,7 @@
             this.dataGridView2.DataSource = this.aCTIVITYUSERBindingSource;
             this.dataGridView2.Location = new System.Drawing.Point(-4, 6);
             this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(569, 157);
+            this.dataGridView2.Size = new System.Drawing.Size(792, 157);
             this.dataGridView2.TabIndex = 0;
             // 
             // iDDataGridViewTextBoxColumn
@@ -262,12 +276,64 @@
             // 
             this.aCTIVITY_USERTableAdapter.ClearBeforeFill = true;
             // 
+            // choose_graph
+            // 
+            this.choose_graph.FormattingEnabled = true;
+            this.choose_graph.Items.AddRange(new object[] {
+            "NumberofActions",
+            "UsersLogedByDate",
+            "DonationPressed"});
+            this.choose_graph.Location = new System.Drawing.Point(3, 185);
+            this.choose_graph.Name = "choose_graph";
+            this.choose_graph.Size = new System.Drawing.Size(121, 21);
+            this.choose_graph.TabIndex = 1;
+            this.choose_graph.SelectedIndexChanged += new System.EventHandler(this.choose_graph_SelectedIndexChanged);
+            // 
+            // activity_Graphs
+            // 
+            this.activity_Graphs.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            chartArea3.Name = "ChartArea1";
+            this.activity_Graphs.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.activity_Graphs.Legends.Add(legend3);
+            this.activity_Graphs.Location = new System.Drawing.Point(454, 169);
+            this.activity_Graphs.Name = "activity_Graphs";
+            this.activity_Graphs.Size = new System.Drawing.Size(300, 300);
+            this.activity_Graphs.TabIndex = 2;
+            this.activity_Graphs.Text = "chart2";
+            // 
+            // load_GraphsBtn
+            // 
+            this.load_GraphsBtn.Location = new System.Drawing.Point(11, 228);
+            this.load_GraphsBtn.Name = "load_GraphsBtn";
+            this.load_GraphsBtn.Size = new System.Drawing.Size(75, 23);
+            this.load_GraphsBtn.TabIndex = 3;
+            this.load_GraphsBtn.Text = "Load Graph";
+            this.load_GraphsBtn.UseVisualStyleBackColor = true;
+            this.load_GraphsBtn.Click += new System.EventHandler(this.load_GraphsBtn_Click);
+            // 
+            // activity_Graphs2
+            // 
+            this.activity_Graphs2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            chartArea2.Name = "ChartArea1";
+            this.activity_Graphs2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.activity_Graphs2.Legends.Add(legend2);
+            this.activity_Graphs2.Location = new System.Drawing.Point(148, 168);
+            this.activity_Graphs2.Name = "activity_Graphs2";
+            this.activity_Graphs2.Size = new System.Drawing.Size(300, 300);
+            this.activity_Graphs2.TabIndex = 4;
+            this.activity_Graphs2.Text = "chart2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 504);
             this.Controls.Add(this.tabControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -284,6 +350,8 @@
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aCTIVITYUSERBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.activity_Graphs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.activity_Graphs2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -313,6 +381,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tIMESTAMPDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn aCTIONPERFORMEDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn iPADDRESSDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button load_GraphsBtn;
+        private System.Windows.Forms.DataVisualization.Charting.Chart activity_Graphs;
+        private System.Windows.Forms.ComboBox choose_graph;
+        private System.Windows.Forms.DataVisualization.Charting.Chart activity_Graphs2;
     }
 }
 

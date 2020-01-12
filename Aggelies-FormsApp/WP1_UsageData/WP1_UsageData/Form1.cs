@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 using System.Windows.Forms.DataVisualization.Charting;
 
@@ -54,6 +55,45 @@ namespace WP1_UsageData
         }
 
         private void chart1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void load_GraphsBtn_Click(object sender, EventArgs e)
+        {
+            String valueCB = choose_graph.Text;
+            if (valueCB.Equals("NumberofActions"))
+            {
+
+
+                //activity_Graphs2.Visible = false;
+                Console.WriteLine ( "1");
+                activity_Graphs.Series.Add("NumberofActions");
+                activity_Graphs.Series["NumberofActions"].XValueMember = "USERNAME";
+                activity_Graphs.Series["NumberofActions"].YValueMembers = "NumberofActions";
+
+                activity_Graphs.DataSource = aCTIVITY_USERTableAdapter.GetDataByNumberofActions();
+                activity_Graphs.DataBind();
+                
+
+            }
+            else if(valueCB.Equals("DonationPressed"))
+            {
+
+               // activity_Graphs.Visible = false;
+                
+                activity_Graphs2.Series.Dispose();
+                activity_Graphs2.Series.Add("DonationPressed");
+                activity_Graphs2.Series["DonationPressed"].XValueMember = "USERNAME";
+                activity_Graphs2.Series["DonationPressed"].YValueMembers = "Counter";
+
+                activity_Graphs2.DataSource = aCTIVITY_USERTableAdapter.GetDataByDonationPressed();
+                activity_Graphs2.DataBind();
+            
+            }
+        }
+
+        private void choose_graph_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
