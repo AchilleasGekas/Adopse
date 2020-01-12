@@ -47,5 +47,12 @@ namespace WindowsFormsApp1
             movX = e.X;
             movY = e.Y;
         }
+
+        private void Prosfores_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'databaseLocal.Discount_Price' table. You can move, or remove it, as needed.
+            this.discount_PriceTableAdapter.Fill(this.databaseLocal.Discount_Price);
+
+        }
     }
 }
