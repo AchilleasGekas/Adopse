@@ -48,7 +48,7 @@
             this.addressTxtBox_reg = new System.Windows.Forms.TextBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.lnameTextBox_reg = new System.Windows.Forms.TextBox();
+            this.lnameTxtBox_reg = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.fnameTxtBox_reg = new System.Windows.Forms.TextBox();
@@ -153,6 +153,7 @@
             this.registerBtn_reg.TabIndex = 10;
             this.registerBtn_reg.Text = "Εγγραφή";
             this.registerBtn_reg.UseVisualStyleBackColor = false;
+            this.registerBtn_reg.Click += new System.EventHandler(this.registerBtn_reg_Click);
             // 
             // pictureBox5
             // 
@@ -268,20 +269,20 @@
             this.panel7.Size = new System.Drawing.Size(250, 1);
             this.panel7.TabIndex = 20;
             // 
-            // lnameTextBox_reg
+            // lnameTxtBox_reg
             // 
-            this.lnameTextBox_reg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
-            this.lnameTextBox_reg.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lnameTextBox_reg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnameTextBox_reg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
-            this.lnameTextBox_reg.HideSelection = false;
-            this.lnameTextBox_reg.Location = new System.Drawing.Point(66, 227);
-            this.lnameTextBox_reg.Name = "lnameTextBox_reg";
-            this.lnameTextBox_reg.Size = new System.Drawing.Size(212, 20);
-            this.lnameTextBox_reg.TabIndex = 19;
-            this.lnameTextBox_reg.TabStop = false;
-            this.lnameTextBox_reg.Text = "Επώνυμο";
-            this.lnameTextBox_reg.Click += new System.EventHandler(this.lnameTextBox_reg_Click);
+            this.lnameTxtBox_reg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
+            this.lnameTxtBox_reg.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lnameTxtBox_reg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnameTxtBox_reg.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.lnameTxtBox_reg.HideSelection = false;
+            this.lnameTxtBox_reg.Location = new System.Drawing.Point(66, 227);
+            this.lnameTxtBox_reg.Name = "lnameTxtBox_reg";
+            this.lnameTxtBox_reg.Size = new System.Drawing.Size(212, 20);
+            this.lnameTxtBox_reg.TabIndex = 19;
+            this.lnameTxtBox_reg.TabStop = false;
+            this.lnameTxtBox_reg.Text = "Επώνυμο";
+            this.lnameTxtBox_reg.Click += new System.EventHandler(this.lnameTextBox_reg_Click);
             // 
             // panel6
             // 
@@ -331,7 +332,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
             this.ClientSize = new System.Drawing.Size(320, 689);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.lnameTextBox_reg);
+            this.Controls.Add(this.lnameTxtBox_reg);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.fnameTxtBox_reg);
@@ -394,7 +395,7 @@
         private System.Windows.Forms.TextBox addressTxtBox_reg;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox lnameTextBox_reg;
+        private System.Windows.Forms.TextBox lnameTxtBox_reg;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.TextBox fnameTxtBox_reg;

@@ -146,6 +146,7 @@
             this.loginBtn.TabIndex = 20;
             this.loginBtn.Text = "Σύνδεση";
             this.loginBtn.UseVisualStyleBackColor = false;
+            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
             // registerBtn
             // 

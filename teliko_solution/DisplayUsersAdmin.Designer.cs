@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DisplayUsersAdmin));
-            this.delete = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.eraseButton = new System.Windows.Forms.Button();
+            this.updateButton = new System.Windows.Forms.Button();
+            this.displayButton = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -53,56 +53,68 @@
             this.textboxLNAME = new System.Windows.Forms.TextBox();
             this.id_label = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.idLabel = new System.Windows.Forms.Label();
+            this.fnameLabel = new System.Windows.Forms.Label();
+            this.lnameLabel = new System.Windows.Forms.Label();
+            this.usernameLabel = new System.Windows.Forms.Label();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.emailLabel = new System.Windows.Forms.Label();
+            this.addressLabel = new System.Windows.Forms.Label();
+            this.attributeLabel = new System.Windows.Forms.Label();
+            this.phoneLabel = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // delete
+            // eraseButton
             // 
-            this.delete.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
-            this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.delete.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.delete.ForeColor = System.Drawing.Color.White;
-            this.delete.Location = new System.Drawing.Point(640, 121);
-            this.delete.Margin = new System.Windows.Forms.Padding(0);
-            this.delete.Name = "delete";
-            this.delete.Size = new System.Drawing.Size(123, 32);
-            this.delete.TabIndex = 88;
-            this.delete.Text = "Erase";
-            this.delete.UseVisualStyleBackColor = false;
+            this.eraseButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.eraseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.eraseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eraseButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eraseButton.ForeColor = System.Drawing.Color.White;
+            this.eraseButton.Location = new System.Drawing.Point(640, 121);
+            this.eraseButton.Margin = new System.Windows.Forms.Padding(0);
+            this.eraseButton.Name = "eraseButton";
+            this.eraseButton.Size = new System.Drawing.Size(123, 32);
+            this.eraseButton.TabIndex = 88;
+            this.eraseButton.Text = "Erase";
+            this.eraseButton.UseVisualStyleBackColor = false;
+            this.eraseButton.Click += new System.EventHandler(this.eraseButton_Click);
             // 
-            // button2
+            // updateButton
             // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(640, 43);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(123, 32);
-            this.button2.TabIndex = 87;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.updateButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.updateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.updateButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.updateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updateButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateButton.ForeColor = System.Drawing.Color.White;
+            this.updateButton.Location = new System.Drawing.Point(640, 43);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(0);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(123, 32);
+            this.updateButton.TabIndex = 87;
+            this.updateButton.Text = "Update";
+            this.updateButton.UseVisualStyleBackColor = false;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
-            // button1
+            // displayButton
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(640, 82);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 32);
-            this.button1.TabIndex = 86;
-            this.button1.Text = "Display";
-            this.button1.UseVisualStyleBackColor = false;
+            this.displayButton.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.displayButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.displayButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.displayButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.displayButton.ForeColor = System.Drawing.Color.White;
+            this.displayButton.Location = new System.Drawing.Point(640, 82);
+            this.displayButton.Margin = new System.Windows.Forms.Padding(0);
+            this.displayButton.Name = "displayButton";
+            this.displayButton.Size = new System.Drawing.Size(123, 32);
+            this.displayButton.TabIndex = 86;
+            this.displayButton.Text = "Display";
+            this.displayButton.UseVisualStyleBackColor = false;
+            this.displayButton.Click += new System.EventHandler(this.displayButton_Click);
             // 
             // panel5
             // 
@@ -307,6 +319,10 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(224)))));
+            this.panel1.Controls.Add(this.passwordLabel);
+            this.panel1.Controls.Add(this.usernameLabel);
+            this.panel1.Controls.Add(this.lnameLabel);
+            this.panel1.Controls.Add(this.fnameLabel);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.textboxLNAME);
@@ -320,11 +336,88 @@
             this.panel1.Size = new System.Drawing.Size(269, 331);
             this.panel1.TabIndex = 109;
             // 
+            // idLabel
+            // 
+            this.idLabel.AutoSize = true;
+            this.idLabel.Location = new System.Drawing.Point(16, 82);
+            this.idLabel.Name = "idLabel";
+            this.idLabel.Size = new System.Drawing.Size(0, 13);
+            this.idLabel.TabIndex = 110;
+            // 
+            // fnameLabel
+            // 
+            this.fnameLabel.AutoSize = true;
+            this.fnameLabel.Location = new System.Drawing.Point(138, 15);
+            this.fnameLabel.Name = "fnameLabel";
+            this.fnameLabel.Size = new System.Drawing.Size(0, 13);
+            this.fnameLabel.TabIndex = 108;
+            // 
+            // lnameLabel
+            // 
+            this.lnameLabel.AutoSize = true;
+            this.lnameLabel.Location = new System.Drawing.Point(141, 89);
+            this.lnameLabel.Name = "lnameLabel";
+            this.lnameLabel.Size = new System.Drawing.Size(0, 13);
+            this.lnameLabel.TabIndex = 109;
+            // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Location = new System.Drawing.Point(138, 172);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(0, 13);
+            this.usernameLabel.TabIndex = 110;
+            // 
+            // passwordLabel
+            // 
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.Location = new System.Drawing.Point(138, 253);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(0, 13);
+            this.passwordLabel.TabIndex = 111;
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.Location = new System.Drawing.Point(514, 43);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(0, 13);
+            this.emailLabel.TabIndex = 112;
+            // 
+            // addressLabel
+            // 
+            this.addressLabel.AutoSize = true;
+            this.addressLabel.Location = new System.Drawing.Point(514, 125);
+            this.addressLabel.Name = "addressLabel";
+            this.addressLabel.Size = new System.Drawing.Size(0, 13);
+            this.addressLabel.TabIndex = 113;
+            // 
+            // attributeLabel
+            // 
+            this.attributeLabel.AutoSize = true;
+            this.attributeLabel.Location = new System.Drawing.Point(514, 204);
+            this.attributeLabel.Name = "attributeLabel";
+            this.attributeLabel.Size = new System.Drawing.Size(0, 13);
+            this.attributeLabel.TabIndex = 114;
+            // 
+            // phoneLabel
+            // 
+            this.phoneLabel.AutoSize = true;
+            this.phoneLabel.Location = new System.Drawing.Point(514, 286);
+            this.phoneLabel.Name = "phoneLabel";
+            this.phoneLabel.Size = new System.Drawing.Size(0, 13);
+            this.phoneLabel.TabIndex = 115;
+            // 
             // DisplayUsersAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(772, 450);
+            this.Controls.Add(this.phoneLabel);
+            this.Controls.Add(this.attributeLabel);
+            this.Controls.Add(this.addressLabel);
+            this.Controls.Add(this.emailLabel);
+            this.Controls.Add(this.idLabel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.id_label);
             this.Controls.Add(this.textboxEMAIL);
@@ -337,9 +430,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.delete);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.eraseButton);
+            this.Controls.Add(this.updateButton);
+            this.Controls.Add(this.displayButton);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DisplayUsersAdmin";
@@ -355,9 +448,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button delete;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button eraseButton;
+        private System.Windows.Forms.Button updateButton;
+        private System.Windows.Forms.Button displayButton;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox close;
         private System.Windows.Forms.Label label1;
@@ -379,5 +472,14 @@
         private System.Windows.Forms.TextBox textboxLNAME;
         private System.Windows.Forms.Label id_label;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label fnameLabel;
+        private System.Windows.Forms.Label idLabel;
+        private System.Windows.Forms.Label passwordLabel;
+        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.Label lnameLabel;
+        private System.Windows.Forms.Label emailLabel;
+        private System.Windows.Forms.Label addressLabel;
+        private System.Windows.Forms.Label attributeLabel;
+        private System.Windows.Forms.Label phoneLabel;
     }
 }

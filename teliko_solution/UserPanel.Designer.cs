@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserPanel));
-            this.button1 = new System.Windows.Forms.Button();
+            this.updateButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.emailTextBox = new System.Windows.Forms.TextBox();
             this.usernameTextBox = new System.Windows.Forms.TextBox();
@@ -50,6 +50,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.eraseButton = new System.Windows.Forms.Button();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -57,19 +58,20 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // updateButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(270, 438);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(176, 43);
-            this.button1.TabIndex = 33;
-            this.button1.Text = "Update";
-            this.button1.UseVisualStyleBackColor = false;
+            this.updateButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.updateButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.updateButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.updateButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.updateButton.Location = new System.Drawing.Point(270, 438);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(4);
+            this.updateButton.Name = "updateButton";
+            this.updateButton.Size = new System.Drawing.Size(176, 43);
+            this.updateButton.TabIndex = 33;
+            this.updateButton.Text = "Update";
+            this.updateButton.UseVisualStyleBackColor = false;
+            this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // label8
             // 
@@ -99,6 +101,7 @@
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.Size = new System.Drawing.Size(132, 22);
             this.usernameTextBox.TabIndex = 30;
+            this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
             // label2
             // 
@@ -280,14 +283,30 @@
             this.panel1.Size = new System.Drawing.Size(200, 179);
             this.panel1.TabIndex = 91;
             // 
+            // eraseButton
+            // 
+            this.eraseButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.eraseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eraseButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.eraseButton.ForeColor = System.Drawing.SystemColors.Control;
+            this.eraseButton.Location = new System.Drawing.Point(40, 438);
+            this.eraseButton.Margin = new System.Windows.Forms.Padding(4);
+            this.eraseButton.Name = "eraseButton";
+            this.eraseButton.Size = new System.Drawing.Size(176, 43);
+            this.eraseButton.TabIndex = 92;
+            this.eraseButton.Text = "Erase Your Account";
+            this.eraseButton.UseVisualStyleBackColor = false;
+            this.eraseButton.Click += new System.EventHandler(this.eraseButton_Click);
+            // 
             // UserPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(530, 505);
+            this.Controls.Add(this.eraseButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.updateButton);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.usernameTextBox);
@@ -305,6 +324,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UserPanel";
             this.Text = "UserPanel";
+            this.Load += new System.EventHandler(this.UserPanel_Load);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -318,7 +338,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox emailTextBox;
         private System.Windows.Forms.TextBox usernameTextBox;
@@ -339,5 +359,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button eraseButton;
     }
 }

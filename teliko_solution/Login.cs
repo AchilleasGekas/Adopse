@@ -7,14 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.OleDb;
 
 namespace WindowsFormsApp1
 {
     public partial class Login : Form
     {
+
+        //retrieve the username for the whole application from HERE
+        //this is the current "session's" username
+        public static String uname = "";
+        //establishing a new connection
+        OleDbConnection conn = new OleDbConnection();
+
         public Login()
         {
             InitializeComponent();
+            //initialization must be done here
+            //Do not modify the String
+            conn.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;" +
+                   @"Data source=C:\teliko_solution\Database1.mdb";
         }
 
 
@@ -35,7 +47,7 @@ namespace WindowsFormsApp1
             panel1.BackColor = Color.White;
             usernameTxtBox.ForeColor = Color.FromArgb(90, 82, 255);
 
-            
+
         }
 
         private void usernameTxtBox_Click(object sender, EventArgs e)
@@ -47,62 +59,110 @@ namespace WindowsFormsApp1
             panel2.BackColor = Color.White;
             passwdTxtBox.ForeColor = Color.FromArgb(90, 82, 255);
 
-            
+
         }
 
         private void registerBtn_Click(object sender, EventArgs e)
         {
-            
+            //initiating the Register Form
+            Register reg = new Register();
+            reg.ShowDialog();
 
-            timer1.Start();
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            r.Left += 10;
-            if (r.Left>=830)
-            {
-                timer1.Stop();
-                this.TopMost = false;
-                r.TopMost = true;
-                timer2.Start();
-            }
+
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            r.Left -= 230;
-            if (r.Left >= 525)
-            {
-                
-                timer2.Stop();
-            }
+
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
-            if (Program.change_lang==false)
-            {
-                usernameTxtBox.Text = "Username";
-                passwdTxtBox.Text = "Password";
-                loginBtn.Text = "Log in";
-                registerBtn.Text = "Register";
-                label2.Text = "New User?";
-            }
-            else
-            {
-                usernameTxtBox.Text = "Όνομα χρήστη";
-                passwdTxtBox.Text = "Κωδικός";
-                loginBtn.Text = "Σύνδεση";
-                registerBtn.Text = "Εγγραφή";
-                label2.Text = "Νέος χρήστης;";
-            }
-            r.Show();
+            //let blank to avoid confusion
         }
 
         private void usernameTxtBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            //usernameTxtBox.Clear();
+            panel1.BackColor = Color.FromArgb(90, 82, 255);
+            usernameTxtBox.ForeColor = Color.FromArgb(90, 82, 255);
+
+            panel2.BackColor = Color.White;
+            passwdTxtBox.ForeColor = Color.FromArgb(90, 82, 255);
+
+
+            try
+            {
+                string attr = "";
+                //opening the new connection
+                conn.Open();
+                OleDbCommand command = new OleDbCommand();
+                command.Connection = conn;
+
+                //submitting the query for the user authentication later
+                command.CommandText = "SELECT attr FROM users WHERE username='"
+                                      + usernameTxtBox.Text + "' and passwd='" + passwdTxtBox.Text + "'";
+
+                OleDbDataReader reader = command.ExecuteReader();
+                int count = 0;
+                while (reader.Read())
+                {
+                    count = 1;
+                    attr = reader.GetString(0); //retrieving the attribute of the user/admin
+
+                }
+
+                //currently visualizing the authentication
+                if (count == 1)
+                {
+                    if (attr == "Admin")
+                    {
+                        uname = usernameTxtBox.Text;
+                        MessageBox.Show("Admin authentication complete");
+                        conn.Close();
+                        this.Close();
+                    }
+                    else
+                    {
+                        uname = usernameTxtBox.Text;
+                        MessageBox.Show("User authentication complete");
+                        conn.Close();
+                        this.Close();
+                    }
+
+
+                }
+                else if (count == 0)
+                {
+                    MessageBox.Show("Authentication Failed.");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                //message displayed in case there is an error detected
+                MessageBox.Show("Failed to connect to data source");
+            }
+            finally
+            {
+                //closing up
+                conn.Close();
+            }
+
+
+
+            
+            //Any redirection to the next form can be placed here
         }
     }
 }

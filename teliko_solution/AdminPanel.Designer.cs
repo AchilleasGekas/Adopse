@@ -34,8 +34,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.manageAdsButton = new System.Windows.Forms.Button();
+            this.manageUsersButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.close = new System.Windows.Forms.PictureBox();
@@ -99,34 +99,35 @@
             this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 11;
             // 
-            // button2
+            // manageAdsButton
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
-            this.button2.Location = new System.Drawing.Point(31, 263);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(138, 36);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Manage Ads";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.manageAdsButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.manageAdsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manageAdsButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageAdsButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
+            this.manageAdsButton.Location = new System.Drawing.Point(31, 263);
+            this.manageAdsButton.Margin = new System.Windows.Forms.Padding(4);
+            this.manageAdsButton.Name = "manageAdsButton";
+            this.manageAdsButton.Size = new System.Drawing.Size(138, 36);
+            this.manageAdsButton.TabIndex = 10;
+            this.manageAdsButton.Text = "Manage Ads";
+            this.manageAdsButton.UseVisualStyleBackColor = false;
+            this.manageAdsButton.Click += new System.EventHandler(this.manageAdsButton_Click);
             // 
-            // button1
+            // manageUsersButton
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
-            this.button1.Location = new System.Drawing.Point(31, 219);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(138, 36);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Manage Users";
-            this.button1.UseVisualStyleBackColor = false;
+            this.manageUsersButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.manageUsersButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.manageUsersButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.manageUsersButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
+            this.manageUsersButton.Location = new System.Drawing.Point(31, 219);
+            this.manageUsersButton.Margin = new System.Windows.Forms.Padding(4);
+            this.manageUsersButton.Name = "manageUsersButton";
+            this.manageUsersButton.Size = new System.Drawing.Size(138, 36);
+            this.manageUsersButton.TabIndex = 9;
+            this.manageUsersButton.Text = "Manage Users";
+            this.manageUsersButton.UseVisualStyleBackColor = false;
+            this.manageUsersButton.Click += new System.EventHandler(this.manageUsersButton_Click);
             // 
             // label1
             // 
@@ -171,8 +172,8 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.manageUsersButton);
+            this.panel1.Controls.Add(this.manageAdsButton);
             this.panel1.Location = new System.Drawing.Point(0, 32);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(221, 336);
@@ -221,8 +222,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button manageAdsButton;
+        private System.Windows.Forms.Button manageUsersButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.PictureBox close;
