@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome_Page));
             this.main_panel = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.Search_button = new System.Windows.Forms.Button();
             this.searchboxTxtBox = new System.Windows.Forms.TextBox();
@@ -126,20 +125,12 @@
             // 
             resources.ApplyResources(this.main_panel, "main_panel");
             this.main_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
-            this.main_panel.Controls.Add(this.button1);
             this.main_panel.Controls.Add(this.panel6);
             this.main_panel.Controls.Add(this.Bottom_panel);
             this.main_panel.Controls.Add(this.panel_login_register);
             this.main_panel.Controls.Add(this.logo);
             this.main_panel.Controls.Add(this.panel4);
             this.main_panel.Name = "main_panel";
-            // 
-            // button1
-            // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel6
             // 
@@ -703,7 +694,6 @@
         private DatabaseLocal databaseLocal1;
         private System.Windows.Forms.BindingSource aDSBindingSource;
         private DatabaseLocalTableAdapters.ADSTableAdapter aDSTableAdapter;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.BindingSource bindingSource1;
         private DatabaseLocalTableAdapters.SEARCHED_DATATableAdapter sEARCHED_DATATableAdapter;
         private System.Windows.Forms.BindingSource bindingSource2;
