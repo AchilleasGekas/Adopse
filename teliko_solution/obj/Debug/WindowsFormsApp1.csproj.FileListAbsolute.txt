@@ -273,3 +273,9 @@ C:\Users\Akuma\Desktop\final\teliko_solution\bin\Debug\Lucene.Net.dll
 C:\Users\Akuma\Desktop\final\teliko_solution\bin\Debug\Lucene.Net.pdb
 C:\Users\Akuma\Desktop\final\teliko_solution\bin\Debug\Lucene.Net.xml
 C:\Users\Akuma\Desktop\final\teliko_solution\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\bin\Debug\el\WindowsFormsApp1.resources.dll
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\bin\Debug\en\WindowsFormsApp1.resources.dll
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\obj\Debug\WindowsFormsApp1.Welcome_Page.el.resources
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\obj\Debug\WindowsFormsApp1.Welcome_Page.en.resources
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\obj\Debug\el\WindowsFormsApp1.resources.dll
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\obj\Debug\en\WindowsFormsApp1.resources.dll

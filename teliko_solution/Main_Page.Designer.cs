@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Page));
             this.main_panel = new System.Windows.Forms.Panel();
+            this.logOutButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.reportBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -108,7 +109,6 @@
             this.pROPERTIES16TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES16TableAdapter();
             this.pROPERTIES17TableAdapter = new WindowsFormsApp1.DataSet1TableAdapters.PROPERTIES17TableAdapter();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.logOutButton = new System.Windows.Forms.Button();
             this.main_panel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -170,6 +170,16 @@
             this.main_panel.Size = new System.Drawing.Size(1209, 498);
             this.main_panel.TabIndex = 0;
             this.main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.main_panel_Paint);
+            // 
+            // logOutButton
+            // 
+            this.logOutButton.Location = new System.Drawing.Point(778, 33);
+            this.logOutButton.Name = "logOutButton";
+            this.logOutButton.Size = new System.Drawing.Size(75, 23);
+            this.logOutButton.TabIndex = 22;
+            this.logOutButton.Text = "Log Out";
+            this.logOutButton.UseVisualStyleBackColor = true;
+            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
             // panel3
             // 
@@ -264,6 +274,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(762, 150);
             this.dataGridView1.TabIndex = 14;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // panel_login_register
             // 
@@ -772,16 +783,6 @@
             // pROPERTIES17TableAdapter
             // 
             this.pROPERTIES17TableAdapter.ClearBeforeFill = true;
-            // 
-            // logOutButton
-            // 
-            this.logOutButton.Location = new System.Drawing.Point(778, 33);
-            this.logOutButton.Name = "logOutButton";
-            this.logOutButton.Size = new System.Drawing.Size(75, 23);
-            this.logOutButton.TabIndex = 22;
-            this.logOutButton.Text = "Log Out";
-            this.logOutButton.UseVisualStyleBackColor = true;
-            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
             // Main_Page
             // 

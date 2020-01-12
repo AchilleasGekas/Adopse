@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using System.Diagnostics;
 
 namespace WindowsFormsApp1
 {
@@ -661,6 +662,11 @@ namespace WindowsFormsApp1
             Login l = new Login();
 
             l.ShowDialog();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)

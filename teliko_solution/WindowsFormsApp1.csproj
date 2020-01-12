@@ -165,12 +165,6 @@
     <Compile Include="UserPanel.Designer.cs">
       <DependentUpon>UserPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Welcome_Page.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Welcome_Page.Designer.cs">
-      <DependentUpon>Welcome_Page.cs</DependentUpon>
-    </Compile>
     <Compile Include="Main_Page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +173,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Welcome_Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome_Page.Designer.cs">
+      <DependentUpon>Welcome_Page.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
@@ -232,9 +232,6 @@
     <EmbeddedResource Include="UserPanel.resx">
       <DependentUpon>UserPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Welcome_Page.resx">
-      <DependentUpon>Welcome_Page.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\en.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>en.Designer.cs</LastGenOutput>
@@ -245,6 +242,15 @@
       <DependentUpon>en.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Welcome_Page.el.resx">
+      <DependentUpon>Welcome_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome_Page.en.resx">
+      <DependentUpon>Welcome_Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome_Page.resx">
+      <DependentUpon>Welcome_Page.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Database1DataSet.xsc">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </None>
