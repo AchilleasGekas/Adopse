@@ -1,0 +1,9 @@
+C:\Users\ekal6\source\repos\WP7_ErrorHandling\WP7_ErrorHandling\bin\Debug\WP7_ErrorHandling.exe.config
+C:\Users\ekal6\source\repos\WP7_ErrorHandling\WP7_ErrorHandling\bin\Debug\WP7_ErrorHandling.exe
+C:\Users\ekal6\source\repos\WP7_ErrorHandling\WP7_ErrorHandling\bin\Debug\WP7_ErrorHandling.pdb
+C:\Users\ekal6\source\repos\WP7_ErrorHandling\WP7_ErrorHandling\obj\Debug\WP7_ErrorHandling.csprojAssemblyReference.cache
+C:\Users\ekal6\source\repos\WP7_ErrorHandling\WP7_ErrorHandling\obj\Debug\WP7_ErrorHandling.Properties.Resources.resources
+C:\Users\ekal6\source\repos\WP7_ErrorHandling\WP7_ErrorHandling\obj\Debug\WP7_ErrorHandling.csproj.GenerateResource.cache
+C:\Users\ekal6\source\repos\WP7_ErrorHandling\WP7_ErrorHandling\obj\Debug\WP7_ErrorHandling.exe
+C:\Users\ekal6\source\repos\WP7_ErrorHandling\WP7_ErrorHandling\obj\Debug\WP7_ErrorHandling.pdb
+C:\Users\ekal6\source\repos\WP7_ErrorHandling\WP7_ErrorHandling\obj\Debug\WP7_ErrorHandling.Form1.resources
