@@ -131,9 +131,6 @@
   <data name="Search_button.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 10.2pt</value>
   </data>
-  <data name="Search_button.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="Search_button.Location" type="System.Drawing.Point, System.Drawing">
     <value>471, 0</value>
   </data>
@@ -193,7 +190,7 @@
     <value>393, 211</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>642, 38</value>
+    <value>638, 38</value>
   </data>
   <data name="panel6.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -213,54 +210,6 @@
   <data name="Bottom_panel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
-  <data name="cATEGORYTITLEDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>CATEGORY_TITLE</value>
-  </data>
-  <data name="cATEGORYTITLEDataGridViewTextBoxColumn2.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="cATEGORYTITLEDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="cATEGORYIDDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>CATEGORY_ID</value>
-  </data>
-  <data name="cATEGORYIDDataGridViewTextBoxColumn1.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="cATEGORYIDDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <metadata name="aDCATEGORY2BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>229, 56</value>
-  </metadata>
-  <metadata name="database1DataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="dataGridView3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 3</value>
-  </data>
-  <data name="dataGridView3.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="dataGridView3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 150</value>
-  </data>
-  <data name="dataGridView3.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;dataGridView3.Name" xml:space="preserve">
-    <value>dataGridView3</value>
-  </data>
-  <data name="&gt;&gt;dataGridView3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridView3.Parent" xml:space="preserve">
-    <value>Bottom_panel</value>
-  </data>
-  <data name="&gt;&gt;dataGridView3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="tech_panel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
   </data>
@@ -273,11 +222,8 @@
   <data name="tech_label.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 14.25pt, style=Bold</value>
   </data>
-  <data name="tech_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="tech_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 209</value>
+    <value>20, 210</value>
   </data>
   <data name="tech_label.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 23</value>
@@ -300,42 +246,6 @@
   <data name="&gt;&gt;tech_label.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="cATEGORYTITLEDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>CATEGORY_TITLE</value>
-  </data>
-  <data name="cATEGORYTITLEDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="cATEGORYTITLEDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <metadata name="aDCATEGORYBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>167, 17</value>
-  </metadata>
-  <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, -11</value>
-  </data>
-  <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 150</value>
-  </data>
-  <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Name" xml:space="preserve">
-    <value>dataGridView1</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.Parent" xml:space="preserve">
-    <value>tech_panel</value>
-  </data>
-  <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="house_devices.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -351,11 +261,8 @@
   <data name="house_devices.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="house_devices.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="house_devices.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 235</value>
+    <value>158, 235</value>
   </data>
   <data name="house_devices.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -365,6 +272,9 @@
   </data>
   <data name="house_devices.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
+  </data>
+  <data name="house_devices.Text" xml:space="preserve">
+    <value>Οικιακές Συσκευές</value>
   </data>
   <data name="&gt;&gt;house_devices.Name" xml:space="preserve">
     <value>house_devices</value>
@@ -376,7 +286,7 @@
     <value>tech_panel</value>
   </data>
   <data name="&gt;&gt;house_devices.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="photoBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -393,11 +303,8 @@
   <data name="photoBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="photoBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="photoBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 188</value>
+    <value>158, 188</value>
   </data>
   <data name="photoBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -407,6 +314,9 @@
   </data>
   <data name="photoBtn.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="photoBtn.Text" xml:space="preserve">
+    <value>Φωτογραφία και Βίντεο</value>
   </data>
   <data name="&gt;&gt;photoBtn.Name" xml:space="preserve">
     <value>photoBtn</value>
@@ -418,7 +328,7 @@
     <value>tech_panel</value>
   </data>
   <data name="&gt;&gt;photoBtn.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="televisionBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -435,11 +345,8 @@
   <data name="televisionBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="televisionBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="televisionBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 141</value>
+    <value>158, 141</value>
   </data>
   <data name="televisionBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -449,6 +356,9 @@
   </data>
   <data name="televisionBtn.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
+  </data>
+  <data name="televisionBtn.Text" xml:space="preserve">
+    <value>Τηλεοράσεις</value>
   </data>
   <data name="&gt;&gt;televisionBtn.Name" xml:space="preserve">
     <value>televisionBtn</value>
@@ -460,7 +370,7 @@
     <value>tech_panel</value>
   </data>
   <data name="&gt;&gt;televisionBtn.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="sound_devicesBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -477,11 +387,8 @@
   <data name="sound_devicesBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="sound_devicesBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="sound_devicesBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 94</value>
+    <value>158, 94</value>
   </data>
   <data name="sound_devicesBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -491,6 +398,9 @@
   </data>
   <data name="sound_devicesBtn.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="sound_devicesBtn.Text" xml:space="preserve">
+    <value>Συσκευές ήχου</value>
   </data>
   <data name="&gt;&gt;sound_devicesBtn.Name" xml:space="preserve">
     <value>sound_devicesBtn</value>
@@ -502,7 +412,7 @@
     <value>tech_panel</value>
   </data>
   <data name="&gt;&gt;sound_devicesBtn.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="telephoneBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -519,11 +429,8 @@
   <data name="telephoneBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="telephoneBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="telephoneBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 47</value>
+    <value>158, 47</value>
   </data>
   <data name="telephoneBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 1, 0, 0</value>
@@ -533,6 +440,9 @@
   </data>
   <data name="telephoneBtn.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="telephoneBtn.Text" xml:space="preserve">
+    <value>Τηλεφωνία</value>
   </data>
   <data name="&gt;&gt;telephoneBtn.Name" xml:space="preserve">
     <value>telephoneBtn</value>
@@ -544,7 +454,7 @@
     <value>tech_panel</value>
   </data>
   <data name="&gt;&gt;telephoneBtn.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="pcBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -561,11 +471,8 @@
   <data name="pcBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="pcBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="pcBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 0</value>
+    <value>158, 0</value>
   </data>
   <data name="pcBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -575,6 +482,9 @@
   </data>
   <data name="pcBtn.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="pcBtn.Text" xml:space="preserve">
+    <value>PC και Laptop</value>
   </data>
   <data name="&gt;&gt;pcBtn.Name" xml:space="preserve">
     <value>pcBtn</value>
@@ -586,7 +496,7 @@
     <value>tech_panel</value>
   </data>
   <data name="&gt;&gt;pcBtn.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -658,11 +568,8 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 70</value>
+    <value>13, 70</value>
   </data>
   <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -683,16 +590,16 @@
     <value>tech_panel</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="tech_panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 14</value>
+    <value>20, 57</value>
   </data>
   <data name="tech_panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="tech_panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 281</value>
+    <value>331, 280</value>
   </data>
   <data name="tech_panel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -707,7 +614,7 @@
     <value>Bottom_panel</value>
   </data>
   <data name="&gt;&gt;tech_panel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="auto_panel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -721,11 +628,8 @@
   <data name="auto_label.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 14.25pt, style=Bold</value>
   </data>
-  <data name="auto_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="auto_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 212</value>
+    <value>38, 210</value>
   </data>
   <data name="auto_label.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 23</value>
@@ -748,51 +652,6 @@
   <data name="&gt;&gt;auto_label.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="cATEGORYTITLEDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>CATEGORY_TITLE</value>
-  </data>
-  <data name="cATEGORYTITLEDataGridViewTextBoxColumn1.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="cATEGORYTITLEDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <data name="cATEGORYIDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>CATEGORY_ID</value>
-  </data>
-  <data name="cATEGORYIDDataGridViewTextBoxColumn.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="cATEGORYIDDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
-  <metadata name="aDCATEGORY1BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>578, 17</value>
-  </metadata>
-  <data name="dataGridView2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, -11</value>
-  </data>
-  <data name="dataGridView2.RowHeadersWidth" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="dataGridView2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 150</value>
-  </data>
-  <data name="dataGridView2.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;dataGridView2.Name" xml:space="preserve">
-    <value>dataGridView2</value>
-  </data>
-  <data name="&gt;&gt;dataGridView2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataGridView2.Parent" xml:space="preserve">
-    <value>auto_panel</value>
-  </data>
-  <data name="&gt;&gt;dataGridView2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="accesoriesBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -805,11 +664,8 @@
   <data name="accesoriesBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="accesoriesBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="accesoriesBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 235</value>
+    <value>161, 235</value>
   </data>
   <data name="accesoriesBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -819,6 +675,9 @@
   </data>
   <data name="accesoriesBtn.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
+  </data>
+  <data name="accesoriesBtn.Text" xml:space="preserve">
+    <value>Ανταλλακτικά και Αξεσουάρ</value>
   </data>
   <data name="&gt;&gt;accesoriesBtn.Name" xml:space="preserve">
     <value>accesoriesBtn</value>
@@ -830,7 +689,7 @@
     <value>auto_panel</value>
   </data>
   <data name="&gt;&gt;accesoriesBtn.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="more_vehicles.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -844,11 +703,8 @@
   <data name="more_vehicles.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="more_vehicles.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="more_vehicles.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 188</value>
+    <value>161, 188</value>
   </data>
   <data name="more_vehicles.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -858,6 +714,9 @@
   </data>
   <data name="more_vehicles.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="more_vehicles.Text" xml:space="preserve">
+    <value>Άλλα Οχήματα</value>
   </data>
   <data name="&gt;&gt;more_vehicles.Name" xml:space="preserve">
     <value>more_vehicles</value>
@@ -869,7 +728,7 @@
     <value>auto_panel</value>
   </data>
   <data name="&gt;&gt;more_vehicles.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="boatBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -883,11 +742,8 @@
   <data name="boatBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="boatBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="boatBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 141</value>
+    <value>161, 141</value>
   </data>
   <data name="boatBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -897,6 +753,9 @@
   </data>
   <data name="boatBtn.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
+  </data>
+  <data name="boatBtn.Text" xml:space="preserve">
+    <value>Σκάφη</value>
   </data>
   <data name="&gt;&gt;boatBtn.Name" xml:space="preserve">
     <value>boatBtn</value>
@@ -908,7 +767,7 @@
     <value>auto_panel</value>
   </data>
   <data name="&gt;&gt;boatBtn.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="prof_vehiclesBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -922,11 +781,8 @@
   <data name="prof_vehiclesBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="prof_vehiclesBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="prof_vehiclesBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 94</value>
+    <value>161, 94</value>
   </data>
   <data name="prof_vehiclesBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -936,6 +792,9 @@
   </data>
   <data name="prof_vehiclesBtn.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="prof_vehiclesBtn.Text" xml:space="preserve">
+    <value>Επαγγελματικά Οχήματα</value>
   </data>
   <data name="&gt;&gt;prof_vehiclesBtn.Name" xml:space="preserve">
     <value>prof_vehiclesBtn</value>
@@ -947,7 +806,7 @@
     <value>auto_panel</value>
   </data>
   <data name="&gt;&gt;prof_vehiclesBtn.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="motoBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -961,11 +820,8 @@
   <data name="motoBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="motoBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="motoBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 47</value>
+    <value>161, 47</value>
   </data>
   <data name="motoBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -975,6 +831,9 @@
   </data>
   <data name="motoBtn.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="motoBtn.Text" xml:space="preserve">
+    <value>Μηχανές</value>
   </data>
   <data name="&gt;&gt;motoBtn.Name" xml:space="preserve">
     <value>motoBtn</value>
@@ -986,7 +845,7 @@
     <value>auto_panel</value>
   </data>
   <data name="&gt;&gt;motoBtn.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="autoBtn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top</value>
@@ -1000,11 +859,8 @@
   <data name="autoBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="autoBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="autoBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 0</value>
+    <value>161, 0</value>
   </data>
   <data name="autoBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1014,6 +870,9 @@
   </data>
   <data name="autoBtn.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="autoBtn.Text" xml:space="preserve">
+    <value>Αυτοκίνητα</value>
   </data>
   <data name="&gt;&gt;autoBtn.Name" xml:space="preserve">
     <value>autoBtn</value>
@@ -1025,7 +884,7 @@
     <value>auto_panel</value>
   </data>
   <data name="&gt;&gt;autoBtn.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="pictureBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>None</value>
@@ -1111,11 +970,8 @@
         AABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 72</value>
+    <value>17, 70</value>
   </data>
   <data name="pictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1136,16 +992,16 @@
     <value>auto_panel</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="auto_panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>350, 14</value>
+    <value>414, 57</value>
   </data>
   <data name="auto_panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="auto_panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 284</value>
+    <value>331, 280</value>
   </data>
   <data name="auto_panel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -1160,7 +1016,7 @@
     <value>Bottom_panel</value>
   </data>
   <data name="&gt;&gt;auto_panel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="house_panel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -1174,11 +1030,8 @@
   <data name="home_label.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 14.25pt, style=Bold</value>
   </data>
-  <data name="home_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="home_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 209</value>
+    <value>48, 210</value>
   </data>
   <data name="home_label.Size" type="System.Drawing.Size, System.Drawing">
     <value>51, 23</value>
@@ -1213,11 +1066,8 @@
   <data name="parkingBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="parkingBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="parkingBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 235</value>
+    <value>161, 235</value>
   </data>
   <data name="parkingBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1227,6 +1077,9 @@
   </data>
   <data name="parkingBtn.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
+  </data>
+  <data name="parkingBtn.Text" xml:space="preserve">
+    <value>Parking</value>
   </data>
   <data name="&gt;&gt;parkingBtn.Name" xml:space="preserve">
     <value>parkingBtn</value>
@@ -1252,11 +1105,8 @@
   <data name="summer_housesBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="summer_housesBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="summer_housesBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 188</value>
+    <value>161, 188</value>
   </data>
   <data name="summer_housesBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1266,6 +1116,9 @@
   </data>
   <data name="summer_housesBtn.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="summer_housesBtn.Text" xml:space="preserve">
+    <value>Εξοχικά</value>
   </data>
   <data name="&gt;&gt;summer_housesBtn.Name" xml:space="preserve">
     <value>summer_housesBtn</value>
@@ -1291,11 +1144,8 @@
   <data name="landBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="landBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="landBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 141</value>
+    <value>161, 141</value>
   </data>
   <data name="landBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1305,6 +1155,9 @@
   </data>
   <data name="landBtn.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
+  </data>
+  <data name="landBtn.Text" xml:space="preserve">
+    <value>Οικόπεδα και Γή</value>
   </data>
   <data name="&gt;&gt;landBtn.Name" xml:space="preserve">
     <value>landBtn</value>
@@ -1330,11 +1183,8 @@
   <data name="prof_housesBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="prof_housesBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="prof_housesBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 94</value>
+    <value>161, 94</value>
   </data>
   <data name="prof_housesBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1344,6 +1194,9 @@
   </data>
   <data name="prof_housesBtn.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
+  </data>
+  <data name="prof_housesBtn.Text" xml:space="preserve">
+    <value>Επαγγελματικοί χώροι</value>
   </data>
   <data name="&gt;&gt;prof_housesBtn.Name" xml:space="preserve">
     <value>prof_housesBtn</value>
@@ -1369,11 +1222,8 @@
   <data name="vilesBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="vilesBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="vilesBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 47</value>
+    <value>161, 47</value>
   </data>
   <data name="vilesBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1383,6 +1233,9 @@
   </data>
   <data name="vilesBtn.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
+  </data>
+  <data name="vilesBtn.Text" xml:space="preserve">
+    <value>Μονοκατοικίες και Βίλες</value>
   </data>
   <data name="&gt;&gt;vilesBtn.Name" xml:space="preserve">
     <value>vilesBtn</value>
@@ -1408,11 +1261,8 @@
   <data name="apartmentsBtn.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 9.75pt</value>
   </data>
-  <data name="apartmentsBtn.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="apartmentsBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>163, 0</value>
+    <value>161, 0</value>
   </data>
   <data name="apartmentsBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -1422,6 +1272,9 @@
   </data>
   <data name="apartmentsBtn.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="apartmentsBtn.Text" xml:space="preserve">
+    <value>Διαμερίσματα</value>
   </data>
   <data name="&gt;&gt;apartmentsBtn.Name" xml:space="preserve">
     <value>apartmentsBtn</value>
@@ -1510,11 +1363,8 @@
         GRkZGRkZGRkZGRkZGRkZGXnUoEH/Dwc1rxqqG9tnAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="pictureBox3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>19, 76</value>
+    <value>17, 76</value>
   </data>
   <data name="pictureBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1538,13 +1388,13 @@
     <value>7</value>
   </data>
   <data name="house_panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>691, 14</value>
+    <value>791, 57</value>
   </data>
   <data name="house_panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="house_panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 281</value>
+    <value>331, 280</value>
   </data>
   <data name="house_panel.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1559,13 +1409,13 @@
     <value>Bottom_panel</value>
   </data>
   <data name="&gt;&gt;house_panel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="Bottom_panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 376</value>
   </data>
   <data name="Bottom_panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1160, 451</value>
+    <value>1155, 371</value>
   </data>
   <data name="Bottom_panel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -1598,7 +1448,7 @@
     <value>English</value>
   </data>
   <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>220, 31</value>
+    <value>216, 31</value>
   </data>
   <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>125, 25</value>
@@ -1630,11 +1480,8 @@
   <data name="Log_in_label.Font" type="System.Drawing.Font, System.Drawing">
     <value>Century Gothic, 14.25pt</value>
   </data>
-  <data name="Log_in_label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="Log_in_label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>153, 6</value>
+    <value>149, 6</value>
   </data>
   <data name="Log_in_label.Size" type="System.Drawing.Size, System.Drawing">
     <value>192, 22</value>
@@ -1658,10 +1505,10 @@
     <value>1</value>
   </data>
   <data name="panel_login_register.Location" type="System.Drawing.Point, System.Drawing">
-    <value>681, 37</value>
+    <value>808, 33</value>
   </data>
   <data name="panel_login_register.Size" type="System.Drawing.Size, System.Drawing">
-    <value>348, 88</value>
+    <value>344, 88</value>
   </data>
   <data name="panel_login_register.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -2556,9 +2403,6 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="logo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="logo.Location" type="System.Drawing.Point, System.Drawing">
     <value>33, 50</value>
   </data>
@@ -2609,11 +2453,8 @@
         cLn+Af2lcU2giAl7AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="close.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="close.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1016, 3</value>
+    <value>1128, 3</value>
   </data>
   <data name="close.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
@@ -2646,11 +2487,8 @@
         wMAAAB3QQrn/mu6tAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Minimize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="Minimize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>986, 3</value>
+    <value>1068, 3</value>
   </data>
   <data name="Minimize.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 24</value>
@@ -2670,11 +2508,48 @@
   <data name="&gt;&gt;Minimize.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="Maximize.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="Maximize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAb9JREFUSEvt
+        lUsvA1EcxWdDYucbeA0hIR71TCqGeLRCTHUkVSWaIFRFoiTdSBobwkbEysIGldQjrIRJVMkQyXwAe3tf
+        4bjlTu5luFrrnuSX+5+c/7lnNp1KOWUlOQRNnkWqbA76T5RahD4p+UZxCKmiMLz0Ortqp2A4ZpBHH7NW
+        Ols1A4M+2tUyiSQd/y1HUHCHEmBmxzjOCDpPu8WEjRMak5zjggK3j5nuUSRdPij9fsTIWeyiJ7W/qNeP
+        OzpKPSRHR7u8GjM9I0iq5EJNg6KqKFTpSe0vUskuHaUhbrYpoDIz4MHbmAqdx88zDH3Uwos3GpN8HkHB
+        9AAzpwcFi0SRR/QtPWEjYqApyO3ys02LLmYuuMUFiQTy4ze4PLpGLMztzoty0W5mRnvEBWm9JlDwco6u
+        FW53WZRbU5i51vl3gaVVbpefbdpyMnOzPfOCDW53XZTbbWXmblvmBTvc7rYot9/IzP2mzAv2mtkPbU+U
+        O65jZrwO5/F6mBZH3zi0aPjgjMakg3pBwUV15m/9m05rBHfcVMIwHf//XKezV1WCz/W9DO1BxjPBJLN5
+        X8FI/UGScFeB59tywR9OTnZJ0jvyo1p6ymdKfgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="Maximize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1098, 3</value>
+  </data>
+  <data name="Maximize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>24, 24</value>
+  </data>
+  <data name="Maximize.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;Maximize.Name" xml:space="preserve">
+    <value>Maximize</value>
+  </data>
+  <data name="&gt;&gt;Maximize.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Maximize.Parent" xml:space="preserve">
+    <value>panel4</value>
+  </data>
+  <data name="&gt;&gt;Maximize.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1042, 31</value>
+    <value>1155, 31</value>
   </data>
   <data name="panel4.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -2695,7 +2570,7 @@
     <value>0, 0</value>
   </data>
   <data name="main_panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1160, 826</value>
+    <value>1155, 747</value>
   </data>
   <data name="main_panel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -2712,29 +2587,8 @@
   <data name="&gt;&gt;main_panel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <metadata name="aD_CATEGORYTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>373, 17</value>
-  </metadata>
-  <metadata name="aD_CATEGORY1TableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="aD_CATEGORY2TableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>441, 56</value>
-  </metadata>
-  <metadata name="databaseLocal1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>653, 56</value>
-  </metadata>
-  <metadata name="aDSBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>789, 56</value>
-  </metadata>
-  <metadata name="aDSTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>941, 56</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>82</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -2743,7 +2597,10 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1041, 687</value>
+    <value>1155, 747</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2753,96 +2610,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Form1</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn2.Name" xml:space="preserve">
-    <value>cATEGORYTITLEDataGridViewTextBoxColumn2</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYIDDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>cATEGORYIDDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYIDDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aDCATEGORY2BindingSource.Name" xml:space="preserve">
-    <value>aDCATEGORY2BindingSource</value>
-  </data>
-  <data name="&gt;&gt;aDCATEGORY2BindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;database1DataSet.Name" xml:space="preserve">
-    <value>database1DataSet</value>
-  </data>
-  <data name="&gt;&gt;database1DataSet.Type" xml:space="preserve">
-    <value>WindowsFormsApp1.Database1DataSet, Database1DataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>cATEGORYTITLEDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aDCATEGORYBindingSource.Name" xml:space="preserve">
-    <value>aDCATEGORYBindingSource</value>
-  </data>
-  <data name="&gt;&gt;aDCATEGORYBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>cATEGORYTITLEDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYTITLEDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYIDDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>cATEGORYIDDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;cATEGORYIDDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aDCATEGORY1BindingSource.Name" xml:space="preserve">
-    <value>aDCATEGORY1BindingSource</value>
-  </data>
-  <data name="&gt;&gt;aDCATEGORY1BindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aD_CATEGORYTableAdapter.Name" xml:space="preserve">
-    <value>aD_CATEGORYTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;aD_CATEGORYTableAdapter.Type" xml:space="preserve">
-    <value>WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORYTableAdapter, Database1DataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;aD_CATEGORY1TableAdapter.Name" xml:space="preserve">
-    <value>aD_CATEGORY1TableAdapter</value>
-  </data>
-  <data name="&gt;&gt;aD_CATEGORY1TableAdapter.Type" xml:space="preserve">
-    <value>WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORY1TableAdapter, Database1DataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;aD_CATEGORY2TableAdapter.Name" xml:space="preserve">
-    <value>aD_CATEGORY2TableAdapter</value>
-  </data>
-  <data name="&gt;&gt;aD_CATEGORY2TableAdapter.Type" xml:space="preserve">
-    <value>WindowsFormsApp1.Database1DataSetTableAdapters.AD_CATEGORY2TableAdapter, Database1DataSet.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;databaseLocal1.Name" xml:space="preserve">
-    <value>databaseLocal1</value>
-  </data>
-  <data name="&gt;&gt;databaseLocal1.Type" xml:space="preserve">
-    <value>WindowsFormsApp1.DatabaseLocal, DatabaseLocal.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;aDSBindingSource.Name" xml:space="preserve">
-    <value>aDSBindingSource</value>
-  </data>
-  <data name="&gt;&gt;aDSBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;aDSTableAdapter.Name" xml:space="preserve">
-    <value>aDSTableAdapter</value>
-  </data>
-  <data name="&gt;&gt;aDSTableAdapter.Type" xml:space="preserve">
-    <value>WindowsFormsApp1.DatabaseLocalTableAdapters.ADSTableAdapter, DatabaseLocal.Designer.cs.dll, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Welcome_Page</value>
