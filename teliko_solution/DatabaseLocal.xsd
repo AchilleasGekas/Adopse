@@ -618,6 +618,27 @@
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Discount_PriceTableAdapter" GeneratorDataComponentClassName="Discount_PriceTableAdapter" Name="Discount_Price" UserDataComponentName="Discount_PriceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="Discount_Price" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AD_TITLE, DESCRIPTION, PRICE, DISCOUNT_PRICE, AREA, TELEPHONE FROM Discount_Price</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AD_TITLE" DataSetColumn="AD_TITLE" />
+              <Mapping SourceColumn="DESCRIPTION" DataSetColumn="DESCRIPTION" />
+              <Mapping SourceColumn="PRICE" DataSetColumn="PRICE" />
+              <Mapping SourceColumn="DISCOUNT_PRICE" DataSetColumn="DISCOUNT_PRICE" />
+              <Mapping SourceColumn="AREA" DataSetColumn="AREA" />
+              <Mapping SourceColumn="TELEPHONE" DataSetColumn="TELEPHONE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
@@ -626,7 +647,7 @@
   <xs:element name="DatabaseLocal" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DatabaseLocal" msprop:Generator_UserDSName="DatabaseLocal">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ACTIVITY_USER" msprop:Generator_TableClassName="ACTIVITY_USERDataTable" msprop:Generator_TableVarName="tableACTIVITY_USER" msprop:Generator_TablePropName="ACTIVITY_USER" msprop:Generator_RowDeletingName="ACTIVITY_USERRowDeleting" msprop:Generator_RowChangingName="ACTIVITY_USERRowChanging" msprop:Generator_RowEvHandlerName="ACTIVITY_USERRowChangeEventHandler" msprop:Generator_RowDeletedName="ACTIVITY_USERRowDeleted" msprop:Generator_UserTableName="ACTIVITY_USER" msprop:Generator_RowChangedName="ACTIVITY_USERRowChanged" msprop:Generator_RowEvArgName="ACTIVITY_USERRowChangeEvent" msprop:Generator_RowClassName="ACTIVITY_USERRow">
+        <xs:element name="ACTIVITY_USER" msprop:Generator_TableClassName="ACTIVITY_USERDataTable" msprop:Generator_TableVarName="tableACTIVITY_USER" msprop:Generator_RowChangedName="ACTIVITY_USERRowChanged" msprop:Generator_TablePropName="ACTIVITY_USER" msprop:Generator_RowDeletingName="ACTIVITY_USERRowDeleting" msprop:Generator_RowChangingName="ACTIVITY_USERRowChanging" msprop:Generator_RowEvHandlerName="ACTIVITY_USERRowChangeEventHandler" msprop:Generator_RowDeletedName="ACTIVITY_USERRowDeleted" msprop:Generator_RowClassName="ACTIVITY_USERRow" msprop:Generator_UserTableName="ACTIVITY_USER" msprop:Generator_RowEvArgName="ACTIVITY_USERRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="iD" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columniD" msprop:Generator_ColumnPropNameInRow="iD" msprop:Generator_ColumnPropNameInTable="iDColumn" msprop:Generator_UserColumnName="iD" type="xs:int" />
@@ -655,7 +676,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="AD_CATEGORY" msprop:Generator_TableClassName="AD_CATEGORYDataTable" msprop:Generator_TableVarName="tableAD_CATEGORY" msprop:Generator_TablePropName="AD_CATEGORY" msprop:Generator_RowDeletingName="AD_CATEGORYRowDeleting" msprop:Generator_RowChangingName="AD_CATEGORYRowChanging" msprop:Generator_RowEvHandlerName="AD_CATEGORYRowChangeEventHandler" msprop:Generator_RowDeletedName="AD_CATEGORYRowDeleted" msprop:Generator_UserTableName="AD_CATEGORY" msprop:Generator_RowChangedName="AD_CATEGORYRowChanged" msprop:Generator_RowEvArgName="AD_CATEGORYRowChangeEvent" msprop:Generator_RowClassName="AD_CATEGORYRow">
+        <xs:element name="AD_CATEGORY" msprop:Generator_TableClassName="AD_CATEGORYDataTable" msprop:Generator_TableVarName="tableAD_CATEGORY" msprop:Generator_RowChangedName="AD_CATEGORYRowChanged" msprop:Generator_TablePropName="AD_CATEGORY" msprop:Generator_RowDeletingName="AD_CATEGORYRowDeleting" msprop:Generator_RowChangingName="AD_CATEGORYRowChanging" msprop:Generator_RowEvHandlerName="AD_CATEGORYRowChangeEventHandler" msprop:Generator_RowDeletedName="AD_CATEGORYRowDeleted" msprop:Generator_RowClassName="AD_CATEGORYRow" msprop:Generator_UserTableName="AD_CATEGORY" msprop:Generator_RowEvArgName="AD_CATEGORYRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CATEGORY_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnCATEGORY_ID" msprop:Generator_ColumnPropNameInRow="CATEGORY_ID" msprop:Generator_ColumnPropNameInTable="CATEGORY_IDColumn" msprop:Generator_UserColumnName="CATEGORY_ID" type="xs:int" />
@@ -670,7 +691,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ADS" msprop:Generator_TableClassName="ADSDataTable" msprop:Generator_TableVarName="tableADS" msprop:Generator_TablePropName="ADS" msprop:Generator_RowDeletingName="ADSRowDeleting" msprop:Generator_RowChangingName="ADSRowChanging" msprop:Generator_RowEvHandlerName="ADSRowChangeEventHandler" msprop:Generator_RowDeletedName="ADSRowDeleted" msprop:Generator_UserTableName="ADS" msprop:Generator_RowChangedName="ADSRowChanged" msprop:Generator_RowEvArgName="ADSRowChangeEvent" msprop:Generator_RowClassName="ADSRow">
+        <xs:element name="ADS" msprop:Generator_TableClassName="ADSDataTable" msprop:Generator_TableVarName="tableADS" msprop:Generator_RowChangedName="ADSRowChanged" msprop:Generator_TablePropName="ADS" msprop:Generator_RowDeletingName="ADSRowDeleting" msprop:Generator_RowChangingName="ADSRowChanging" msprop:Generator_RowEvHandlerName="ADSRowChangeEventHandler" msprop:Generator_RowDeletedName="ADSRowDeleted" msprop:Generator_RowClassName="ADSRow" msprop:Generator_UserTableName="ADS" msprop:Generator_RowEvArgName="ADSRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="AD_ID" msprop:Generator_ColumnVarNameInTable="columnAD_ID" msprop:Generator_ColumnPropNameInRow="AD_ID" msprop:Generator_ColumnPropNameInTable="AD_IDColumn" msprop:Generator_UserColumnName="AD_ID">
@@ -712,7 +733,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="AREA" msprop:Generator_TableClassName="AREADataTable" msprop:Generator_TableVarName="tableAREA" msprop:Generator_TablePropName="AREA" msprop:Generator_RowDeletingName="AREARowDeleting" msprop:Generator_RowChangingName="AREARowChanging" msprop:Generator_RowEvHandlerName="AREARowChangeEventHandler" msprop:Generator_RowDeletedName="AREARowDeleted" msprop:Generator_UserTableName="AREA" msprop:Generator_RowChangedName="AREARowChanged" msprop:Generator_RowEvArgName="AREARowChangeEvent" msprop:Generator_RowClassName="AREARow">
+        <xs:element name="AREA" msprop:Generator_TableClassName="AREADataTable" msprop:Generator_TableVarName="tableAREA" msprop:Generator_RowChangedName="AREARowChanged" msprop:Generator_TablePropName="AREA" msprop:Generator_RowDeletingName="AREARowDeleting" msprop:Generator_RowChangingName="AREARowChanging" msprop:Generator_RowEvHandlerName="AREARowChangeEventHandler" msprop:Generator_RowDeletedName="AREARowDeleted" msprop:Generator_RowClassName="AREARow" msprop:Generator_UserTableName="AREA" msprop:Generator_RowEvArgName="AREARowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="AREA_ID" msprop:Generator_ColumnVarNameInTable="columnAREA_ID" msprop:Generator_ColumnPropNameInRow="AREA_ID" msprop:Generator_ColumnPropNameInTable="AREA_IDColumn" msprop:Generator_UserColumnName="AREA_ID" type="xs:double" />
@@ -740,7 +761,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PICTURES" msprop:Generator_TableClassName="PICTURESDataTable" msprop:Generator_TableVarName="tablePICTURES" msprop:Generator_TablePropName="PICTURES" msprop:Generator_RowDeletingName="PICTURESRowDeleting" msprop:Generator_RowChangingName="PICTURESRowChanging" msprop:Generator_RowEvHandlerName="PICTURESRowChangeEventHandler" msprop:Generator_RowDeletedName="PICTURESRowDeleted" msprop:Generator_UserTableName="PICTURES" msprop:Generator_RowChangedName="PICTURESRowChanged" msprop:Generator_RowEvArgName="PICTURESRowChangeEvent" msprop:Generator_RowClassName="PICTURESRow">
+        <xs:element name="PICTURES" msprop:Generator_TableClassName="PICTURESDataTable" msprop:Generator_TableVarName="tablePICTURES" msprop:Generator_RowChangedName="PICTURESRowChanged" msprop:Generator_TablePropName="PICTURES" msprop:Generator_RowDeletingName="PICTURESRowDeleting" msprop:Generator_RowChangingName="PICTURESRowChanging" msprop:Generator_RowEvHandlerName="PICTURESRowChangeEventHandler" msprop:Generator_RowDeletedName="PICTURESRowDeleted" msprop:Generator_RowClassName="PICTURESRow" msprop:Generator_UserTableName="PICTURES" msprop:Generator_RowEvArgName="PICTURESRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PICTURE_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPICTURE_ID" msprop:Generator_ColumnPropNameInRow="PICTURE_ID" msprop:Generator_ColumnPropNameInTable="PICTURE_IDColumn" msprop:Generator_UserColumnName="PICTURE_ID" type="xs:int" />
@@ -757,7 +778,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PROPERTIES" msprop:Generator_TableClassName="PROPERTIESDataTable" msprop:Generator_TableVarName="tablePROPERTIES" msprop:Generator_TablePropName="PROPERTIES" msprop:Generator_RowDeletingName="PROPERTIESRowDeleting" msprop:Generator_RowChangingName="PROPERTIESRowChanging" msprop:Generator_RowEvHandlerName="PROPERTIESRowChangeEventHandler" msprop:Generator_RowDeletedName="PROPERTIESRowDeleted" msprop:Generator_UserTableName="PROPERTIES" msprop:Generator_RowChangedName="PROPERTIESRowChanged" msprop:Generator_RowEvArgName="PROPERTIESRowChangeEvent" msprop:Generator_RowClassName="PROPERTIESRow">
+        <xs:element name="PROPERTIES" msprop:Generator_TableClassName="PROPERTIESDataTable" msprop:Generator_TableVarName="tablePROPERTIES" msprop:Generator_RowChangedName="PROPERTIESRowChanged" msprop:Generator_TablePropName="PROPERTIES" msprop:Generator_RowDeletingName="PROPERTIESRowDeleting" msprop:Generator_RowChangingName="PROPERTIESRowChanging" msprop:Generator_RowEvHandlerName="PROPERTIESRowChangeEventHandler" msprop:Generator_RowDeletedName="PROPERTIESRowDeleted" msprop:Generator_RowClassName="PROPERTIESRow" msprop:Generator_UserTableName="PROPERTIES" msprop:Generator_RowEvArgName="PROPERTIESRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="PROPERTIES_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnPROPERTIES_ID" msprop:Generator_ColumnPropNameInRow="PROPERTIES_ID" msprop:Generator_ColumnPropNameInTable="PROPERTIES_IDColumn" msprop:Generator_UserColumnName="PROPERTIES_ID" type="xs:int" minOccurs="0" />
@@ -779,7 +800,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PROPERTIES_VALUE" msprop:Generator_TableClassName="PROPERTIES_VALUEDataTable" msprop:Generator_TableVarName="tablePROPERTIES_VALUE" msprop:Generator_TablePropName="PROPERTIES_VALUE" msprop:Generator_RowDeletingName="PROPERTIES_VALUERowDeleting" msprop:Generator_RowChangingName="PROPERTIES_VALUERowChanging" msprop:Generator_RowEvHandlerName="PROPERTIES_VALUERowChangeEventHandler" msprop:Generator_RowDeletedName="PROPERTIES_VALUERowDeleted" msprop:Generator_UserTableName="PROPERTIES_VALUE" msprop:Generator_RowChangedName="PROPERTIES_VALUERowChanged" msprop:Generator_RowEvArgName="PROPERTIES_VALUERowChangeEvent" msprop:Generator_RowClassName="PROPERTIES_VALUERow">
+        <xs:element name="PROPERTIES_VALUE" msprop:Generator_TableClassName="PROPERTIES_VALUEDataTable" msprop:Generator_TableVarName="tablePROPERTIES_VALUE" msprop:Generator_RowChangedName="PROPERTIES_VALUERowChanged" msprop:Generator_TablePropName="PROPERTIES_VALUE" msprop:Generator_RowDeletingName="PROPERTIES_VALUERowDeleting" msprop:Generator_RowChangingName="PROPERTIES_VALUERowChanging" msprop:Generator_RowEvHandlerName="PROPERTIES_VALUERowChangeEventHandler" msprop:Generator_RowDeletedName="PROPERTIES_VALUERowDeleted" msprop:Generator_RowClassName="PROPERTIES_VALUERow" msprop:Generator_UserTableName="PROPERTIES_VALUE" msprop:Generator_RowEvArgName="PROPERTIES_VALUERowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="VALUE_ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnVALUE_ID" msprop:Generator_ColumnPropNameInRow="VALUE_ID" msprop:Generator_ColumnPropNameInTable="VALUE_IDColumn" msprop:Generator_UserColumnName="VALUE_ID" type="xs:int" />
@@ -814,7 +835,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="SEARCHED_DATA" msprop:Generator_TableClassName="SEARCHED_DATADataTable" msprop:Generator_TableVarName="tableSEARCHED_DATA" msprop:Generator_TablePropName="SEARCHED_DATA" msprop:Generator_RowDeletingName="SEARCHED_DATARowDeleting" msprop:Generator_RowChangingName="SEARCHED_DATARowChanging" msprop:Generator_RowEvHandlerName="SEARCHED_DATARowChangeEventHandler" msprop:Generator_RowDeletedName="SEARCHED_DATARowDeleted" msprop:Generator_UserTableName="SEARCHED_DATA" msprop:Generator_RowChangedName="SEARCHED_DATARowChanged" msprop:Generator_RowEvArgName="SEARCHED_DATARowChangeEvent" msprop:Generator_RowClassName="SEARCHED_DATARow">
+        <xs:element name="SEARCHED_DATA" msprop:Generator_TableClassName="SEARCHED_DATADataTable" msprop:Generator_TableVarName="tableSEARCHED_DATA" msprop:Generator_RowChangedName="SEARCHED_DATARowChanged" msprop:Generator_TablePropName="SEARCHED_DATA" msprop:Generator_RowDeletingName="SEARCHED_DATARowDeleting" msprop:Generator_RowChangingName="SEARCHED_DATARowChanging" msprop:Generator_RowEvHandlerName="SEARCHED_DATARowChangeEventHandler" msprop:Generator_RowDeletedName="SEARCHED_DATARowDeleted" msprop:Generator_RowClassName="SEARCHED_DATARow" msprop:Generator_UserTableName="SEARCHED_DATA" msprop:Generator_RowEvArgName="SEARCHED_DATARowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
@@ -836,7 +857,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="USERS" msprop:Generator_TableClassName="USERSDataTable" msprop:Generator_TableVarName="tableUSERS" msprop:Generator_TablePropName="USERS" msprop:Generator_RowDeletingName="USERSRowDeleting" msprop:Generator_RowChangingName="USERSRowChanging" msprop:Generator_RowEvHandlerName="USERSRowChangeEventHandler" msprop:Generator_RowDeletedName="USERSRowDeleted" msprop:Generator_UserTableName="USERS" msprop:Generator_RowChangedName="USERSRowChanged" msprop:Generator_RowEvArgName="USERSRowChangeEvent" msprop:Generator_RowClassName="USERSRow">
+        <xs:element name="USERS" msprop:Generator_TableClassName="USERSDataTable" msprop:Generator_TableVarName="tableUSERS" msprop:Generator_RowChangedName="USERSRowChanged" msprop:Generator_TablePropName="USERS" msprop:Generator_RowDeletingName="USERSRowDeleting" msprop:Generator_RowChangingName="USERSRowChanging" msprop:Generator_RowEvHandlerName="USERSRowChangeEventHandler" msprop:Generator_RowDeletedName="USERSRowDeleted" msprop:Generator_RowClassName="USERSRow" msprop:Generator_UserTableName="USERS" msprop:Generator_RowEvArgName="USERSRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="USER_ID" msprop:Generator_ColumnVarNameInTable="columnUSER_ID" msprop:Generator_ColumnPropNameInRow="USER_ID" msprop:Generator_ColumnPropNameInTable="USER_IDColumn" msprop:Generator_UserColumnName="USER_ID" type="xs:double" />
@@ -900,6 +921,42 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="Discount_Price" msprop:Generator_TableClassName="Discount_PriceDataTable" msprop:Generator_TableVarName="tableDiscount_Price" msprop:Generator_TablePropName="Discount_Price" msprop:Generator_RowDeletingName="Discount_PriceRowDeleting" msprop:Generator_RowChangingName="Discount_PriceRowChanging" msprop:Generator_RowEvHandlerName="Discount_PriceRowChangeEventHandler" msprop:Generator_RowDeletedName="Discount_PriceRowDeleted" msprop:Generator_UserTableName="Discount_Price" msprop:Generator_RowChangedName="Discount_PriceRowChanged" msprop:Generator_RowEvArgName="Discount_PriceRowChangeEvent" msprop:Generator_RowClassName="Discount_PriceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AD_TITLE" msprop:Generator_ColumnVarNameInTable="columnAD_TITLE" msprop:Generator_ColumnPropNameInRow="AD_TITLE" msprop:Generator_ColumnPropNameInTable="AD_TITLEColumn" msprop:Generator_UserColumnName="AD_TITLE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DESCRIPTION" msprop:Generator_ColumnVarNameInTable="columnDESCRIPTION" msprop:Generator_ColumnPropNameInRow="DESCRIPTION" msprop:Generator_ColumnPropNameInTable="DESCRIPTIONColumn" msprop:Generator_UserColumnName="DESCRIPTION" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PRICE" msprop:Generator_ColumnVarNameInTable="columnPRICE" msprop:Generator_ColumnPropNameInRow="PRICE" msprop:Generator_ColumnPropNameInTable="PRICEColumn" msprop:Generator_UserColumnName="PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="DISCOUNT_PRICE" msprop:Generator_ColumnVarNameInTable="columnDISCOUNT_PRICE" msprop:Generator_ColumnPropNameInRow="DISCOUNT_PRICE" msprop:Generator_ColumnPropNameInTable="DISCOUNT_PRICEColumn" msprop:Generator_UserColumnName="DISCOUNT_PRICE" type="xs:double" minOccurs="0" />
+              <xs:element name="AREA" msprop:Generator_ColumnVarNameInTable="columnAREA" msprop:Generator_ColumnPropNameInRow="AREA" msprop:Generator_ColumnPropNameInTable="AREAColumn" msprop:Generator_UserColumnName="AREA" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TELEPHONE" msprop:Generator_ColumnVarNameInTable="columnTELEPHONE" msprop:Generator_ColumnPropNameInRow="TELEPHONE" msprop:Generator_ColumnPropNameInTable="TELEPHONEColumn" msprop:Generator_UserColumnName="TELEPHONE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -937,10 +994,10 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="AREAADS" msdata:parent="AREA" msdata:child="ADS" msdata:parentkey="AREA_ID" msdata:childkey="AREA_ID" msprop:Generator_UserChildTable="ADS" msprop:Generator_ChildPropName="GetADSRows" msprop:Generator_UserRelationName="AREAADS" msprop:Generator_RelationVarName="relationAREAADS" msprop:Generator_UserParentTable="AREA" msprop:Generator_ParentPropName="AREARow" />
-      <msdata:Relationship name="USERSADS" msdata:parent="USERS" msdata:child="ADS" msdata:parentkey="USER_ID" msdata:childkey="USER_ID" msprop:Generator_UserChildTable="ADS" msprop:Generator_ChildPropName="GetADSRows" msprop:Generator_UserRelationName="USERSADS" msprop:Generator_RelationVarName="relationUSERSADS" msprop:Generator_UserParentTable="USERS" msprop:Generator_ParentPropName="USERSRow" />
-      <msdata:Relationship name="ADSPICTURES" msdata:parent="ADS" msdata:child="PICTURES" msdata:parentkey="AD_ID" msdata:childkey="AD_ID" msprop:Generator_UserChildTable="PICTURES" msprop:Generator_ChildPropName="GetPICTURESRows" msprop:Generator_UserRelationName="ADSPICTURES" msprop:Generator_ParentPropName="ADSRow" msprop:Generator_RelationVarName="relationADSPICTURES" msprop:Generator_UserParentTable="ADS" />
-      <msdata:Relationship name="ADSPROPERTIES_VALUE" msdata:parent="ADS" msdata:child="PROPERTIES_VALUE" msdata:parentkey="AD_ID" msdata:childkey="AD_ID" msprop:Generator_UserChildTable="PROPERTIES_VALUE" msprop:Generator_ChildPropName="GetPROPERTIES_VALUERows" msprop:Generator_UserRelationName="ADSPROPERTIES_VALUE" msprop:Generator_ParentPropName="ADSRow" msprop:Generator_RelationVarName="relationADSPROPERTIES_VALUE" msprop:Generator_UserParentTable="ADS" />
+      <msdata:Relationship name="AREAADS" msdata:parent="AREA" msdata:child="ADS" msdata:parentkey="AREA_ID" msdata:childkey="AREA_ID" msprop:Generator_UserChildTable="ADS" msprop:Generator_ChildPropName="GetADSRows" msprop:Generator_UserRelationName="AREAADS" msprop:Generator_ParentPropName="AREARow" msprop:Generator_RelationVarName="relationAREAADS" msprop:Generator_UserParentTable="AREA" />
+      <msdata:Relationship name="USERSADS" msdata:parent="USERS" msdata:child="ADS" msdata:parentkey="USER_ID" msdata:childkey="USER_ID" msprop:Generator_UserChildTable="ADS" msprop:Generator_ChildPropName="GetADSRows" msprop:Generator_UserRelationName="USERSADS" msprop:Generator_ParentPropName="USERSRow" msprop:Generator_RelationVarName="relationUSERSADS" msprop:Generator_UserParentTable="USERS" />
+      <msdata:Relationship name="ADSPICTURES" msdata:parent="ADS" msdata:child="PICTURES" msdata:parentkey="AD_ID" msdata:childkey="AD_ID" msprop:Generator_UserChildTable="PICTURES" msprop:Generator_ChildPropName="GetPICTURESRows" msprop:Generator_UserRelationName="ADSPICTURES" msprop:Generator_RelationVarName="relationADSPICTURES" msprop:Generator_UserParentTable="ADS" msprop:Generator_ParentPropName="ADSRow" />
+      <msdata:Relationship name="ADSPROPERTIES_VALUE" msdata:parent="ADS" msdata:child="PROPERTIES_VALUE" msdata:parentkey="AD_ID" msdata:childkey="AD_ID" msprop:Generator_UserChildTable="PROPERTIES_VALUE" msprop:Generator_ChildPropName="GetPROPERTIES_VALUERows" msprop:Generator_UserRelationName="ADSPROPERTIES_VALUE" msprop:Generator_RelationVarName="relationADSPROPERTIES_VALUE" msprop:Generator_UserParentTable="ADS" msprop:Generator_ParentPropName="ADSRow" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
