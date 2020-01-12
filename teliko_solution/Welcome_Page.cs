@@ -464,7 +464,7 @@ namespace WindowsFormsApp1
             var query = searchboxTxtBox.Text.Trim();
             var results = search(query);
             mp.dataGridView1.DataSource = results;
-            //AdsGV.DataSource = results;
+  
             //this.aCTIVITY_USERTableAdapter.InsertUserActivity("George", DateTime.Today,"searched",Global.getIP());
             //this.sEARCHED_DATATableAdapter.Insert("Karanikas", searchTB.Text, DateTime.Today);
             voithitikosArithmos = 20;
@@ -547,6 +547,18 @@ namespace WindowsFormsApp1
                 }
             }
             return table;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Usage_Data data = new Usage_Data();
+            data.ShowDialog();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Usage_Data data = new Usage_Data();
+            data.ShowDialog();
         }
     }
 

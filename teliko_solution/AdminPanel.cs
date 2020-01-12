@@ -131,5 +131,11 @@ namespace WindowsFormsApp1
             Form1 f = new Form1();
             f.ShowDialog();
         }
+
+        private void usage_DataBtn_Click(object sender, EventArgs e)
+        {
+            Usage_Data data = new Usage_Data();
+            data.ShowDialog();
+        }
     }
 }

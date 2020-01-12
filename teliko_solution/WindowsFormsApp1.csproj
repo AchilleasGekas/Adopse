@@ -41,6 +41,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -165,6 +166,12 @@
     <Compile Include="test_data.Designer.cs">
       <DependentUpon>test_data.cs</DependentUpon>
     </Compile>
+    <Compile Include="Usage_Data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usage_Data.Designer.cs">
+      <DependentUpon>Usage_Data.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserPanel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="test_data.resx">
       <DependentUpon>test_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usage_Data.resx">
+      <DependentUpon>Usage_Data.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserPanel.resx">
       <DependentUpon>UserPanel.cs</DependentUpon>

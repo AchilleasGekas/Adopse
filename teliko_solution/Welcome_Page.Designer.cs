@@ -87,6 +87,7 @@
             this.databaseLocal1 = new WindowsFormsApp1.DatabaseLocal();
             this.aDSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aDSTableAdapter = new WindowsFormsApp1.DatabaseLocalTableAdapters.ADSTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
             this.main_panel.SuspendLayout();
             this.panel6.SuspendLayout();
             this.Bottom_panel.SuspendLayout();
@@ -116,6 +117,7 @@
             // 
             resources.ApplyResources(this.main_panel, "main_panel");
             this.main_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
+            this.main_panel.Controls.Add(this.button1);
             this.main_panel.Controls.Add(this.panel6);
             this.main_panel.Controls.Add(this.Bottom_panel);
             this.main_panel.Controls.Add(this.panel_login_register);
@@ -556,6 +558,13 @@
             // 
             this.aDSTableAdapter.ClearBeforeFill = true;
             // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Welcome_Page
             // 
             resources.ApplyResources(this, "$this");
@@ -655,6 +664,7 @@
         private DatabaseLocal databaseLocal1;
         private System.Windows.Forms.BindingSource aDSBindingSource;
         private DatabaseLocalTableAdapters.ADSTableAdapter aDSTableAdapter;
+        private System.Windows.Forms.Button button1;
     }
 }
 

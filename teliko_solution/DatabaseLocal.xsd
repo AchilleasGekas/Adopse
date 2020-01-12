@@ -72,7 +72,29 @@
               <Mapping SourceColumn="ACTIONPERFORMED" DataSetColumn="ACTIONPERFORMED" />
               <Mapping SourceColumn="IP_ADDRESS" DataSetColumn="IP_ADDRESS" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="ACTIVITY_USER" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByDonationPressed" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByDonationPressed" GeneratorSourceName="FillByDonationPressed" GetMethodModifier="Public" GetMethodName="GetDataByDonationPressed" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByDonationPressed" UserSourceName="FillByDonationPressed">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        USERNAME, COUNT(*) AS [Counter]
+FROM            ACTIVITY_USER
+WHERE        (ACTIONPERFORMED = 'PRESS_DONATION')
+GROUP BY USERNAME</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="ACTIVITY_USER" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillByNumberofActions" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByNumberofActions" GeneratorSourceName="FillByNumberofActions" GetMethodModifier="Public" GetMethodName="GetDataByNumberofActions" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByNumberofActions" UserSourceName="FillByNumberofActions">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        USERNAME, COUNT(*) AS NumberofActions
+FROM            ACTIVITY_USER
+GROUP BY USERNAME</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AD_CATEGORYTableAdapter" GeneratorDataComponentClassName="AD_CATEGORYTableAdapter" Name="AD_CATEGORY" UserDataComponentName="AD_CATEGORYTableAdapter">
             <MainSource>
@@ -516,7 +538,18 @@
               <Mapping SourceColumn="SEARCHED_TEXT" DataSetColumn="SEARCHED_TEXT" />
               <Mapping SourceColumn="DATE_TIME" DataSetColumn="DATE_TIME" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="SEARCHED_DATA" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBySearchCounter" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBySearchCounter" GeneratorSourceName="FillBySearchCounter" GetMethodModifier="Public" GetMethodName="GetDataBySearchCounter" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBySearchCounter" UserSourceName="FillBySearchCounter">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT SEARCHED_TEXT, COUNT(*) AS TIMES
+FROM SEARCHED_DATA
+GROUP BY SEARCHED_TEXT</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="USERSTableAdapter" GeneratorDataComponentClassName="USERSTableAdapter" Name="USERS" UserDataComponentName="USERSTableAdapter">
             <MainSource>
@@ -636,6 +669,23 @@
               <Mapping SourceColumn="DISCOUNT_PRICE" DataSetColumn="DISCOUNT_PRICE" />
               <Mapping SourceColumn="AREA" DataSetColumn="AREA" />
               <Mapping SourceColumn="TELEPHONE" DataSetColumn="TELEPHONE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Query1TableAdapter" GeneratorDataComponentClassName="Query1TableAdapter" Name="Query1" UserDataComponentName="Query1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="Database1ConnectionString (Settings)" DbObjectName="Query1" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT SEARCHED_TEXT, TIMES FROM Query1</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SEARCHED_TEXT" DataSetColumn="SEARCHED_TEXT" />
+              <Mapping SourceColumn="TIMES" DataSetColumn="TIMES" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -954,6 +1004,20 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Query1" msprop:Generator_TableClassName="Query1DataTable" msprop:Generator_TableVarName="tableQuery1" msprop:Generator_RowChangedName="Query1RowChanged" msprop:Generator_TablePropName="Query1" msprop:Generator_RowDeletingName="Query1RowDeleting" msprop:Generator_RowChangingName="Query1RowChanging" msprop:Generator_RowEvHandlerName="Query1RowChangeEventHandler" msprop:Generator_RowDeletedName="Query1RowDeleted" msprop:Generator_RowClassName="Query1Row" msprop:Generator_UserTableName="Query1" msprop:Generator_RowEvArgName="Query1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SEARCHED_TEXT" msprop:Generator_ColumnVarNameInTable="columnSEARCHED_TEXT" msprop:Generator_ColumnPropNameInRow="SEARCHED_TEXT" msprop:Generator_ColumnPropNameInTable="SEARCHED_TEXTColumn" msprop:Generator_UserColumnName="SEARCHED_TEXT" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TIMES" msprop:Generator_ColumnVarNameInTable="columnTIMES" msprop:Generator_ColumnPropNameInRow="TIMES" msprop:Generator_ColumnPropNameInTable="TIMESColumn" msprop:Generator_UserColumnName="TIMES" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

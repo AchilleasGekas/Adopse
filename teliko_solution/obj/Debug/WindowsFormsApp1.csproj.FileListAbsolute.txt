@@ -318,3 +318,5 @@ C:\Users\panos\Desktop\Adopse\teliko_solution\obj\Debug\el\WindowsFormsApp1.reso
 C:\Users\panos\Desktop\Adopse\teliko_solution\obj\Debug\en\WindowsFormsApp1.resources.dll
 C:\Users\panos\Desktop\Adopse\teliko_solution\obj\Debug\WindowsFormsApp1.csproj.CopyComplete
 C:\Users\panos\Desktop\Adopse\teliko_solution\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\ekal6\Desktop\Adopse\teliko_solution\obj\Debug\WindowsFormsApp1.Usage_Data.resources
