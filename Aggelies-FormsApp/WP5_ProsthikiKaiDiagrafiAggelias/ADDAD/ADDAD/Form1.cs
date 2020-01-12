@@ -500,7 +500,6 @@ namespace ADDAD
 
 
 					int nexthop = COUNT + 2;
-					MessageBox.Show(nexthop.ToString());
 
 
 					int category = 0;
@@ -1263,36 +1262,25 @@ namespace ADDAD
 
 				Random rnd = new Random();
 				int randomnum = rnd.Next(1, 54);
-				MessageBox.Show(randomnum.ToString());
 				string PEND = "PENDING";
 
 				string query = "INSERT INTO ADS( AD_ID , AD_TITLE, DESCRIPTION, INSERT_DATE, PRICE, CATEGORY_ID, AREA_ID, STATUS)" + " VALUES('" + nexthop + "' , '" + textBox1.Text + "', '" + textBox2.Text + "', '" + today.ToString() + "', '" + numericUpDown1.Value + "', '" + category + "', '" + randomnum + "', '" + PEND + "'); ";
 				using (OleDbCommand cmd = new OleDbCommand(query, con))
 				{
 					int i = cmd.ExecuteNonQuery();
-					if (i >= 1)
-					{
-						MessageBox.Show("INSERT IN ADS");
-					}
-					else
-					{
-						MessageBox.Show("ADS ERROR");
-					}
 				}
 				
 				string query1 = "INSERT INTO PROPERTIES_VALUE(AD_ID, PROPERTIES1 , PROPERTIES2 , PROPERTIES3)" + " VALUES('" + nexthop + "', '" + prop1 + "', '" + prop2 + "','" + prop3 + "');";
 				using (OleDbCommand cmd1 = new OleDbCommand(query1, con))
 				{
 					int J = cmd1.ExecuteNonQuery();
-					if (J >= 1)
+					if (J >= 1 )
 					{
-						MessageBox.Show("INSERT IN PROPERTIES");
+						MessageBox.Show("Προσθέθηκε επιτυχώς");
 					}
-					else
-					{
-						MessageBox.Show("PROPERTIES ERROR");
-					}
+					
 				}
+
 				con.Close();
 				}
 			}
