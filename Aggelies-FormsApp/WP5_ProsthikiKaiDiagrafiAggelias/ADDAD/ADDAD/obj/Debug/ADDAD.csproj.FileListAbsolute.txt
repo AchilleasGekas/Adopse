@@ -1,0 +1,9 @@
+C:\Users\gkeka\Source\Repos\ADDAD\ADDAD\bin\Debug\ADDAD.exe.config
+C:\Users\gkeka\Source\Repos\ADDAD\ADDAD\bin\Debug\ADDAD.exe
+C:\Users\gkeka\Source\Repos\ADDAD\ADDAD\bin\Debug\ADDAD.pdb
+C:\Users\gkeka\Source\Repos\ADDAD\ADDAD\obj\Debug\ADDAD.csprojAssemblyReference.cache
+C:\Users\gkeka\Source\Repos\ADDAD\ADDAD\obj\Debug\ADDAD.Form1.resources
+C:\Users\gkeka\Source\Repos\ADDAD\ADDAD\obj\Debug\ADDAD.Properties.Resources.resources
+C:\Users\gkeka\Source\Repos\ADDAD\ADDAD\obj\Debug\ADDAD.csproj.GenerateResource.cache
+C:\Users\gkeka\Source\Repos\ADDAD\ADDAD\obj\Debug\ADDAD.exe
+C:\Users\gkeka\Source\Repos\ADDAD\ADDAD\obj\Debug\ADDAD.pdb
