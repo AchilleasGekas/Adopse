@@ -620,7 +620,18 @@ namespace WindowsFormsApp1
                 usern_main_label.Text = "User";
                 Log_in_label_main.Text = "Log in / Register";
             }
-        }       
+        } 
+
+ private void button1_Click(object sender, EventArgs e)
+        {
+            Trace.Listeners.Add(new TextWriterTraceListener("AdholicsErrors.log"));
+            Trace.AutoFlush = true;
+            Trace.Indent();
+            Trace.TraceInformation("Information");
+            Trace.TraceError("Error");
+            Trace.TraceWarning("Warning");
+            Trace.Unindent();
+        }		
     }
 }
     

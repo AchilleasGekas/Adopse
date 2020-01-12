@@ -19,6 +19,12 @@ namespace WindowsFormsApp1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Welcome_Page());
+			
+			Trace.Listeners.Add(new TextWriterTraceListener("AdholicsErrors.log"));
+            Trace.AutoFlush = true;
+            Trace.Unindent();
+            Trace.WriteLine("Adholics Closed!!");
+            Trace.Unindent();
         }
     }
 }
