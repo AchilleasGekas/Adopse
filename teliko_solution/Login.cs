@@ -64,40 +64,28 @@ namespace WindowsFormsApp1
 
         private void registerBtn_Click(object sender, EventArgs e)
         {
-            //initiating the Register Form
-            //Register reg = new Register();
-           // reg.ShowDialog();
-            timer1.Start();
+           //initiating the Register Form
+           Register reg = new Register();
+           reg.ShowDialog();
+            
 
 
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            r.Left += 10;
-            if (r.Left >= 830)
-            {
-                timer1.Stop();
-                this.TopMost = false;
-                r.TopMost = true;
-                timer2.Start();
-            }
+            
         }
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            r.Left -= 30;
-            if (r.Left >= 525)
-            {
-
-                timer2.Stop();
-            }
+           
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
             //let blank to avoid confusion
-            r.Show();
+            
         }
 
         private void usernameTxtBox_TextChanged(object sender, EventArgs e)

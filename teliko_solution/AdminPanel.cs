@@ -125,5 +125,11 @@ namespace WindowsFormsApp1
             DisplayUsersAdmin dua = new DisplayUsersAdmin();
             dua.ShowDialog();
         }
+
+        private void insertAddBtn_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.ShowDialog();
+        }
     }
 }

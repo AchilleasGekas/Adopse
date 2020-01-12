@@ -290,5 +290,16 @@ namespace WindowsFormsApp1
             //in order to prevent it from being editted
             usernameTextBox.Text = Login.uname;
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void insertAddBtn_Click(object sender, EventArgs e)
+        {
+            Form1 f = new Form1();
+            f.ShowDialog();
+        }
     }
 }

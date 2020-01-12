@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Page));
             this.main_panel = new System.Windows.Forms.Panel();
-            this.logOutButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.reportBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -54,6 +53,7 @@
             this.panel_home = new System.Windows.Forms.Panel();
             this.back_button_main = new System.Windows.Forms.Button();
             this.panel_user = new System.Windows.Forms.Panel();
+            this.logOutButton = new System.Windows.Forms.Button();
             this.usern_main_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.left_panel_options = new System.Windows.Forms.Panel();
@@ -165,21 +165,11 @@
             this.main_panel.Controls.Add(this.panel_user);
             this.main_panel.Controls.Add(this.left_panel_options);
             this.main_panel.Location = new System.Drawing.Point(0, 0);
-            this.main_panel.Margin = new System.Windows.Forms.Padding(2);
+            this.main_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.main_panel.Name = "main_panel";
-            this.main_panel.Size = new System.Drawing.Size(1209, 498);
+            this.main_panel.Size = new System.Drawing.Size(1167, 498);
             this.main_panel.TabIndex = 0;
             this.main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.main_panel_Paint);
-            // 
-            // logOutButton
-            // 
-            this.logOutButton.Location = new System.Drawing.Point(778, 33);
-            this.logOutButton.Name = "logOutButton";
-            this.logOutButton.Size = new System.Drawing.Size(75, 23);
-            this.logOutButton.TabIndex = 22;
-            this.logOutButton.Text = "Log Out";
-            this.logOutButton.UseVisualStyleBackColor = true;
-            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
             // panel3
             // 
@@ -272,7 +262,8 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(281, 220);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(762, 150);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(720, 150);
             this.dataGridView1.TabIndex = 14;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -283,9 +274,9 @@
             this.panel_login_register.Controls.Add(this.donationBtn);
             this.panel_login_register.Controls.Add(this.comboBox1);
             this.panel_login_register.Controls.Add(this.Log_in_label_main);
-            this.panel_login_register.Location = new System.Drawing.Point(905, 37);
+            this.panel_login_register.Location = new System.Drawing.Point(954, 37);
             this.panel_login_register.Name = "panel_login_register";
-            this.panel_login_register.Size = new System.Drawing.Size(301, 106);
+            this.panel_login_register.Size = new System.Drawing.Size(210, 106);
             this.panel_login_register.TabIndex = 13;
             // 
             // donationBtn
@@ -296,7 +287,7 @@
             this.donationBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.donationBtn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.donationBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
-            this.donationBtn.Location = new System.Drawing.Point(171, 68);
+            this.donationBtn.Location = new System.Drawing.Point(80, 68);
             this.donationBtn.Name = "donationBtn";
             this.donationBtn.Size = new System.Drawing.Size(120, 27);
             this.donationBtn.TabIndex = 17;
@@ -313,7 +304,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Greek",
             "English"});
-            this.comboBox1.Location = new System.Drawing.Point(171, 37);
+            this.comboBox1.Location = new System.Drawing.Point(80, 37);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 25);
             this.comboBox1.TabIndex = 16;
@@ -325,7 +316,7 @@
             this.Log_in_label_main.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Log_in_label_main.AutoSize = true;
             this.Log_in_label_main.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.Log_in_label_main.Location = new System.Drawing.Point(100, 9);
+            this.Log_in_label_main.Location = new System.Drawing.Point(9, 9);
             this.Log_in_label_main.Name = "Log_in_label_main";
             this.Log_in_label_main.Size = new System.Drawing.Size(192, 22);
             this.Log_in_label_main.TabIndex = 13;
@@ -342,7 +333,7 @@
             this.panel5.Controls.Add(this.Maximize);
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1209, 32);
+            this.panel5.Size = new System.Drawing.Size(1167, 32);
             this.panel5.TabIndex = 0;
             this.panel5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel5_MouseDown);
             this.panel5.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel5_MouseMove);
@@ -352,7 +343,7 @@
             // 
             this.Minimize.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Minimize.Image = ((System.Drawing.Image)(resources.GetObject("Minimize.Image")));
-            this.Minimize.Location = new System.Drawing.Point(1122, 4);
+            this.Minimize.Location = new System.Drawing.Point(1080, 4);
             this.Minimize.Name = "Minimize";
             this.Minimize.Size = new System.Drawing.Size(24, 24);
             this.Minimize.TabIndex = 15;
@@ -363,7 +354,7 @@
             // 
             this.close.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.close.Image = ((System.Drawing.Image)(resources.GetObject("close.Image")));
-            this.close.Location = new System.Drawing.Point(1182, 3);
+            this.close.Location = new System.Drawing.Point(1140, 3);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(24, 24);
             this.close.TabIndex = 13;
@@ -374,7 +365,7 @@
             // 
             this.Maximize.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.Maximize.Image = ((System.Drawing.Image)(resources.GetObject("Maximize.Image")));
-            this.Maximize.Location = new System.Drawing.Point(1152, 4);
+            this.Maximize.Location = new System.Drawing.Point(1110, 4);
             this.Maximize.Name = "Maximize";
             this.Maximize.Size = new System.Drawing.Size(24, 24);
             this.Maximize.TabIndex = 14;
@@ -390,7 +381,7 @@
             this.navigation_panel.Controls.Add(this.panel_home);
             this.navigation_panel.Controls.Add(this.back_button_main);
             this.navigation_panel.Location = new System.Drawing.Point(0, 0);
-            this.navigation_panel.Margin = new System.Windows.Forms.Padding(2);
+            this.navigation_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.navigation_panel.Name = "navigation_panel";
             this.navigation_panel.Size = new System.Drawing.Size(229, 151);
             this.navigation_panel.TabIndex = 0;
@@ -408,7 +399,7 @@
             this.home_button_main.Image = ((System.Drawing.Image)(resources.GetObject("home_button_main.Image")));
             this.home_button_main.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.home_button_main.Location = new System.Drawing.Point(11, 31);
-            this.home_button_main.Margin = new System.Windows.Forms.Padding(2);
+            this.home_button_main.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.home_button_main.Name = "home_button_main";
             this.home_button_main.Size = new System.Drawing.Size(218, 55);
             this.home_button_main.TabIndex = 2;
@@ -469,10 +460,24 @@
             this.panel_user.Controls.Add(this.usern_main_label);
             this.panel_user.Controls.Add(this.pictureBox1);
             this.panel_user.Location = new System.Drawing.Point(281, 0);
-            this.panel_user.Margin = new System.Windows.Forms.Padding(2);
+            this.panel_user.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel_user.Name = "panel_user";
             this.panel_user.Size = new System.Drawing.Size(147, 175);
             this.panel_user.TabIndex = 1;
+            // 
+            // logOutButton
+            // 
+            this.logOutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.logOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logOutButton.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.logOutButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(224)))));
+            this.logOutButton.Location = new System.Drawing.Point(1089, 149);
+            this.logOutButton.Name = "logOutButton";
+            this.logOutButton.Size = new System.Drawing.Size(75, 27);
+            this.logOutButton.TabIndex = 22;
+            this.logOutButton.Text = "Log Out";
+            this.logOutButton.UseVisualStyleBackColor = false;
+            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
             // usern_main_label
             // 
@@ -489,7 +494,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(24, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(78, 78);
             this.pictureBox1.TabIndex = 0;
@@ -511,44 +516,51 @@
             this.left_panel_options.Controls.Add(this.filtro1);
             this.left_panel_options.Controls.Add(this.onomaKatigorias);
             this.left_panel_options.Location = new System.Drawing.Point(0, 145);
-            this.left_panel_options.Margin = new System.Windows.Forms.Padding(2);
+            this.left_panel_options.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.left_panel_options.Name = "left_panel_options";
             this.left_panel_options.Size = new System.Drawing.Size(229, 346);
             this.left_panel_options.TabIndex = 0;
             // 
             // epilogiFiltrwn
             // 
+            this.epilogiFiltrwn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.epilogiFiltrwn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.epilogiFiltrwn.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.epilogiFiltrwn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(229)))), ((int)(((byte)(250)))));
             this.epilogiFiltrwn.Location = new System.Drawing.Point(51, 274);
             this.epilogiFiltrwn.Name = "epilogiFiltrwn";
-            this.epilogiFiltrwn.Size = new System.Drawing.Size(121, 23);
+            this.epilogiFiltrwn.Size = new System.Drawing.Size(124, 31);
             this.epilogiFiltrwn.TabIndex = 7;
             this.epilogiFiltrwn.Text = "Επιλογή Φίλτρων";
-            this.epilogiFiltrwn.UseVisualStyleBackColor = true;
+            this.epilogiFiltrwn.UseVisualStyleBackColor = false;
             this.epilogiFiltrwn.Click += new System.EventHandler(this.epilogiFiltrwn_Click);
             // 
             // comboBox4
             // 
+            this.comboBox4.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(67, 219);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.Size = new System.Drawing.Size(121, 23);
             this.comboBox4.TabIndex = 6;
             // 
             // comboBox3
             // 
+            this.comboBox3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Location = new System.Drawing.Point(67, 149);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.Size = new System.Drawing.Size(121, 23);
             this.comboBox3.TabIndex = 5;
             // 
             // comboBox2
             // 
             this.comboBox2.DataSource = this.pROPERTIES17BindingSource;
+            this.comboBox2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(67, 87);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.Size = new System.Drawing.Size(121, 23);
             this.comboBox2.TabIndex = 4;
             // 
             // pROPERTIES17BindingSource
@@ -564,36 +576,40 @@
             // filtro3
             // 
             this.filtro3.AutoSize = true;
+            this.filtro3.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.filtro3.Location = new System.Drawing.Point(11, 227);
             this.filtro3.Name = "filtro3";
-            this.filtro3.Size = new System.Drawing.Size(35, 13);
+            this.filtro3.Size = new System.Drawing.Size(41, 16);
             this.filtro3.TabIndex = 3;
             this.filtro3.Text = "label3";
             // 
             // filtro2
             // 
             this.filtro2.AutoSize = true;
+            this.filtro2.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.filtro2.Location = new System.Drawing.Point(11, 157);
             this.filtro2.Name = "filtro2";
-            this.filtro2.Size = new System.Drawing.Size(35, 13);
+            this.filtro2.Size = new System.Drawing.Size(41, 16);
             this.filtro2.TabIndex = 2;
             this.filtro2.Text = "label2";
             // 
             // filtro1
             // 
             this.filtro1.AutoSize = true;
+            this.filtro1.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.filtro1.Location = new System.Drawing.Point(11, 90);
             this.filtro1.Name = "filtro1";
-            this.filtro1.Size = new System.Drawing.Size(35, 13);
+            this.filtro1.Size = new System.Drawing.Size(41, 16);
             this.filtro1.TabIndex = 1;
             this.filtro1.Text = "label1";
             // 
             // onomaKatigorias
             // 
             this.onomaKatigorias.AutoSize = true;
+            this.onomaKatigorias.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.onomaKatigorias.Location = new System.Drawing.Point(6, 35);
             this.onomaKatigorias.Name = "onomaKatigorias";
-            this.onomaKatigorias.Size = new System.Drawing.Size(35, 13);
+            this.onomaKatigorias.Size = new System.Drawing.Size(41, 16);
             this.onomaKatigorias.TabIndex = 0;
             this.onomaKatigorias.Text = "label1";
             // 
@@ -788,10 +804,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1209, 498);
+            this.ClientSize = new System.Drawing.Size(1167, 498);
             this.Controls.Add(this.main_panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Main_Page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";

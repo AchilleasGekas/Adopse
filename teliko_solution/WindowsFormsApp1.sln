@@ -7,6 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "Windows
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{17FCE592-2D4F-46CA-A5D4-2F58D321F869}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\ADDAD\ADDAD\Form1.cs = ..\..\ADDAD\ADDAD\Form1.cs
+		..\..\ADDAD\ADDAD\Form1.Designer.cs = ..\..\ADDAD\ADDAD\Form1.Designer.cs
+		..\..\ADDAD\ADDAD\Form1.resx = ..\..\ADDAD\ADDAD\Form1.resx
 		..\..\New folder\V3\Adopse\teliko_solution\Welcome_Page.cs = ..\..\New folder\V3\Adopse\teliko_solution\Welcome_Page.cs
 		..\..\New folder\V3\Adopse\teliko_solution\Welcome_Page.Designer.cs = ..\..\New folder\V3\Adopse\teliko_solution\Welcome_Page.Designer.cs
 		..\..\New folder\V3\Adopse\teliko_solution\Welcome_Page.el.resx = ..\..\New folder\V3\Adopse\teliko_solution\Welcome_Page.el.resx
