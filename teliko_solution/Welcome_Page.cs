@@ -36,6 +36,10 @@ namespace WindowsFormsApp1
       
         private void Welcome_Page_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'databaseLocal1.ACTIVITY_USER' table. You can move, or remove it, as needed.
+            this.aCTIVITY_USERTableAdapter.Fill(this.databaseLocal1.ACTIVITY_USER);
+            // TODO: This line of code loads data into the 'databaseLocal1.SEARCHED_DATA' table. You can move, or remove it, as needed.
+            this.sEARCHED_DATATableAdapter.Fill(this.databaseLocal1.SEARCHED_DATA);
             // TODO: This line of code loads data into the 'databaseLocal1.ADS' table. You can move, or remove it, as needed.
             this.aDSTableAdapter.Fill(this.databaseLocal1.ADS);
             // TODO: This line of code loads data into the 'database1DataSet.AD_CATEGORY2' table. You can move, or remove it, as needed.
@@ -382,9 +386,11 @@ namespace WindowsFormsApp1
 
         private void Log_in_label_Click(object sender, EventArgs e)
         {
+
             Login l = new Login();
 
             l.ShowDialog();
+           
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -465,8 +471,8 @@ namespace WindowsFormsApp1
             var results = search(query);
             mp.dataGridView1.DataSource = results;
   
-            //this.aCTIVITY_USERTableAdapter.InsertUserActivity("George", DateTime.Today,"searched",Global.getIP());
-            //this.sEARCHED_DATATableAdapter.Insert("Karanikas", searchTB.Text, DateTime.Today);
+            this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today,"SEARCHED",Global.getIP());
+            this.sEARCHED_DATATableAdapter.Insert(Login.uname, searchboxTxtBox.Text, DateTime.Today);
             voithitikosArithmos = 20;
             mp.filtro1.Visible = false;
             mp.filtro2.Visible = false;

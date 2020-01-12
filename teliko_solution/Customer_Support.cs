@@ -101,9 +101,10 @@ namespace WindowsFormsApp1
                 SmtpServer.Send(mail);
 
                 MessageBox.Show("Your Mail is sended");
-
+                //            this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today,"CUSTOMER_SUPPORT",Global.getIP());
                 this.Close();
                 // }
+               
 
             }
             catch (Exception ex)

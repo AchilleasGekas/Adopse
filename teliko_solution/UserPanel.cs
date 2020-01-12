@@ -66,6 +66,7 @@ namespace WindowsFormsApp1
 
         private void updateButton_Click(object sender, EventArgs e)
         {
+            //this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today,"UPDATE",Global.getIP());
             int follow = 0;//used to check if the registration will close or not
             //total report, in case data inputed are not as expected
             String report = "UPDATE COULD NOT BE DONE\n\n";
@@ -174,6 +175,7 @@ namespace WindowsFormsApp1
 
         private void eraseButton_Click(object sender, EventArgs e)
         {
+            //this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today,"ERASE",Global.getIP());
             int check = 0;
             int check0 = 0;
             try
@@ -300,6 +302,7 @@ namespace WindowsFormsApp1
         {
             Form1 f = new Form1();
             f.ShowDialog();
+            //this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today, "INSERT_ADD", Global.getIP());
         }
     }
 }

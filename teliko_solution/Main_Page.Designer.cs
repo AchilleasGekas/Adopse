@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main_Page));
             this.main_panel = new System.Windows.Forms.Panel();
+            this.logOutButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.reportBtn = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -53,7 +54,6 @@
             this.panel_home = new System.Windows.Forms.Panel();
             this.back_button_main = new System.Windows.Forms.Button();
             this.panel_user = new System.Windows.Forms.Panel();
-            this.logOutButton = new System.Windows.Forms.Button();
             this.usern_main_label = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.left_panel_options = new System.Windows.Forms.Panel();
@@ -165,11 +165,25 @@
             this.main_panel.Controls.Add(this.panel_user);
             this.main_panel.Controls.Add(this.left_panel_options);
             this.main_panel.Location = new System.Drawing.Point(0, 0);
-            this.main_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.main_panel.Margin = new System.Windows.Forms.Padding(2);
             this.main_panel.Name = "main_panel";
             this.main_panel.Size = new System.Drawing.Size(1167, 498);
             this.main_panel.TabIndex = 0;
             this.main_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.main_panel_Paint);
+            // 
+            // logOutButton
+            // 
+            this.logOutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
+            this.logOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.logOutButton.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.logOutButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(224)))));
+            this.logOutButton.Location = new System.Drawing.Point(1089, 149);
+            this.logOutButton.Name = "logOutButton";
+            this.logOutButton.Size = new System.Drawing.Size(75, 27);
+            this.logOutButton.TabIndex = 22;
+            this.logOutButton.Text = "Log Out";
+            this.logOutButton.UseVisualStyleBackColor = false;
+            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
             // panel3
             // 
@@ -381,7 +395,7 @@
             this.navigation_panel.Controls.Add(this.panel_home);
             this.navigation_panel.Controls.Add(this.back_button_main);
             this.navigation_panel.Location = new System.Drawing.Point(0, 0);
-            this.navigation_panel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.navigation_panel.Margin = new System.Windows.Forms.Padding(2);
             this.navigation_panel.Name = "navigation_panel";
             this.navigation_panel.Size = new System.Drawing.Size(229, 151);
             this.navigation_panel.TabIndex = 0;
@@ -399,7 +413,7 @@
             this.home_button_main.Image = ((System.Drawing.Image)(resources.GetObject("home_button_main.Image")));
             this.home_button_main.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.home_button_main.Location = new System.Drawing.Point(11, 31);
-            this.home_button_main.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.home_button_main.Margin = new System.Windows.Forms.Padding(2);
             this.home_button_main.Name = "home_button_main";
             this.home_button_main.Size = new System.Drawing.Size(218, 55);
             this.home_button_main.TabIndex = 2;
@@ -460,24 +474,11 @@
             this.panel_user.Controls.Add(this.usern_main_label);
             this.panel_user.Controls.Add(this.pictureBox1);
             this.panel_user.Location = new System.Drawing.Point(281, 0);
-            this.panel_user.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_user.Margin = new System.Windows.Forms.Padding(2);
             this.panel_user.Name = "panel_user";
             this.panel_user.Size = new System.Drawing.Size(147, 175);
             this.panel_user.TabIndex = 1;
-            // 
-            // logOutButton
-            // 
-            this.logOutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
-            this.logOutButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.logOutButton.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.logOutButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(199)))), ((int)(((byte)(224)))));
-            this.logOutButton.Location = new System.Drawing.Point(1089, 149);
-            this.logOutButton.Name = "logOutButton";
-            this.logOutButton.Size = new System.Drawing.Size(75, 27);
-            this.logOutButton.TabIndex = 22;
-            this.logOutButton.Text = "Log Out";
-            this.logOutButton.UseVisualStyleBackColor = false;
-            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
+            this.panel_user.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_user_Paint);
             // 
             // usern_main_label
             // 
@@ -494,7 +495,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(24, 37);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(78, 78);
             this.pictureBox1.TabIndex = 0;
@@ -516,7 +517,7 @@
             this.left_panel_options.Controls.Add(this.filtro1);
             this.left_panel_options.Controls.Add(this.onomaKatigorias);
             this.left_panel_options.Location = new System.Drawing.Point(0, 145);
-            this.left_panel_options.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.left_panel_options.Margin = new System.Windows.Forms.Padding(2);
             this.left_panel_options.Name = "left_panel_options";
             this.left_panel_options.Size = new System.Drawing.Size(229, 346);
             this.left_panel_options.TabIndex = 0;
@@ -807,7 +808,7 @@
             this.ClientSize = new System.Drawing.Size(1167, 498);
             this.Controls.Add(this.main_panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Main_Page";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";

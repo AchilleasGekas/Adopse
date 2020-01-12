@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome_Page));
             this.main_panel = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.Search_button = new System.Windows.Forms.Button();
             this.searchboxTxtBox = new System.Windows.Forms.TextBox();
@@ -87,7 +88,10 @@
             this.databaseLocal1 = new WindowsFormsApp1.DatabaseLocal();
             this.aDSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.aDSTableAdapter = new WindowsFormsApp1.DatabaseLocalTableAdapters.ADSTableAdapter();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.sEARCHED_DATATableAdapter = new WindowsFormsApp1.DatabaseLocalTableAdapters.SEARCHED_DATATableAdapter();
+            this.bindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.aCTIVITY_USERTableAdapter = new WindowsFormsApp1.DatabaseLocalTableAdapters.ACTIVITY_USERTableAdapter();
             this.main_panel.SuspendLayout();
             this.panel6.SuspendLayout();
             this.Bottom_panel.SuspendLayout();
@@ -111,6 +115,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseLocal1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // main_panel
@@ -124,6 +130,13 @@
             this.main_panel.Controls.Add(this.logo);
             this.main_panel.Controls.Add(this.panel4);
             this.main_panel.Name = "main_panel";
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel6
             // 
@@ -558,12 +571,23 @@
             // 
             this.aDSTableAdapter.ClearBeforeFill = true;
             // 
-            // button1
+            // bindingSource1
             // 
-            resources.ApplyResources(this.button1, "button1");
-            this.button1.Name = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.bindingSource1.DataMember = "SEARCHED_DATA";
+            this.bindingSource1.DataSource = this.databaseLocal1;
+            // 
+            // sEARCHED_DATATableAdapter
+            // 
+            this.sEARCHED_DATATableAdapter.ClearBeforeFill = true;
+            // 
+            // bindingSource2
+            // 
+            this.bindingSource2.DataMember = "ACTIVITY_USER";
+            this.bindingSource2.DataSource = this.databaseLocal1;
+            // 
+            // aCTIVITY_USERTableAdapter
+            // 
+            this.aCTIVITY_USERTableAdapter.ClearBeforeFill = true;
             // 
             // Welcome_Page
             // 
@@ -601,6 +625,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.databaseLocal1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aDSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -665,6 +691,10 @@
         private System.Windows.Forms.BindingSource aDSBindingSource;
         private DatabaseLocalTableAdapters.ADSTableAdapter aDSTableAdapter;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.BindingSource bindingSource1;
+        private DatabaseLocalTableAdapters.SEARCHED_DATATableAdapter sEARCHED_DATATableAdapter;
+        private System.Windows.Forms.BindingSource bindingSource2;
+        private DatabaseLocalTableAdapters.ACTIVITY_USERTableAdapter aCTIVITY_USERTableAdapter;
     }
 }
 

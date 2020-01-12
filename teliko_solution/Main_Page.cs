@@ -387,6 +387,7 @@ namespace WindowsFormsApp1
         private void epilogiFiltrwn_Click(object sender, EventArgs e)
         {
             arithmosFiltrwn();
+            //this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today, "FILTER", Global.getIP());
         }
 
         public static string Dok, Dok2, Dok3;
@@ -556,7 +557,7 @@ namespace WindowsFormsApp1
 
         private void home_button_Click(object sender, EventArgs e)
         {
-
+           // this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today, "HOMEPAGE", Global.getIP());
             panel_home.Height = home_button_main.Height;
             panel_home.Top = home_button_main.Top;
             Welcome_Page wp1 = new Welcome_Page();
@@ -568,6 +569,7 @@ namespace WindowsFormsApp1
 
         private void back_button_Click(object sender, EventArgs e)
         {
+            //this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today, "BACK_BUTTON", Global.getIP());
             panel_back.Height = back_button_main.Height;
             panel_back.Top = back_button_main.Top;
             Welcome_Page wp = new Welcome_Page();
@@ -582,24 +584,28 @@ namespace WindowsFormsApp1
         {
             Report rs = new Report();
             rs.ShowDialog();
+            //this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today,"REPORT",Global.getIP());
         }
 
         private void Customer_supportBtn_Click(object sender, EventArgs e)
         {
             Customer_Support cs = new Customer_Support();
             cs.ShowDialog();
+            //this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today, "SUPPORT", Global.getIP());
         }
 
         private void donationBtn_Click(object sender, EventArgs e)
         {
             DonationForm dn = new DonationForm();
             dn.ShowDialog();
+            //this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today, "DONATION", Global.getIP());
         }
 
         private void prosforesBtn_Click(object sender, EventArgs e)
         {
             Prosfores ps = new Prosfores();
             ps.ShowDialog();
+            //this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today, "SALES", Global.getIP());
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -642,6 +648,7 @@ namespace WindowsFormsApp1
             Login.uname = null;
             this.Hide();
             wp.ShowDialog();
+            //this.aCTIVITY_USERTableAdapter.Insert(Login.uname, DateTime.Today, "LOGGED_OUT", Global.getIP());
             this.Close();
         }
 
@@ -665,6 +672,11 @@ namespace WindowsFormsApp1
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void panel_user_Paint(object sender, PaintEventArgs e)
         {
 
         }
